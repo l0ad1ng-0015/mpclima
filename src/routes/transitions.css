@@ -1,0 +1,11 @@
+
+.blur-effect {
+    filter: blur(10px); 
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.blur-effect:hover,
+.blur-effect:focus {
+    filter: none;
+}

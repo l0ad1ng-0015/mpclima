@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/images/background.png);
+    background-size: 80%;
+    background-position: center top;
+}
+
+.container {
+    width: 60%;
+    padding: 30px 30px;
+    margin: 0 auto;
+}
+.banner {
+    width: 100%;
+    /* height: 100vh; */
+
+}
+
+.nav { /* Corrected class name here */
+    width: 90%;
+    margin: auto;
+    padding: 30px 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.logo{
+    cursor: pointer;
+    padding: 50px 0 0 40px;
+    width: 310px;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-table;
+    margin: 1dvh;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #0070BB ; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 40px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #0070BB;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #0070BB;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    background-color: #0070BB;
+    color: #fff
+}
+
+.sub-nav {
+    display: none; /* Hide submenus by default */
+    position: absolute;
+    background-color: transparent; /* Set transparent background */
+    border-radius: 5px;
+    padding: 0; /* Remove padding to handle spacing with pseudo-element */
+    z-index: -1; /* Set z-index to position submenu below main menu items */
+    transform: rotate(90deg) scale(0); /* Apply initial rotation and scaling */
+    transform-origin: top left; /* Set the rotation origin */
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s; /* Add transitions for smooth animation */
+}
+
+.submenu:hover .sub-nav {
+    display: block;
+    transform: rotate(0) scale(1);
+    opacity: 1;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 10px;
+    border: 2px solid #0070BB;
+    z-index: 1; /* Keep the z-index as 1 or remove it to use the default stacking order */
+}
+
+
+
+/* Style for the pseudo-element */
+.submenu:hover .sub-nav {
+    display: block;
+    transform: rotate(0) scale(1);
+    opacity: 1;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 10px;
+    border: 2px solid #0070BB;
+    z-index: 1; /* Keep the z-index as 1 or remove it to use the default stacking order */
+}
+
+
+
+/*за събмит нищото*/
+
+.contact {
+    text-align: center;
+    padding: 240px 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 30vh; /* Adjust the height as needed for centering */
+}
+/* Additional CSS styles for contact form */
+.contact form {
+    /* Other styles */
+    position: relative;
+}
+
+/* Additional CSS styles for contact form */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    display: block; /* Make input fields and textarea block-level elements */
+    width: 95%; /* Set their width to 100% to make them full-width */
+    background-color: rgba(255, 255, 255, 0.2); /* Add a translucent white background */
+    border: 2px solid #0070BB; /* Add a blue border */
+    border-radius: 5px;
+    color: #fff; /* Change text color to white */
+    padding: 10px;
+    font-size: 13px;
+    backdrop-filter: blur (10px); /* Apply a blur effect to the background */
+    margin-bottom: 10px; /* Add spacing between fields */
+}
+
+/* Rest of the styles remain the same */
+
+
+.contact input[type="text"]::placeholder,
+.contact input[type="email"]::placeholder,
+.contact textarea::placeholder {
+    color: #fff; /* Change placeholder text color to white */
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #00518A; /* Change border color on focus */
+}
+
+.contact button[type="submit"] {
+    /* Other button styles... */
+    background-color: #0070BB;
+    color: #fff;
+}
+
+.contact h2,
+.contact p {
+    color: #fff; /* Change the text color to white */
+}
+/* Additional CSS styles for contact form */
+
+
+.contact-content {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.contact h2,
+.contact p {
+    color: #fff;
+}
+
+/* Rest of the styles remain the same */
+
+.thankyou h2,
+.thankyou p {
+    color: #fff;
+}
+
+
+.social {
+    padding: 20px;
+}
+
+.social h2 {
+    font-size: 24px;
+    color: #333; /* Text color */
+}
+
+.social p {
+    font-size: 16px;
+    color: #666; /* Text color */
+    margin-bottom: 10px;
+}
+
+/* Style for the phone numbers */
+.social .phone {
+    font-weight: bold;
+    color: #007BFF; /* Blue color */
+}
+
+
+.social h2 {
+    margin: 0 auto;
+    display: block;
+}
+
+ .social iframe { 
+    border: 5px solid #007BFF; /* Blue border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    height: 500px;
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+ 
+#promotions-message {
+    display: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
