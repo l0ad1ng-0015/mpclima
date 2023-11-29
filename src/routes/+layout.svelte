@@ -12,16 +12,16 @@
             <li class="submenu">
                 <a href="#">За нас</a>
                 <ul class="sub-nav">
-                    <li><a href="./foundation">Основаване Фирма</a></li>
-                    <li><a href="./partners">Партньори</a></li>
-                    <li><a href="./gallery/">Галерия</a></li>
+                    <li><a href="./основаване">Основаване Фирма</a></li>
+                    <li><a href="./партньори">Партньори</a></li>
+                    <li><a href="./галерия/">Галерия</a></li>
                 </ul>
             </li>
             <li class="submenu">
                 <a href="#">Ценови листи</a>
                 <ul class="sub-nav">
-                    <li><a href="./activities">Дейности</a></li>
-                    <li><a href="./delivery">Доставка</a></li>
+                    <li><a href="./дейности">Дейности</a></li>
+                    <li><a href="./доставка">Доставка</a></li>
      
                 </ul>
             </li>
@@ -29,8 +29,8 @@
             <li class="submenu">
                 <a href="#">Контакти</a>
                 <ul class="sub-nav">
-                    <li><a href="./social">Връзки</a></li>
-                    <li><a href="./contact-us">Пишете </a></li>
+                    <li><a href="./връзки">Връзки</a></li>
+                    <li><a href="./свържете се">Свържете се</a></li>
                 </ul>
             </li>
             
