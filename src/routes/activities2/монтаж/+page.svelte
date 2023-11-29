@@ -9,6 +9,33 @@
 
 
 
+<div class="montaj-container">
+  <h1>9-12 000 BTV</h1>
+  <hr>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+  <h2>Цена: 270лв</h2>
+</div>
+
+<div class="montaj-container2">
+  <h1>9-12 000 BTV</h1>
+  <hr>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+  <h2>Цена: 270лв</h2>
+</div>
+
+
 <style>
   .montaj-container {
     padding: 20px;
@@ -57,29 +84,3 @@ hr{
   margin: 0;
 }
 </style>
-
-<div class="montaj-container">
-  <h1>9-12 000 BTV</h1>
-  <hr>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
-  <h2>Цена: 270лв</h2>
-</div>
-
-<div class="montaj-container2">
-  <h1>9-12 000 BTV</h1>
-  <hr>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
-  <h2>Цена: 270лв</h2>
-</div>
