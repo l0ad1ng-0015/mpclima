@@ -11,31 +11,34 @@
 
 <style>
   .montaj-container {
+    padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 370px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    border-radius: 25px;
-    text-align: center;
-    -webkit-box-direction: normal;
+    border-radius: 6px;
+    margin: 0 10px;
   }
 
- /* .motaj-container2{
+  .montaj-container2{
+    padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 370px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    border-radius: 25px;
-    text-align: center;
-  } */
+    border-radius: 6px;
+    margin: 0 10px;
+  } 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   color: #ddd;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #ddd;
 }
@@ -46,10 +49,18 @@ p {
 
 }
 
+hr{
+  width: 40%;   
+  height: 2px;
+  background: white;
+  border: none;
+  margin: 0;
+}
 </style>
 
 <div class="montaj-container">
   <h1>9-12 000 BTV</h1>
+  <hr>
  <p> TEXT TEXT TEXT</p>
  <p> TEXT TEXT TEXT</p>
  <p> TEXT TEXT TEXT</p>
@@ -58,19 +69,17 @@ p {
  <p> TEXT TEXT TEXT</p>
  <p> TEXT TEXT TEXT</p>
   <h2>Цена: 270лв</h2>
-
 </div>
 
-<div class="motaj-container2">  
+<div class="montaj-container2">
   <h1>9-12 000 BTV</h1>
   <hr>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-  <p> TEXT TEXT TEXT</p>
-   <h2>Цена: 270лв</h2>
-   
-   </div>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+ <p> TEXT TEXT TEXT</p>
+  <h2>Цена: 270лв</h2>
+</div>
