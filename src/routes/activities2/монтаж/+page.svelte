@@ -1,5 +1,5 @@
 
-  <script>
+<script>
   let showAdditionalSection = false;
 
   function toggleSection() {
@@ -12,13 +12,13 @@
 <div class="montaj-container">
   <h1>9-12 000 BTV</h1>
   <hr>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
- <p> TEXT TEXT TEXT</p>
+  <li>Качване на климатик и материали с асансьор</li>
+  <li>Фиксиране на стойка на вътрешно тяло</li>
+  <li>Технологичен отвор в стената 1 бр.</li>
+  <li>Медни тръби с термо изолация до 3 л. м.</li>
+  <li>Отводняваща гофрирана тръба до 3 л. м.</li>
+  <li>Комуникационен кабел до 5 л. м.</li>
+
   <h2>Цена: 270лв</h2>
 </div>
 
@@ -37,9 +37,9 @@
 
 
 <style>
-  .montaj-container {
+  .montaj-container, .montaj-container2 {
     padding: 20px;
-    width: 100%;
+    width: calc(50% - 15px);
     max-width: 370px;
     display: flex;
     flex-wrap: wrap;
@@ -48,16 +48,6 @@
     margin: 0 10px;
   }
 
-  .montaj-container2{
-    padding: 20px;
-    width: 100%;
-    max-width: 370px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 6px;
-    margin: 0 10px;
-  } 
 h1 {
   font-size: 40px;
   font-weight: bold;
