@@ -11,7 +11,7 @@
   
     <div class="montaj-container">
       <p>Профилактика на климатици:</p> 
-    <h1>9-12 000 BTU</h1>
+    <h1>9-24 000 + BTU</h1>
     <hr>
     <li class="first-li">Преглед на вътрешно тяло</li>
     <li>Почистване на вътрешно тяло</li>
@@ -19,34 +19,10 @@
     <li>Измерване на работно налягане.</li>
     <li>Измерване на температура на изпарение на <br>фреона</li>
     <li>Почистване на филтърна секция</li>
-    <h2>Цена: 270лв</h2>
+    <h2>Цена: 60лв</h2>
   </div>
   
-  <div class="montaj-container2">
-    <p>Профилактика на климатици:</p> 
-    <h1>12-24 000 BTU</h1>
-     <hr>
-     <li class="first-li">Преглед на вътрешно тяло</li>
-    <li>Почистване на вътрешно тяло</li>
-    <li>Преглед на външно климатично тяло</li>
-    <li>Измерване на работно налягане.</li>
-    <li>Измерване на температура на изпарение на <br>фреона</li>
-    <li>Почистване на филтърна секция</li>
-     <h2>Цена: 270лв</h2>
-  </div>
-  
-  <div class="montaj-container3">
-    <p>Профилактика на климатици:</p>
-    <h1>24 000 + BTU</h1>
-     <hr>
-    <li class="first-li">Преглед на вътрешно тяло</li>
-    <li>Почистване на вътрешно тяло</li>
-    <li>Преглед на външно климатично тяло</li>
-    <li>Измерване на работно налягане.</li>
-    <li>Измерване на температура на изпарение на <br>фреона</li>
-    <li>Почистване на филтърна секция</li>
-     <h2>Цена: 270лв</h2>
-  </div>
+
   </div>
   
   
@@ -62,7 +38,7 @@
       flex-direction: row;
       margin: 0 -5px;
   } 
-    .montaj-container, .montaj-container2, .montaj-container3 {
+    .montaj-container, .montaj-container2, .montaj-container3, .montaj-container4 {
       padding: 30px;
       width: calc(30% - 10px);
       box-sizing: border-box; 
@@ -70,7 +46,7 @@
       flex-wrap: wrap;
       background-color: rgba(0, 0, 0, 0.7);
       border-radius: 15px;
-      margin: 0 100px;
+      margin: 0 750px;
     }
     
   h1 {
@@ -93,7 +69,7 @@
   }
   
   hr{
-    width: 50%;   
+    width: 63%;   
     height: 2px;
     background: white;
     border: none;
