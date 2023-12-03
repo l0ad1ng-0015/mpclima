@@ -1,8 +1,9 @@
 <script>
     let images = [
-      "/gallery/snimka1.png",
-      "/gallery/snimka2.png",
-      /* "image3.jpg" */,
+      "/gallery/gallery1.jpg",
+      "/gallery/gallery2.jpg",
+      "/gallery/gallery3.jpg",
+      "/gallery/gallery4.jpg",
     ];
   
     let selectedImage = null;
