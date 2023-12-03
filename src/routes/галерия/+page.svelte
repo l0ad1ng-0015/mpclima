@@ -1,3 +1,8 @@
+<!--TASKOVE
+-Zoom unzoom button
+-lightbox almost on full screen-->
+
+
 <script>
     let images = [
       "/gallery/gallery1.jpg",
