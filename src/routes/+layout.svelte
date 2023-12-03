@@ -1,3 +1,5 @@
+<!--kak da se adjustne za vs ustroistva-->
+
 <script type="ts">
     import './styles.css'
     import './transitions.css'
