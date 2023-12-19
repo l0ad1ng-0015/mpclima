@@ -54,9 +54,15 @@
 
 
     .banner {
-    width: 100%;
+        width: 100%;
+    }
     
     
+    
+    .submenu> a::after {
+        content: u rl('/imagas/arrow/down.png'); /* Replace with the actual path to your down arrow image */
+        display: inline-block;
+        margin-left: 5px;
 
 }
 </style>
