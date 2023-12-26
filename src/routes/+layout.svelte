@@ -1,7 +1,7 @@
 <!--kak da se adjustne za vs ustroistva-->
 
 <script type="ts">
-    import './styles.css'
+    import'./styles.css'
     import './transitions.css'
 </script>
 
@@ -9,6 +9,7 @@
 <div class="banner">
     <div class="nav">
         <img src="/images/logo.png" class="logo">
+        <img src="/images/arrow_down.png" class="arrow">
         <ul>
             <li><a href="/">Начало</a></li>
             <li class="submenu">
@@ -42,12 +43,8 @@
     <background class="png"></background>
 
     <div class="content">
-
         <slot />
-
     </div>
-
-
 </div>
 
 <style>
@@ -60,11 +57,13 @@
     
     
     .submenu> a::after {
-        content: u rl('/imagas/arrow/down.png'); /* Replace with the actual path to your down arrow image */
-        display: inline-block;
-        margin-left: 5px;
-
-}
+    content: '';
+    background: url('/static/images/arrow_down.png') no-repeat;
+    width: 10px; /* Adjust width and height based on your image size */
+    height: 10px;
+    display: inline-block;
+    margin-left: 5px;
+    }
 </style>
 
 
