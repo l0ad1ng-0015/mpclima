@@ -9,7 +9,7 @@
 <div class="banner">
     <div class="nav">
         <img src="/images/logo.png" class="logo">
-        <img src="/images/arrow_down.png" class="arrow">
+       <!---<img src="/images/arrow_down.png" class="arrow"> --> 
         <ul>
             <li><a href="/">Начало</a></li>
             <li class="submenu">
