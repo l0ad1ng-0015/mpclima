@@ -1,8 +1,8 @@
 <script>
-  let categories = [
+   let categories = [
     { title: 'Монтаж на вътрешни тела', slug: 'internal' },
     { title: 'Монтаж на външни тела', slug: 'external' },
-  ];
+  ]; 
 
   let images = [
     { src: "/gallery/gallery1.jpg", category: 'internal' },
