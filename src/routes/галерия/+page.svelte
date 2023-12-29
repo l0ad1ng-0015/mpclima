@@ -5,19 +5,19 @@
 	export let galleryID = "gallery-01";
 
 	let images = [
-    {
-      largeURL: '/images/gallery-01/images/gallery2.jpg',
-      // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
-      thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
-      galleryClass: 'card card-tall card-wide',
-      width: 720,
-      height: 960,
-    },
 		{
       largeURL: '/images/gallery-01/images/gallery1.jpg',
       thumbnailURL: '/images/gallery-01/thumbs/gallery1.jpg',
       galleryClass: 'card',
       width: 540,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery2.jpg',
+      // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
+      thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
+      galleryClass: 'card card-tall card-wide',
+      width: 720,
       height: 960,
     },
 		{
@@ -64,6 +64,7 @@
     }
 	];
 
+
   function handleImageLoad(image, event) {
     console.log("Image..")
     const { naturalWidth, naturalHeight } = event.target;
@@ -100,8 +101,8 @@
 </div>
 
 
-<!-- 
-<div class="image-mosaic">
+ 
+<!-- <div class="image-mosaic">
   <div
     class="card card-tall card-wide"
     style="background-image: url('https://picsum.photos/id/564/1200/800')"
@@ -150,7 +151,7 @@
     class="card"
     style="background-image: url('https://picsum.photos/id/599/800/530')"
   ></div>
-</div> -->
+</div>  -->
 
 <style>
   .image-mosaic {

@@ -32,6 +32,8 @@
 	"type": "module",
 	"dependencies": {
 		"photoswipe": "^5.4.3",
+		"posthog-js": "^1.96.1",
+		"posthog-node": "^3.2.1",
 		"svelte-routing": "^2.5.0"
 	}
 }

@@ -22,12 +22,15 @@
     .contentWrapper {
         color: #fff; 
 		display: flex;
-		/* align-items: center; */
+		align-items: center;
 		justify-content: center;
     }
 	.content {
-		/* border: solid 1px green; */
+		border: solid 1px green;
+		margin: 0 auto;
 		width: 90%;
+		justify-content: center;
+		padding: 20px;
 	} 
 
 	.submenu > a::after {
@@ -47,3 +50,6 @@
   		/* end keep nav */
 	}
 </style>
+
+
+
