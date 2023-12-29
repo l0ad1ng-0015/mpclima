@@ -26,9 +26,9 @@
 		justify-content: center;
     }
 	.content {
-		border: solid 1px green;
+		/* border: solid 1px green; */
 		width: 90%;
-	}
+	} 
 
 	.submenu > a::after {
 		content: '';

@@ -1,142 +1,193 @@
-<!--TASKOVE
-  -Zoom unzoom button
-  -lightbox almost on full screen
-  -da sa na redove po 4-->
-  
-  <div class="full-img" id="fullImgBox">
-      <img src="/gallery/gallery1.jpg" id="fullImg">
-      <span onclick="closeFullImg()">X</span>
-  </div>
-
-  <div class="img-gallery"></div>
 <script>
-    let images = [
-      "/gallery/gallery1.jpg",
-      "/gallery/gallery2.jpg",
-      "/gallery/gallery3.jpg",
-      "/gallery/gallery4.jpg", 
-      "/gallery/gallery5.jpg",
-      "/gallery/gallery6.jpg",
-      "/gallery/gallery7.jpg",
-      "/gallery/gallery8.jpg",
-    ];
-  
-    let selectedImage = null;
-  
-    function openImage(index) {
-      selectedImage = index;
-    }
-  
-    function closeImage() {
-      selectedImage = null;
-    }
-  </script>
-  
-  <style>
+  import { onMount } from 'svelte';
+	import PhotoSwipeLightbox from 'photoswipe/lightbox';
+	import 'photoswipe/style.css';
+	export let galleryID = "gallery-01";
 
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
+	let images = [
+    {
+      largeURL: '/images/gallery-01/images/gallery2.jpg',
+      // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
+      thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
+      galleryClass: 'card card-tall card-wide',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery1.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery1.jpg',
+      galleryClass: 'card',
+      width: 540,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery3.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery3.jpg',
+      galleryClass: 'card',
+      width: 1350,
+      height: 1800,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery4.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery4.jpg',
+      galleryClass: 'card',
+      width: 641,
+      height: 855,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery5.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery5.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery6.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery6.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery7.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery7.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery8.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery8.jpg',
+      galleryClass: 'card',
+      width: 222,
+      height: 244,
     }
-    .img-gallery{
-      width: 80%;
-      margin: 100px auto 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 30px;
-    }
-    
-    .img-gallery img{
-      width: 100%;
-      cursor: pointer;
-    }
-    .fullImgBox{
-      width: 100%;
-      height: 100vh;
-      
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  
-    .thumbnail {
-      width: 150px;
-    height: 150px; 
-    margin: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    }
-  
-    .thumbnail img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s;
-    }
-  
-    .thumbnail:hover img {
-      transform: scale(1.1);
-    }
-  
-    .lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-  
-    .lightbox img {
-      width: 90%;
-      max-width: 500px;
-      max-height: 90%;
-      object-fit: contain;
-    }
+	];
 
-    .full-Img span{
-      position: absolute;
-      top: 5%;
-      right: 5%;
-      font-size: 30px;
-      color: #fff;
-      cursor: pointer;
-    }
-  
-    .close-button {
-      position: absolute;
-      top: 1px;
-      right: 20px;
-      cursor: pointer;
-      color: #fff;
-      font-size: 30px;
-    }
-  </style>
-  
+  function handleImageLoad(image, event) {
+    console.log("Image..")
+    const { naturalWidth, naturalHeight } = event.target;
+    console.log(image, naturalWidth, naturalHeight);
+  }
 
 
+	onMount(() => {
+		let lightbox = new PhotoSwipeLightbox({
+			gallery: '#' + galleryID,
+			children: 'a',
+			pswpModule: () => import('photoswipe')
+		});
+		lightbox.init();
+	});
+</script>
 
-  <div class="gallery">
-    {#each images as image, index (image)}
-      <div class="thumbnail" on:click={() => openImage(index)}>
-        <img src={image} alt={`Image ${index + 1}`} />
-      </div>
-    {/each}
-  
-    {#if selectedImage !== null}
-      <div class="lightbox" on:click={() => closeImage()}>
-        <span class="close-button" on:click={() => closeImage()}>&times;</span>
-        <img src={images[selectedImage]} alt={`Image ${selectedImage + 1}`} />
-      </div>
-    {/if}
+<div class="pswp-gallery image-mosaic" id={galleryID}>
+	{#each images as image}
+		<a
+			href={image.largeURL}
+      class={image.galleryClass}
+			data-pswp-width={image.width}
+			data-pswp-height={image.height}
+			target="_blank"
+			rel="noreferrer"
+		>
+       <img src={image.thumbnailURL} alt="" /> 
+      {#if false}
+			  <img src={image.largeURL} alt="" on:load={(event) => handleImageLoad(image, event)} />
+      {/if}      
+		</a>
+	{/each}
+</div>
 
- 
-  </div>
-  
+
+<!-- 
+<div class="image-mosaic">
+  <div
+    class="card card-tall card-wide"
+    style="background-image: url('https://picsum.photos/id/564/1200/800')"
+  ></div>
+  <div
+    class="card card-tall"
+    style="background-image: url('https://picsum.photos/id/566/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/575/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/626/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/667/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/678/800/530')"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://picsum.photos/id/695/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/683/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/693/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/715/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/610/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/599/800/530')"
+  ></div>
+</div> -->
+
+<style>
+  .image-mosaic {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+}
+</style>

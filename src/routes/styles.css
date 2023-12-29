@@ -105,78 +105,7 @@ button:hover{
 
 /*за събмит нищото*/
 
-.contact {
-    text-align: center;
-    padding: 240px 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 30vh; /* Adjust the height as needed for centering */
-}
-/* Additional CSS styles for contact form */
-.contact form {
-    /* Other styles */
-    position: relative;
-}
 
-/* Additional CSS styles for contact form */
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-    display: block; /* Make input fields and textarea block-level elements */
-    width: 95%; /* Set their width to 100% to make them full-width */
-    background-color: rgba(255, 255, 255, 0.2); /* Add a translucent white background */
-    border: 2px solid #0070BB; /* Add a blue border */
-    border-radius: 5px;
-    color: #fff; /* Change text color to white */
-    padding: 10px;
-    font-size: 13px;
-    backdrop-filter: blur (10px); /* Apply a blur effect to the background */
-    margin-bottom: 10px; /* Add spacing between fields */
-}
-
-/* Rest of the styles remain the same */
-
-
-.contact input[type="text"]::placeholder,
-.contact input[type="email"]::placeholder,
-.contact textarea::placeholder {
-    color: #fff; /* Change placeholder text color to white */
-}
-
-.contact input[type="text"]:focus,
-.contact input[type="email"]:focus,
-.contact textarea:focus {
-    outline: none;
-    border-color: #00518A; /* Change border color on focus */
-}
-
-.contact button[type="submit"] {
-    /* Other button styles... */
-    background-color: #0070BB;
-    color: #fff;
-}
-
-.contact h2,
-.contact p {
-    color: #fff; /* Change the text color to white */
-}
-/* Additional CSS styles for contact form */
-
-
-.contact-content {
-    width: 100%;
-    max-width: 500px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.contact h2,
-.contact p {
-    color: #fff;
-}
 
 /* Rest of the styles remain the same */
 
