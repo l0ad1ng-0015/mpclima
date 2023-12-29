@@ -1,6 +1,7 @@
 <script lang="ts">
 
 	let name = '';
+    let phone = '';
 	let email = '';
 	let message = '';
 	let statusMessage = '';
@@ -17,8 +18,7 @@
 
         // https://api.telegram.org/bot6537438238:AAFfi1D4ZP1FYkb87uBi3tAVOFM1LoSOuAo/getUpdates
 
-		let text = JSON.stringify({ name, email, message }, null, 2);
-
+		let text = JSON.stringify({ name, phone, email, message }, null, 2);
 		try {
 			const response = await fetch(telegramURL, {
 				method: 'POST',
@@ -27,9 +27,9 @@
 			});
 
 			if (response.ok) {
-				statusMessage = 'Message Sent!';
+				statusMessage = 'Съобщението беше изпратено успешно!';
 			} else {
-				statusMessage = 'Message Failed to send :( ' + (await response.text());
+				statusMessage = 'Изпращането беше неуспешно :( ' + (await response.text());
 			}
 		} catch (error) {
 			console.error('Error:', error);
@@ -37,6 +37,7 @@
 		}
 
 		name = '';
+        phone = '';
 		email = '';
 		message = '';
 	};
@@ -70,6 +71,7 @@
             <form on:submit|preventDefault={submitForm} class="contact-form">
                 <input type="hidden" bind:value={apples} />
                 <input type="text" name="name" bind:value={name} placeholder="Име">
+                <input type="number" name="phone" bind:value={phone} placeholder="Телефон">
                 <input type="email" name="email" bind:value={email} placeholder="Имейл">
                 <textarea on:input={doApples} bind:value={message} name="message" placeholder="Вашето ъобщение"></textarea>
                 <button type="submit">Изпрати</button>
@@ -93,10 +95,12 @@
         gap: 2rem;
         flex-wrap: wrap-reverse;
         align-items: flex-end;
+       
         /* align-items: stretch; */
         & div {
             /* border: solid 1px red; */
         }
+
     }
     
     .contact {
@@ -124,6 +128,7 @@
         position: relative;
     }
     .contact input[type="text"],
+    .contact input[type="number"],
     .contact input[type="email"],
     .contact textarea {
         display: block; /* Make input fields and textarea block-level elements */
@@ -142,6 +147,7 @@
 
 
     .contact input[type="text"]::placeholder,
+    .contact input[type="number"]::placeholder,
     .contact input[type="email"]::placeholder,
     .contact textarea::placeholder {
         color: #fff; /* Change placeholder text color to white */

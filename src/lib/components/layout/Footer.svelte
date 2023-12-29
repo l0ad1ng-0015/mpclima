@@ -38,6 +38,7 @@
 		/* grid-template-rows: repeat(3, minmax(40px, auto)); */
 		gap: var(--size-fluid-2);
 		padding: var(--size-fluid-5) var(--size-fluid-2);
+		color: white;
 
 		& a {
 			text-decoration: none;
