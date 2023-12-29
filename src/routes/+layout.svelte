@@ -26,11 +26,12 @@
 		justify-content: center;
     }
 	.content {
-		border: solid 1px green;
+		/* border: solid 1px green; */
 		margin: 0 auto;
 		width: 90%;
 		justify-content: center;
 		padding: 20px;
+		text-align: center;
 	} 
 
 	.submenu > a::after {

@@ -19,7 +19,7 @@
 			</ul>
 		</li>
 		<li class="submenu">
-			<a href="#">Ценови листи</a>
+			<a href="#">Услуги</a>
 			<ul class="sub-nav">
 				<li><a href="/дейности">Дейности</a></li>
 				<li><a href="/доставка">Доставка</a></li>

@@ -92,7 +92,7 @@
         justify-content: center;
         /* border: solid 1px green; */
         width: 100%;
-        gap: 2rem;
+        gap: 10rem;
         flex-wrap: wrap-reverse;
         align-items: flex-end;
        
