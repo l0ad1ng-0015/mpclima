@@ -72,7 +72,7 @@
 	
 	.montaj-container {
 		padding: 30px;
-		width: calc(30% - 10px);
+		width: calc(30% - 200px);
 		box-sizing: border-box;
 		background-color: rgba(0, 0, 0, 0.7);
 		border-radius: 15px;

@@ -4,29 +4,31 @@
 	import './styles.css';
 	import './transitions.css';
     import Navigation from "$lib/components/layout/Navigation.svelte";
+	import Footer from "$lib/components/layout/Footer.svelte";
 </script>
 
-<div>
+<div class="layoutWrapper">
     <Navigation />
 
-	<background class="png" />
-
-	<div class="content">
-		<slot />
+	<div class="contentWrapper">
+		<div class="content"><slot /></div>
+		
 	</div>
+	<Footer />
 </div>
 
 <style>
 
-    .content {
-        /* width: 100%;
-        position: absolute;
-        top: 52%;
-        transform: translateY(-50%);
-        text-align: center; */
-        color: #fff;
+    .contentWrapper {
+        color: #fff; 
+		display: flex;
+		/* align-items: center; */
+		justify-content: center;
     }
-  
+	.content {
+		border: solid 1px green;
+		width: 90%;
+	}
 
 	.submenu > a::after {
 		content: '';
@@ -35,5 +37,13 @@
 		height: 10px;
 		display: inline-block;
 		margin-left: 5px;
+	}
+
+	.layoutWrapper {
+  		display: grid;
+		/* keep nav on top, footer on bottom even on pages with less content */
+		grid-template-rows: auto 1fr auto;
+		min-height: 100vh;
+  		/* end keep nav */
 	}
 </style>
