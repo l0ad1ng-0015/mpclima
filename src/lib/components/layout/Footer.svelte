@@ -15,15 +15,17 @@
 		</ul>
 	</div>
 	<div class="column" >
-		<h2 >Products</h2>
+		<h2 >Услуги</h2>
 		<ul>
-			<li>Data Listener</li>
-			<li>RPI Wifi Autoconnect</li>
+			<li>Продажба на климатици</li>
+			<li>Монтаж и Демонтаж на климатици</li>
+			<li>Профилактика</li>
+			<li>Сервизна дейност</li>
 		</ul>
 	</div>
 	<div class="column" />
 	<div class="row-without-columns">
-		Designed and developed by Gudasoft<br />
+		Designed and developed by Viking<br />
 		Warning: This website might use cookies to enhance your experience. If you are not comfortable with
 		this, please consider leaving the website. Your privacy is important to us, and we respect your choice.
 		Thank you for your understanding.
