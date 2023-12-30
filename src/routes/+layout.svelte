@@ -1,10 +1,15 @@
 <!--kak da se adjustne za vs ustroistva-->
+<head>
+	<title>MP Clima BG</title>
+	<link rel="shortcut icon" type="x-icon" href="logo.png" />
+</head>
 
+  
 <script type="ts">
 	import './styles.css';
 	import './transitions.css';
     import Navigation from "$lib/components/layout/Navigation.svelte";
-	import Footer from "$lib/components/layout/Footer.svelte";
+	import Footer from "$lib/components/layout/Footer/Footer.svelte";
 </script>
 
 <div class="layoutWrapper">
