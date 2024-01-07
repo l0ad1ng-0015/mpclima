@@ -5,63 +5,63 @@
 	export let galleryID = "gallery-01";
 
 	let images = [
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery1.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery1.jpg',
-  //     galleryClass: 'card',
-  //     width: 540,
-  //     height: 960,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery2.jpg',
-  //     // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
-  //     thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
-  //     galleryClass: 'card card-tall card-wide',
-  //     width: 720,
-  //     height: 960,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery3.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery3.jpg',
-  //     galleryClass: 'card',
-  //     width: 1350,
-  //     height: 1800,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery4.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery4.jpg',
-  //     galleryClass: 'card',
-  //     width: 641,
-  //     height: 855,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery5.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery5.jpg',
-  //     galleryClass: 'card',
-  //     width: 720,
-  //     height: 960,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery6.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery6.jpg',
-  //     galleryClass: 'card',
-  //     width: 720,
-  //     height: 960,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery7.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery7.jpg',
-  //     galleryClass: 'card',
-  //     width: 720,
-  //     height: 960,
-  //   },
-	// 	{
-  //     largeURL: '/images/gallery-01/images/gallery8.jpg',
-  //     thumbnailURL: '/images/gallery-01/thumbs/gallery8.jpg',
-  //     galleryClass: 'card',
-  //     width: 222,
-  //     height: 244,
-  //   }
+		{
+      largeURL: '/images/gallery-01/images/gallery1.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery1.jpg',
+      galleryClass: 'card',
+      width: 540,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery2.jpg',
+      // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
+      thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
+      galleryClass: 'card card-tall card-wide',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery3.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery3.jpg',
+      galleryClass: 'card',
+      width: 1350,
+      height: 1800,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery4.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery4.jpg',
+      galleryClass: 'card',
+      width: 641,
+      height: 855,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery5.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery5.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery6.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery6.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery7.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery7.jpg',
+      galleryClass: 'card',
+      width: 720,
+      height: 960,
+    },
+		{
+      largeURL: '/images/gallery-01/images/gallery8.jpg',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery8.jpg',
+      galleryClass: 'card',
+      width: 222,
+      height: 244,
+    }
 	 ];
 
 

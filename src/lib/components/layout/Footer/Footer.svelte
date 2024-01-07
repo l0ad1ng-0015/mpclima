@@ -1,3 +1,7 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-MQ67a7k7DpPwznQ+ekYZL1VLzRRy5PrnChh2ZbrOXFPDijURdrkQ1N6M8Zp+WWFzEE60e70XfuM0qqc1nUVYUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <footer class="">
 	<div class="column">
 		<h2>За фирмата</h2>
@@ -9,9 +13,10 @@
 	<div class="column">
 		<h2>Контакти</h2>
 		<ul>
-			<li><a href="tel:+123456789">123-456-789</a></li>
-			<li><a href="mailto:mpclimabg@gmail.com">Фирмен имейл: mpclimabg@gmail.com</a></li>
-			<li><a href="mailto:v.popov.businesses@gmail.com">v.popov.businesses@gmail.com</a></li>
+			<li><a href="tel:0899 591664">0899 591664</a> <a href="tel:0898 414816">0898 414816</a></li>
+			<li><a href="mailto:mpclimabg@gmail.com">mpclimabg@gmail.com</a> 
+			<!-- <a href="mailto:v.popov.businesses@gmail.com">v.popov.businesses@gmail.com</a>--> </li> 
+			
 			<li><a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%E2%80%9E%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%E2%80%9C+3,+1000+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F/@42.69742,23.3237038,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa856e34c59f1d:0x97d07b6d259f65c!8m2!3d42.6974161!4d23.3262787!16s%2Fg%2F11c1_6sygp?entry=ttu">Централен офис: ул.Московска 3, София</a></li>
 		</ul>
 	</div>
@@ -33,6 +38,13 @@
 </footer>
 
 <style>
+	.contact p {
+  margin: 5px 0;
+}
+
+.contact i {
+  margin-right: 5px;
+}
 	footer {
 		/* border: solid 1px var(--blue-6);; */
 		display: grid;

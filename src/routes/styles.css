@@ -143,14 +143,14 @@ button:hover{
     display: block;
 }
 
- .social iframe { 
+ /* .social iframe { 
     border: 5px solid #007BFF; /* Blue border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-    height: 500px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    /* height: 500px;
     width: 600px;
     margin: 0 auto;
     display: block;
-}
+} */ */ */
  
 #promotions-message {
     display: none;
