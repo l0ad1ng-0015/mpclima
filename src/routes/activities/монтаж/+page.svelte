@@ -77,6 +77,7 @@
 		background-color: rgba(0, 0, 0, 0.7);
 		border-radius: 15px;
 		margin: 0 30px;
+		text-align: center;
 		/* display: flex; */
 		/* flex-wrap: wrap; */
 		/* margin-right: 100pc; */

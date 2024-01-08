@@ -8,10 +8,10 @@
     <a href="/activities/профилактика">
         <button type="button">ПРОФИЛАКТИКА</button>
     </a>
-    <a href="/activities/сервизно обслужване">
+    <a href="/activities/сервизно_обслужване">
         <button type="button">СЕРВИЗНО ОБСЛУЖВАНЕ</button>
     </a>
-    <a href="/activities/сервизно обслужване">
+    <a href="/activities/други_услуги">
         <button type="button">ДОПЪЛНИТЕЛНИ УСЛУГИ</button>
     </a>
 </div>
