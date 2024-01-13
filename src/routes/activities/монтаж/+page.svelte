@@ -6,7 +6,16 @@
 	}
 </script>
 
+
+<div class="main-title">
+	Монтаж на климатици
+</div>
+
 <div class="montaj-container-wrapper">
+	<!-- <div class="montaj-title">Стандартен монтаж</div> -->
+	<h2>
+		<b>Стандартен монтаж</b>
+	</h2>
 	<div class="montaj-container">
 		<p>Монтаж на климатици:</p>
 		<h1>9-12 000 BTU</h1>
@@ -61,28 +70,61 @@
 </div>
 
 <style>
+	 /* body {
+    margin: 0;
+    padding: 0;
+    border-top: 50px solid #ddd; /* Adjust the color and size as needed */
+
+  	
+	.main-title {
+    text-align: center;
+    padding: 20px;
+	margin: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #0000007e; 
+    color: #fff; 
+    }
+
+	/* .montaj-title {
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		color: white; 
+		margin-bottom: 10px;
+	} */
 	.montaj-container-wrapper {
 		display: flex;
 		justify-content: center;
-		flex-direction: row;
-		flex-wrap: wrap;
+		align-items: flex-start;
+		
 		gap: 1rem;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.297);
 		/* margin-right: 400px; */
+		/* margin-right: 400px; */
+
+		/* & .montaj-title{
+			justify-content: center;
+		} */
 	}
+		
 	
 	.montaj-container {
-		padding: 30px;
+		padding: 40px 20px;
 		width: calc(30% - 200px);
 		box-sizing: border-box;
 		background-color: rgba(0, 0, 0, 0.7);
 		border-radius: 15px;
 		margin: 0 30px;
 		text-align: center;
+
 		/* display: flex; */
 		/* flex-wrap: wrap; */
 		/* margin-right: 100pc; */
 	}
 
+	
 	h1 {
 		font-size: 40px;
 		font-weight: bold;

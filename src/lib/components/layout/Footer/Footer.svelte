@@ -4,15 +4,17 @@
 	<div class="column">
 		<h2>За фирмата</h2>
 		Designed and developed by Viking<br />
-		Warning: This website might use cookies to enhance your experience. If you are not comfortable with
-		this, please consider leaving the website. Your privacy is important to us, and we respect your choice.
+		Warning: This website might use cookies to enhance your experience. <br> If you are not comfortable with
+		this, please consider leaving the website.<br> Your privacy is important to us, and we respect your choice.<br>
 		Thank you for your understanding.
 	</div>
 	<div class="column">
 		<h2>Контакти</h2>
 		<ul>
-
-			<li><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" {...$$props}><path fill="#888888" d="M199.232 125.568L90.624 379.008a32 32 0 0 0 6.784 35.2l512.384 512.384a32 32 0 0 0 35.2 6.784l253.44-108.608a32 32 0 0 0 10.048-52.032L769.6 633.92a32 32 0 0 0-36.928-5.952l-130.176 65.088l-271.488-271.552l65.024-130.176a32 32 0 0 0-5.952-36.928L251.2 115.52a32 32 0 0 0-51.968 10.048"/></svg><a href="tel:0899 591664">0899 591664</a> <a href="tel:0898 414816">0898 414816</a> </li>	
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" {...$$props}><path fill="#888888" d="M199.232 125.568L90.624 379.008a32 32 0 0 0 6.784 35.2l512.384 512.384a32 32 0 0 0 35.2 6.784l253.44-108.608a32 32 0 0 0 10.048-52.032L769.6 633.92a32 32 0 0 0-36.928-5.952l-130.176 65.088l-271.488-271.552l65.024-130.176a32 32 0 0 0-5.952-36.928L251.2 115.52a32 32 0 0 0-51.968 10.048"/></svg> <a href="tel:0899 591664">0899 591664</a> <a href="tel:0898 414816">0898 414816</a>
+			</li>
+			
 		
 			<li><a href="mailto:mpclimabg@gmail.com">mpclimabg@gmail.com</a> </li>
 			

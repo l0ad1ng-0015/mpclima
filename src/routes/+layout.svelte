@@ -29,6 +29,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		/* padding-bottom: 500px; */
     }
 	.content {
 		/* border: solid 1px green; */

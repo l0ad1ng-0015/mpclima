@@ -102,7 +102,7 @@
 
 
  
-<div class="image-mosaic">
+<!-- <div class="image-mosaic">
   <div
     class="card card-tall card-wide"
     style="background-image: url('https://picsum.photos/id/564/1200/800')"
@@ -151,7 +151,7 @@
     class="card"
     style="background-image: url('https://picsum.photos/id/599/800/530')"
   ></div>
-</div> 
+</div>  -->
 
 <style>
   .image-mosaic {
