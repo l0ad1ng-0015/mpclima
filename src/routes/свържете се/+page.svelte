@@ -174,7 +174,7 @@
     /* Additional CSS styles for contact form */
 
     .social iframe { 
-    border: 6px solid #007BFF; /* Blue border */
+    border: 6px solid #0070FF; /* Blue border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
     height: 500px;
     width: 600px;
