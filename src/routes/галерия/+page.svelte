@@ -14,9 +14,9 @@
     },
 		{
       largeURL: '/images/gallery-01/images/gallery2.jpg',
-      // thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
-      thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
-      galleryClass: 'card card-tall card-wide',
+      thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
+      // thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
+      galleryClass: 'card',
       width: 720,
       height: 960,
     },
@@ -82,6 +82,10 @@
 	});
 </script>
 
+<div class="main-title">
+	Галерия
+</div>
+	
 <div class="pswp-gallery image-mosaic" id={galleryID}>
 	{#each images as image}
 		<a
@@ -154,7 +158,18 @@
 </div>  -->
 
 <style>
-  .image-mosaic {
+.main-title {
+  text-align: center;
+  padding: 20px 10px;
+	margin: 40px 0;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #0000007e; 
+  color: #fff;     
+}
+
+.image-mosaic {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

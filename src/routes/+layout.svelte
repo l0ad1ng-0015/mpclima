@@ -1,6 +1,6 @@
 <!--kak da se adjustne za vs ustroistva-->
 <head>
-	<title>MP Clima BG</title>
+	<title>MP Clima | Sofia</title>
 	<link rel="shortcut icon" type="x-icon" href="logo.png" />
 </head>
 
