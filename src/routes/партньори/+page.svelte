@@ -30,6 +30,10 @@
     <img src="/partners/magnum7Logo.png" alt="Img 3">
     <div class="background"></div>
   </div>
+  <div class="partners-item">
+    <img src="/partners/generalLogo.png" alt="Img 3">
+    <div class="background"></div>
+  </div>
 </div>
 
 <style>
