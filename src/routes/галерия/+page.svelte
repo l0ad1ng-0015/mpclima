@@ -171,7 +171,8 @@
 
 .image-mosaic {
   display: grid;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: 240px;
 }
@@ -188,7 +189,8 @@
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  transition: all 500ms;
+  transition: tranform 0.5s ease;
+  /* transition: all 500ms; */
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -196,6 +198,10 @@
   padding: 0;
   margin: 0;
 }
+
+.card:hover {
+    transform: scale(1.1); /* Scale up the partner item on hover */
+  }
 
 @media screen and (min-width: 600px) {
   .card-tall {

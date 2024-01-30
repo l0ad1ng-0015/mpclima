@@ -74,7 +74,7 @@
    <div class="contact">
         <div class="contact-content">
             <h2>Свържете се с нас</h2>
-            <p>Ако имате въпроси или запитвания, <br> моля свържете се с нас .</p>
+            <p>Ако имате въпроси или запитвания, <br> моля свържете се като попълние формата .</p>
         
             <form on:submit|preventDefault={submitForm} class="contact-form">
                 <input type="hidden" bind:value={apples} />
@@ -137,6 +137,7 @@
     .contact h2,
     .contact p {
         color: #fff;
+        /* s */
     }
 
 
@@ -186,7 +187,9 @@
 
     .contact h2,
     .contact p {
-        color: #fff; /* Change the text color to white */
+        color: #fff;
+        /* margin-top: 0;
+        margin-bottom: 20px 0;  */
     }
     /* Additional CSS styles for contact form */
 

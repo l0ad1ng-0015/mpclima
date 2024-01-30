@@ -1,4 +1,4 @@
-<div class="montaj-info-box">
+<!-- <div class="montaj-info-box">
     <div class="montaj-info-item">
         <span>Услуга</span>
         <span class="price-label">Цена</span>
@@ -53,4 +53,4 @@
     flex-shrink: 0; /* To prevent shrinking the price span */
 }
 
-</style>
+</style> -->

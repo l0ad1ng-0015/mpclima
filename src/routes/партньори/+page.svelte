@@ -79,8 +79,8 @@
 
   .partners-item img {
     max-width: 100%;
-    height: 100px;
-    z-index: 2; /* Make sure the image is above the background */
+    height: auto;
+    z-index: 2;
   }
 
   .partners-item + .partners-item {

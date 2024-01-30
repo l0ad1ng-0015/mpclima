@@ -1,13 +1,24 @@
 <div class="nav">
 	<script>
-		!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-		posthog.init('phc_x3UekziHcG5eSZg9WHnXW81PGkH0AUORJbTz1GjfuE2',{api_host:'https://eu.posthog.com'})
-
+		import { onMount } from 'svelte';
+	  
 		let isNavVisible = false;
-
-  		function toggleNav() {
-    		isNavVisible = !isNavVisible;
-	</script>
+		let currentPath = window.location.pathname;
+	  
+		function toggleNav() {
+		  isNavVisible = !isNavVisible;
+		}
+	  
+		// Function to check if a link is the active link
+		function isActiveLink(link) {
+		  return currentPath === link;
+		}
+	  
+		// Update currentPath on component mount to handle initial state
+		onMount(() => {
+		  currentPath = window.location.pathname;
+		});
+	  </script>
 	
 	<div class="icon">
 		<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...$$props}><path fill="none" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -21,9 +32,10 @@
 		<li class="submenu">
 			<a href="#">За нас</a>
 			<ul class="sub-nav">
-				<li><a href="/основаване">Основаване Фирма</a></li>
+				<li><a href="/основаване-фирма">Основаване Фирма</a></li>
 				<li><a href="/партньори">Партньори</a></li>
 				<li><a href="/галерия">Галерия</a></li>
+				<li><a href="/tests-files">File for tests</a></li>
 				<!-- <li><a href="/галерия2">Галерия 2</a></li>
 				<li><a href="/галерия3">Галерия 3</a></li> -->
 			</ul>
@@ -34,11 +46,10 @@
 				<li><a href="/дейности">Дейности</a></li>
 			</ul>
 		</li>
-
 		<li class="submenu">
 			<a href="#">Контакти</a>
 			<ul class="sub-nav">
-				<li><a href="/свържете се">Свържете се</a></li>
+				<li><a href="/свържете-се">Свържете се</a></li>
 			</ul>
 		</li>
 	</ul>
@@ -58,7 +69,7 @@
 	}
 	.logo {
 		cursor: pointer;
-		padding: 50px 0 0 40px;
+		padding: 10px 0 0 30px;
 		width: 310px;
 	}
 	.nav ul li {
@@ -82,6 +93,10 @@
 		bottom: -5px;
 		transition: 0.5s;
 	}
+
+	/* .nav ul li.active::after {
+    width: 100%;
+  } */
 	.nav ul li:hover::after {
 		width: 100%;
 	}
@@ -102,13 +117,12 @@
 	}
 
 	/* Media query to show the icon only on screens with a maximum width of 768px */
-	@media screen and (max-width: 855px) {
-		.icon {
-			display: inline-block; /* Show the icon for smaller screens */
+	/* @media screen and (min-width: 600px) {
+		.logo {
+		cursor: pointer;
+		padding: 10px 0 0 30px;
+		width: 210px span 2 / auto; 
 		}
 
-		.checkbtn {
-			display: none; /* Hide the checkbtn for smaller screens */
-		}
-	}
+	} */
 </style>
