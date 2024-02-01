@@ -51,7 +51,7 @@
 	<div class="column" />
 	
 	<div class="text-center p-4" style="text-aling: center;">
-		© 2021 Copyright:
+		© 2024 Copyright:
 		<a class="text-reset fw-bold" href="https://mpclima.bg/">MP Clima | Sofia</a>
 	  </div>
 

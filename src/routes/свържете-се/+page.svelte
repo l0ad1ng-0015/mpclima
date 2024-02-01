@@ -95,6 +95,7 @@
         text-align: center;
         padding: 20px 10px;
 	    margin: 40px 0;
+        margin-top: 20px;
         /* margin-bottom: 50px; */
         font-size: 40px;
         font-weight: bold;

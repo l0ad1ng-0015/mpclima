@@ -10,16 +10,18 @@
 <div class="main-title">
 	Монтаж на климатици
 </div>
-
+<div class="container-title">
+		<h4>
+			<b>Стандартни монтажни дейности</b>
+		</h4>
+	</div>
 <div class="montaj-container-wrapper">
 	<!-- <div class="montaj-title">Стандартен монтаж</div> -->
-	<h2>
-		<b>Стандартен монтаж</b>
-	</h2>
+    
 	<div class="montaj-container">
 		<p>Монтаж на климатици:</p>
 		<h1>9-12 000 BTU</h1>
-		<hr />
+		<hr>
 		<li class="first-li">Качване на климатик и материали с асансьор</li>
 		<li>Фиксиране на стойка на вътрешно тяло</li>
 		<li>Технологичен отвор в стената 1 бр.</li>
@@ -32,7 +34,7 @@
 	<div class="montaj-container">
 		<p>Монтаж на климатици:</p>
 		<h1>12-18 000 BTU</h1>
-		<hr />
+		<hr>
 		<li class="first-li">Качване на климатик и материали с асансьор</li>
 		<li>Фиксиране на стойка на вътрешно тяло</li>
 		<li>Технологичен отвор в стената 1 бр.</li>
@@ -45,7 +47,7 @@
 	<div class="montaj-container">
 		<p>Монтаж на климатици:</p>
 		<h1>18-24 000 BTU</h1>
-		<hr />
+		<hr>
 		<li class="first-li">Качване на климатик и материали с асансьор</li>
 		<li>Фиксиране на стойка на вътрешно тяло</li>
 		<li>Технологичен отвор в стената 1 бр.</li>
@@ -58,7 +60,7 @@
 	<div class="montaj-container">
 		<p>Монтаж на климатици:</p>
 		<h1>24 000 + BTU</h1>
-		<hr />
+		<hr>
 		<li class="first-li">Качване на климатик и материали с асансьор</li>
 		<li>Фиксиране на стойка на вътрешно тяло</li>
 		<li>Технологичен отвор в стената 1 бр.</li>
@@ -69,12 +71,12 @@
 	</div>
 </div>
 
-<div class="montaj-info">
+<div class="montaj-price">
 	<h3>
 		<b>Допълнителни цени</b>
 	</h3>
 
-	<div class="montaj-info-box">
+	<div class="montaj-price-box">
         <p>
 			<!-- <span>Услуга</span>
 			<span>Цена</span> -->
@@ -100,6 +102,18 @@
 		</p>
 	</div>
 </div>
+
+<div class="montaj-info">
+	<h3>Уточнения</h3>
+	<p>	
+		<strong>СТАНДАРТЕН МОНТАЖ:</strong>
+		Стандартен монтаж (за сплит-ситема от настенен тип), при което се съблюдават следните условия: външният блок се монтира на достъпни места (под прозорец, на балкон или балконна стена) и не са необходими услугите на алпинисти, специални вишки и високи скелета. Дължината на тръбния път не превишава 3 метра и няма вкопаване на тръбния път в стените (не препоръчваме вкопаване) без декоративни ПВЦ канали.
+	</p>
+</div>
+
+
+
+
 
 <style>
 	 /* body {
@@ -130,17 +144,36 @@
 		align-items: flex-start;
 		gap: 1rem;
 		padding: 40px 20px;
+		padding-top: 20px;
 		background-color: rgba(0, 0, 0, 0.297);
 		text-align: left;
 		/* margin-right: 400px; */
 		/* margin-right: 400px; */
-
+		
 		/* & .montaj-title{
 			justify-content: center;
 		} */
+		
+
 	}
 		
-	
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+	h4 {
+		font-family: 'Poppins', sans-serif !important;
+    	/* background: #eff3f8; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-size: 35px;
+		font-weight: bold;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.297);
+	}
+
 	.montaj-container {
 		padding: 20px 20px;
 		width: calc(30% - 200px);
@@ -149,20 +182,23 @@
 		border-radius: 15px;
 		margin: 0 30px;
 		text-align: left;
-
+		flex-direction: row;
 		/* display: flex; */
 		/* flex-wrap: wrap; */
 		/* margin-right: 100pc; */
+
 	}
 
-	.montaj-info {
+
+	.montaj-price {
 		padding: 40px 20px;
     	width: 100%;
-   	 	max-width: var(--width);
+   	 	max-width: 1400px;
+		/* max-width: (--width); */
 		margin: 40px auto;
 	}
 
-	.montaj-info p {
+	.montaj-price p {
 		background: rgba(0, 0, 0, 0.246);
 		display: flex;
 		align-items: center;
@@ -174,11 +210,11 @@
     	border-right: 1px solid var(--light);
 	}
 
-		.montaj-info-box {
+		.montaj-price-box {
 			margin: 20px; 
 		}
 
-		.montaj-info p:first-child {
+		.montaj-price p:first-child {
  			display: flex;
   			color: #fff;
   			background: #0070BB;
@@ -186,7 +222,7 @@
   			border-top-right-radius: 8px;
 		}
 
-		.montaj-info p:nth-of-type(odd):not(:first-child) {
+		.montaj-price p:nth-of-type(odd):not(:first-child) {
 			background: rgba(0, 0, 0, 0.6);
 			display: flex;
 			align-items: center;
@@ -198,7 +234,7 @@
 			border-right: 1px solid var(--light);
 		}
 
-		.montaj-info p:nth-of-type(even) {
+		.montaj-price p:nth-of-type(even) {
 			background: rgba(0, 0, 0, 0.356);
 			display: flex;
 			justify-content: space-between;
@@ -212,8 +248,18 @@
 		background: var(--light);
 	} */
 	
-	
+	.montaj-info {
+		display: flexbox;
+		background-color: rgba(0, 0, 0, 0.455);
+		
+	}
 
+	.montaj-info p {
+		max-width: var(--widthmin);
+		margin: 20px auto 40px auto;
+		line-height: 28px;
+		box-sizing: border-box;
+	}
 
 	h1 {
 		font-size: 40px;
@@ -223,6 +269,8 @@
 	}
 
 	h2 {
+		display: flex;
+		justify-content: left;
 		margin-top: 40px;
 		font-size: 30px;
 		font-weight: bold;
