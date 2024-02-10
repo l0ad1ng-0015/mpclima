@@ -3,10 +3,12 @@
 	let name = '';
     let phone = '';
 	let email = '';
+    let subject = '';
 	let message = '';
 	let statusMessage = '';
 	let apples = 'apples';
 
+    
 	const submitForm = async () => {
 		if (apples != 'oranges') {
 			return;
@@ -18,7 +20,7 @@
 
         // https://api.telegram.org/bot6537438238:AAFfi1D4ZP1FYkb87uBi3tAVOFM1LoSOuAo/getUpdates
 
-		let text = JSON.stringify({ name, phone, email, message }, null, 2);
+		let text = JSON.stringify({ name, phone, email, subject, message }, null, 2);
 		try {
 			const response = await fetch(telegramURL, {
 				method: 'POST',
@@ -66,6 +68,9 @@
         <p>Централен офис: ул.Московска 3, София</p>
         <p>Телефони: 0899 591664, 0898 414816</p>
         <p>Работно време: Понеделник-Петък 8:00 - 20:00</p>
+        <!-- <b>Централен офис: ул.Московска 3, София</b>
+        <b>Телефони: 0899 591664, 0898 414816</b>
+        <b>Работно време: Понеделник-Петък 8:00 - 20:00</b> -->
     </div>
     
    
@@ -78,9 +83,10 @@
         
             <form on:submit|preventDefault={submitForm} class="contact-form">
                 <input type="hidden" bind:value={apples} />
-                <input type="text" name="name" bind:value={name} placeholder="Име">
-                <input type="number" name="phone" bind:value={phone} placeholder="Телефон">
-                <input type="email" name="email" bind:value={email} placeholder="Имейл">
+                <input type="text" name="name" bind:value={name} placeholder="Име (задължително)" required  title="Моля, попълнете това поле">
+                <input type="number" name="phone" bind:value={phone} placeholder="Телефон (задължително)" required title="Моля, попълнете това поле">
+                <input type="email" name="email" bind:value={email} placeholder="Имейл (задължително)" required title="Моля, попълнете това поле">
+                <input type="text" name="your-subject" bind:value={subject} placeholder="Относно">
                 <textarea on:input={doApples} bind:value={message} name="message" placeholder="Вашето ъобщение"></textarea>
                 <button type="submit">Изпрати</button>
                 <p>{statusMessage}</p>
@@ -116,10 +122,6 @@
         align-items: flex-end;
        
         /* align-items: stretch; */
-        & div {
-            /* border: solid 1px red; */
-        }
-
     }
     
     .contact {
@@ -203,10 +205,13 @@
     display: block;
 }
 
+
 /* Add this style for the Google link */
 
 
-
+    .social iframe p {
+        
+    }
 
 
 </style>

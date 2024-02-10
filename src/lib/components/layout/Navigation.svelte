@@ -59,18 +59,19 @@
 	.nav {
 		/* Corrected class name here */
         height: 11rem;
-		width: 90%;
+		width: 93%;
 		margin: auto;
 		padding: 30px 0 0 20px;
 		display: flex;
 		align-items: center;
-		justify-content: space-between
+		justify-content: space-between;
         
 	}
 	.logo {
 		cursor: pointer;
 		padding: 10px 0 0 30px;
-		width: 310px;
+		width: 350px;
+		position: relative;
 	}
 	.nav ul li {
 		list-style: none;

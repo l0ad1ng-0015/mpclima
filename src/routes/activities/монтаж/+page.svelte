@@ -1,4 +1,6 @@
 <script>
+	// import { getElementsFromOption } from "photoswipe/dist/types/util/util";
+
 	let showAdditionalSection = false;
 
 	function toggleSection() {
@@ -27,7 +29,20 @@
 		<li>Технологичен отвор в стената 1 бр.</li>
 		<li>Медни тръби с термо изолация до 3 л. м.</li>
 		<li>Отводняваща гофрирана тръба до 3 л. м.</li>
-		<li>Комуникационен кабел до 5 л. м.</li>
+		{#if showAdditionalSection}
+			<li>Комуникационен кабел до 5 л. м.</li>
+			<li>Щепсел и захранващ кабел до 4 л.м.</li>
+			<li>Поставяне на PVC канал до 1 л. м.</li>
+			<li>Стойки за монтиране на външно тяло</li>
+			<li>Свързване на двете климатични тела</li>
+			<li>Вакуумиране</li>
+			<li>Пуск на машината</li>
+			<li>Кратък инструктаж на клиента за експлоатация</li>
+			<li>Почистване</li>   
+			<li><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
+			{:else}
+			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
+		{/if}
 		<h2>Цена: 270лв</h2>
 	</div>
 
@@ -40,7 +55,20 @@
 		<li>Технологичен отвор в стената 1 бр.</li>
 		<li>Медни тръби с термо изолация до 3 л. м.</li>
 		<li>Отводняваща гофрирана тръба до 3 л. м.</li>
-		<li>Комуникационен кабел до 5 л. м.</li>
+		{#if showAdditionalSection}
+			<li>Комуникационен кабел до 5 л. м.</li>
+			<li>Щепсел и захранващ кабел до 4 л.м.</li>
+			<li>Поставяне на PVC канал до 1 л. м.</li>
+			<li>Стойки за монтиране на външно тяло</li>
+			<li>Свързване на двете климатични тела</li>
+			<li>Вакуумиране</li>
+			<li>Пуск на машината</li>
+			<li>Кратък инструктаж на клиента за експлоатация</li>
+			<li>Почистване</li>   
+			<li><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
+			{:else}
+			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
+		{/if}
 		<h2>Цена: 290лв</h2>
 	</div>
 
@@ -53,7 +81,20 @@
 		<li>Технологичен отвор в стената 1 бр.</li>
 		<li>Медни тръби с термо изолация до 3 л. м.</li>
 		<li>Отводняваща гофрирана тръба до 3 л. м.</li>
-		<li>Комуникационен кабел до 5 л. м.</li>
+		{#if showAdditionalSection}
+			<li>Комуникационен кабел до 5 л. м.</li>
+			<li>Щепсел и захранващ кабел до 4 л.м.</li>
+			<li>Поставяне на PVC канал до 1 л. м.</li>
+			<li>Стойки за монтиране на външно тяло</li>
+			<li>Свързване на двете климатични тела</li>
+			<li>Вакуумиране</li>
+			<li>Пуск на машината</li>
+			<li>Кратък инструктаж на клиента за експлоатация</li>
+			<li>Почистване</li>   
+			<li><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
+			{:else}
+			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
+		{/if}
 		<h2>Цена: 310лв</h2>
 	</div>
 
@@ -66,14 +107,27 @@
 		<li>Технологичен отвор в стената 1 бр.</li>
 		<li>Медни тръби с термо изолация до 3 л. м.</li>
 		<li>Отводняваща гофрирана тръба до 3 л. м.</li>
-		<li>Комуникационен кабел до 5 л. м.</li>
+		{#if showAdditionalSection}
+			<li>Комуникационен кабел до 5 л. м.</li>
+			<li>Щепсел и захранващ кабел до 4 л.м.</li>
+			<li>Поставяне на PVC канал до 1 л. м.</li>
+			<li>Стойки за монтиране на външно тяло</li>
+			<li>Свързване на двете климатични тела</li>
+			<li>Вакуумиране</li>
+			<li>Пуск на машината</li>
+			<li>Кратък инструктаж на клиента за експлоатация</li>
+			<li>Почистване</li>   
+			<li><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
+			{:else}
+			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
+		{/if}
 		<h2>Цена: По договаряне</h2>
 	</div>
 </div>
 
 <div class="montaj-price">
 	<h3>
-		<b>Допълнителни цени</b>
+		<b>Нестандартни услуги</b>
 	</h3>
 
 	<div class="montaj-price-box">
@@ -97,7 +151,7 @@
 		
 
 		<p>
-			Монтаж и качване на инструмент над партер без асансьор (цена на етаж)
+			Монтаж и качване на инструмент над партер без асансьор (цена за всеки следващ етаж)
 			<p2>15лв</p2>
 		</p>
 	</div>
@@ -186,8 +240,42 @@
 		/* display: flex; */
 		/* flex-wrap: wrap; */
 		/* margin-right: 100pc; */
-
 	}
+
+			
+			.btn {
+				
+				cursor: pointer;
+				align-items: center;
+				padding: 8px 16px;
+				margin: 2px 2px;
+				border: none;
+				border-radius: 4px;
+				font-size: 17px;
+			}
+				.show-more-btn {
+					color: #0070BB; 
+					align-items: center;
+					justify-content: center;
+					background-color: transparent;
+				}
+
+				.show-more-btn:hover {
+					color: #005695; 
+				}
+
+				.show-less-btn {
+					color: #ffffff; 
+					background-color: #0070BB; 
+				}
+
+				.show-less-btn:hover {
+					background-color: #005695; 
+				}
+
+				.show-more-btn:focus, .show-less-btn:focus {
+					outline: none;
+				}
 
 
 	.montaj-price {
@@ -251,7 +339,10 @@
 	.montaj-info {
 		display: flexbox;
 		background-color: rgba(0, 0, 0, 0.455);
-		
+		border-radius: 15px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 20px;
 	}
 
 	.montaj-info p {
@@ -302,7 +393,8 @@
 	li {
 		font-size: 18px;
 		color: #ddd;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
+		list-style: none;
 	}
 
 	.first-li {

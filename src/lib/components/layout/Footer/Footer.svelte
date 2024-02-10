@@ -78,12 +78,9 @@
 		flex-direction: row;
   		flex-wrap: wrap;
 		margin-top: 50px;
+		
 		/* margin-bottom: 50px; */
 
-		
-		& first-li{
-			padding-top: 10px;
-		}
 		& a {
 			text-decoration: none;
 		}
@@ -153,4 +150,5 @@
 	/* grid-template-columns: 8px auto 8px;
 	grid-template-rows: 8px auto 12px; */
 
+	
 </style>
