@@ -9,7 +9,7 @@
 	import './styles.css';
 	import './transitions.css';
     import Navigation from "$lib/components/layout/Navigation.svelte";
-	import Footer from "$lib/components/layout/Footer/Footer.svelte";
+	import Footer from "../lib/components/layout/Footer/Footer.svelte";
 </script>
 
 <div class="layoutWrapper">

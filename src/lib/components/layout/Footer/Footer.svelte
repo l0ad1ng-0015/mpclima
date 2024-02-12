@@ -16,7 +16,7 @@
 			<li><a href="/дейности">Монтаж и Демонтаж на климатици </a> </li>
 			<li><a href="activities/профилактика">Профилактика</a></li>
 			<li><a href="activities/сервизно_обслужване">Сервизна дейност</a></li>
-			<li><a href="activities/други_услуги">Допълнителни услуги</a></li>
+			<li><a href="activities/допълнителни-цени">Допълнителни цени</a></li>
 		</ul>
 	</div>
 
@@ -24,10 +24,10 @@
 		<h2>Контакти</h2>
 		<ul>
 			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" {...$$props}>
+				<!-- <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" {...$$props}>
 					<path fill="#888888" d="M199.232 125.568L90.624 379.008a32 32 0 0 0 6.784 35.2l512.384 512.384a32 32 0 0 0 35.2 6.784l253.44-108.608a32 32 0 0 0 10.048-52.032L769.6 633.92a32 32 0 0 0-36.928-5.952l-130.176 65.088l-271.488-271.552l65.024-130.176a32 32 0 0 0-5.952-36.928L251.2 115.52a32 32 0 0 0-51.968 10.048"/>
-				</svg> 
-				<a href="tel:0899 591664">0899 591664</a>
+				</svg>  -->
+				<a href="tel:0899 591664">0899 591664,</a>
 				<a href="tel:0898 414816">0898 414816</a>
 			</li>
 			
@@ -58,13 +58,7 @@
 </footer>
 
 <style>
-	.contact p {
-  margin: 5px 0;
-}
 
-.contact i {
-  margin-right: 5px;
-}
 	footer {
 		/* border: solid 1px var(--blue-6);; */
 		display: grid;
@@ -93,8 +87,9 @@
 		& .column ul li svg {
 			width: 1em;
 			height: 1em;
-			margin-right: 5px;
+			margin-right: 15px;
 			fill: #888888;
+			list-style: none;
 }
 		& .column ul li a{
 			font-size: 16px;
@@ -132,6 +127,7 @@
 			text-align: center;
 			font-size: 18px;
 		}
+		
 	}
 	/* @media screen and (max-width: 800px) {
 	main {

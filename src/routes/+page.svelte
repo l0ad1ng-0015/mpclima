@@ -3,11 +3,8 @@
 
     <p>Фирма за климатици, която ще Ви предостави добро обслужване <br> и коректно отношение. </p>
     <div>
-        <a href="./промоции">
-            <button type="button">ПРОМОЦИИ</button>
-        </a>
-        <a href="/каталог">
-            <button type="button">КАТАЛОГ КЛИМАТИЦИ</button>
+        <a href="/продажба">
+            <button type="button">ПРОДАЖБА КЛИМАТИЦИ</button>
         </a>
     </div>
 

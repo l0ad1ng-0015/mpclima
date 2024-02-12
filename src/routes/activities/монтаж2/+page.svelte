@@ -117,9 +117,9 @@
 			<li>Пуск на машината</li>
 			<li>Кратък инструктаж на клиента за експлоатация</li>
 			<li>Почистване</li>   
-			<li class="button"><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
+			<li><button class="btn show-less-btn" on:click={toggleSection}>Покажи по-малко</button></li>
 			{:else}
-			<li class="button"><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
+			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
 		{/if}
 		<h2>Цена: По договаряне</h2>
 	</div>
@@ -136,15 +136,11 @@
 			<span>Цена</span> -->
 			Услуга
 			<p2>Цена</p2>
-		</p>
-
-		<p>
-			Качване на климатик, материали и инструменти без асансьор (на етаж)
-			<p2>15лв</p2>
+		</p> 
 
 		<p>
 			Монтаж с висока стълба над 3 метра 
-			<p2>След предвалителен оглед</p2>
+			<p2>80лв</p2>
 		</p>
 		
 		<p>
@@ -153,11 +149,11 @@
 		</p>
 
 		
-		
-	</div>
 
-	<div class="montaj-price-box-warn">
-		<b>Тези цени се отнасят само за монтаж на климатици, ако<br> искате да видите допълнителните ни цени кликнете <a href="/activities/допълнителни-цени">тук</a> </b>
+		<p>
+			Монтаж и качване на инструмент над партер без асансьор (цена за всеки следващ етаж)
+			<p2>15лв</p2>
+		</p>
 	</div>
 </div>
 
@@ -198,7 +194,6 @@
 	} */
 	.montaj-container-wrapper {
 		display: flex;
-		flex-wrap: wrap; 
 		justify-content: center;
 		align-items: flex-start;
 		gap: 1rem;
@@ -206,7 +201,6 @@
 		padding-top: 20px;
 		background-color: rgba(0, 0, 0, 0.297);
 		text-align: left;
-
 		/* margin-right: 400px; */
 		/* margin-right: 400px; */
 		
@@ -219,48 +213,66 @@
 		
 	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-	
+	h4 {
+		font-family: 'Poppins', sans-serif !important;
+    	/* background: #eff3f8; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-size: 35px;
+		font-weight: 300;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.297);
 
+		& b {
+			font-weight: 300;
+		}
+	}
 
 	.montaj-container {
-        padding: 20px 20px;
-		flex-wrap: wrap;
-        width: calc(25% - 40px); 
-        box-sizing: border-box;
-        align-items: flex-start;
-        justify-content: flex-start;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 15px;
-        margin-bottom: 20px; 
-    }
+		padding: 20px 20px;
+		width: calc(30% - 200px);
+		box-sizing: border-box;
+		background-color: rgba(0, 0, 0, 0.7);
+		border-radius: 15px;
+		margin: 0 30px;
+		text-align: left;
+		flex-direction: row;
+		/* display: flex; */
+		/* flex-wrap: wrap; */
+		/* margin-right: 100pc; */
+	}
 
-
-		/* @media screen and (max-width: 2000px) {
-		.montaj-container {
-				width: calc(1000% - 10px); 
-		}
-		} */
-
-		@media screen and (min-width: 1381px) {
-    .montaj-container {
-        width: calc(25% - 40px); /* Adjusted width to leave space for gap */
-    }
+	@media screen and (max-width: 1380px) {
+  .montaj-container {
+    width: calc(50% - 40px); /* Adjust width for smaller screens */
+  }
 }
-		@media screen and (max-width: 1380px) {
-		.montaj-container {
-			width: calc(50% - 40px); 
-		}
-		}
 
-		@media screen and (max-width: 765px) {
-		.montaj-container {
-			width: calc(100% - 40px); 
-		}
-		}
-
-.montaj-container li button {
-    margin-bottom: 0;
+/* Add a media query for even smaller screens */
+@media screen and (max-width: 765px) {
+  .montaj-container {
+    width: calc(100% - 40px); /* Adjust width for even smaller screens */
+  }
 }
+
+	/* .container-title b {
+  font-family: 'Poppins', sans-serif !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 35px;
+  font-weight: 300; 
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.297);
+} */
+
 			
 			.btn {
 				
@@ -302,7 +314,7 @@
     	width: 100%;
    	 	max-width: 1400px;
 		/* max-width: (--width); */
-		margin: 10px auto;
+		margin: 40px auto;
 	}
 
 	.montaj-price p {
@@ -320,15 +332,7 @@
 		.montaj-price-box {
 			margin: 20px; 
 		}
-		.montaj-price-box-warn b {
-			padding-top: 10px;
-			color: red;
-			font-size: 20px;
-		}
-		.montaj-price-box-warn a  {
-			font-size: larger;
-			color: #cb0e0ec1;
-		}
+
 		.montaj-price p:first-child {
  			display: flex;
   			color: #fff;
@@ -373,12 +377,11 @@
 	}
 
 	.montaj-info p {
-		width: calc(90% - 40px); ;
+		max-width: var(--widthmin);
 		margin: 20px auto 40px auto;
 		line-height: 28px;
 		box-sizing: border-box;
 	}
-	
 
 	h1 {
 		font-size: 40px;
@@ -390,7 +393,7 @@
 	h2 {
 		display: flex;
 		justify-content: left;
-		margin-top: 10px;
+		margin-top: 40px;
 		font-size: 30px;
 		font-weight: bold;
 		color: #ddd;
@@ -401,24 +404,6 @@
 		font-size: 35px;
 		font-weight: bold;
 		color: #ddd;
-	}
-	h4 {
-		font-family: 'Poppins', sans-serif !important;
-    	/* background: #eff3f8; */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 40px;
-		padding-top: 15px;
-		padding-bottom: 10px;
-		font-size: 35px;
-		font-weight: bold;
-		color: #fff;
-		background-color: rgba(0, 0, 0, 0.297);
-
-		& b {
-			font-weight: 500;
-		}
 	}
 
 	p {
