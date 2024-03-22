@@ -5,6 +5,7 @@
 	let email = '';
     let subject = '';
 	let message = '';
+    let agree = '';
 	let statusMessage = '';
 	let apples = 'apples';
 
@@ -42,12 +43,21 @@
         phone = '';
 		email = '';
 		message = '';
+        agree = '';
+
+
+        if (!agree) {
+            alert('Моля, съгласете се с условията за защита на личните данни.');
+            return;
+        }
 	};
 
 	const doApples = () => {
 		apples = 'oranges';
 		console.log('apples', apples);
 	};
+
+
 
 </script>
 
@@ -108,6 +118,11 @@
                 <input type="email" name="email" bind:value={email} placeholder="Имейл (задължително)" required title="Моля, попълнете това поле">
                 <input type="text" name="your-subject" bind:value={subject} placeholder="Относно">
                 <textarea on:input={doApples} bind:value={message} name="message" placeholder="Вашето ъобщение"></textarea>
+                <label for="agree">
+                    <input type="checkbox" id="agree" bind:checked={agree} required title="Моля, кликнете тикчето, за да продължите">
+                    Съгласявам се с условията за <a href="/защита-лични-данни">Защита на личните данни</a>
+                </label>
+                
                 <button type="submit">Изпрати</button>
                 <p>{statusMessage}</p>
             </form>
@@ -206,13 +221,23 @@
         color: #fff;
     }
 
+    .contact input [type="checkbox"] {
+        cursor: pointer;
+    }
+
     .contact h2,
     .contact p {
         color: #fff;
         /* margin-top: 0;
         margin-bottom: 20px 0;  */
     }
-    /* Additional CSS styles for contact form */
+
+    .contact a {
+        color: #0070BB;
+    }
+    .contact a:hover{
+        color: #00518A;
+    }
 
     .social iframe { 
     border: 6px solid #0070FF; /* Blue border */

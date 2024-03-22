@@ -1,7 +1,15 @@
 
 
 <footer class="">
+	<!-- <div class="footer-logo">
+	</div> -->
 	<div class="column">
+		<!-- <img src="images/MP_LOGO_2-ptif.png" alt="Footer Logo">
+		 <h2>За фирмата</h2> 
+		<div class="column-1-text">Designed and developed by<br />
+		Warning: This website might use cookies to enhance your experience. <br> If you are not comfortable with
+		this, please consider leaving the website.<br> Your privacy is important to us, and we respect your choice.<br>
+		Thank you for your understanding.</div> -->
 		<h2>За фирмата</h2>
 		Designed and developed by<br />
 		Warning: This website might use cookies to enhance your experience. <br> If you are not comfortable with
@@ -83,6 +91,10 @@
 			width: 90%;
 			padding: 20px;
 			text-align: left;
+
+			& .column-1-text {
+				padding-top: 10px;
+			}
 		}
 		& .column ul li svg {
 			width: 1em;

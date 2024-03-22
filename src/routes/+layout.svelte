@@ -1,7 +1,8 @@
 <!--kak da se adjustne za vs ustroistva-->
 <head>
 	<title>MP Clima | Sofia</title>
-	<link rel="shortcut icon" type="x-icon" href="logo.png" />
+	<!-- <link rel="shortcut icon" href="static/images/logo.png" type="image/png" />
+	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" type="image/x-icon"> -->
 </head>
 
   
