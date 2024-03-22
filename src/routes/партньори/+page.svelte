@@ -14,47 +14,69 @@
 
 <div class="partners">
   <div class="partners-item1">
-    <img src="/partners/bulclimaLogo.png" alt="Img 1">
+    <a href="https://bulclima.com/" target="_blank">
+      <img src="/partners/bulclimaLogo.png" alt="Img 1">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/techmartLogo.png" alt="Img 2">
+    <a href="https://techmart.bg/" target="_blank">
+      <img src="/partners/techmartLogo.png" alt="Img 2">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item3">
-    <img src="/partners/generalLogo.png" alt="Img 3">
+    <a href="https://general-bulgaria.com//" target="_blank">
+      <img src="/partners/generalLogo.png" alt="Img 3">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item4">
-    <img src="/partners/magnum7Logo.png" alt="Img 4">
+    <a href="https://www.magnum7.bg/" target="_blank">
+      <img src="/partners/magnum7Logo.png" alt="Img 4">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/metroLogo.png" alt="Img 5">
+    <a href="https://metro.bg/" target="_blank">
+      <img src="/partners/metroLogo.png" alt="Img 5">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/mitsubishi_electricLogo.png" alt="Img 6">
+    <a href="https://bg.mitsubishielectric.com/fa/" target="_blank">
+      <img src="/partners/mitsubishi_electricLogo.png" alt="Img 6">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/mitsubishi_heavyLogo.png" alt="Img 7">
+    <a href="https://condex.bg/?gad_source=1&gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgMVfkbUmfkdUOa6OifpiLhSkcu-LL3LgQ0AgyI5G35GVxu967UJvu4aAirlEALw_wcB/" target="_blank">
+      <img src="/partners/mitsubishi_heavyLogo.png" alt="Img 7">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/GREE-logo.png" alt="Img 8">
+    <a href="https://gree-bulgaria.com/" target="_blank">
+      <img src="/partners/GREE-logo.png" alt="Img 8">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item">
-    <img src="/partners/daikinLogo.png" alt="Img 9">
+    <a href="https://www.daikin.bg/bg_bg/customers.html/" target="_blank">
+      <img src="/partners/daikinLogo.png" alt="Img 9">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item10">
-    <img src="/partners/auxLogo.png" alt="Img 10">
+    <a href="https://www.auxbg.com//" target="_blank">
+      <img src="/partners/auxLogo.png" alt="Img 10">
+    </a>
     <div class="background"></div>
   </div>
   <div class="partners-item11">
-    <img src="/partners/toshibaLogo.png" alt="Img 11">
+    <a href="https://www.toshiba.bg/pages/bg/" target="_blank">
+      <img src="/partners/toshibaLogo.png" alt="Img 11">
+    </a>
     <div class="background"></div>
   </div>
 </div>
