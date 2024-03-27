@@ -107,6 +107,7 @@
     .content li {
         margin-bottom: 5px;
         font-size: 20px;
+        line-height: 1.3;
     }
 
     .content h1, .content h2 {
@@ -117,6 +118,7 @@
     .content p {
         color: #ffffff;
         font-size: 20px;
+        line-height: 1.5;
     }
 
     .content ul {

@@ -1,7 +1,44 @@
-<p>We have a 30-day return policy, which means you have 14 days after receiving your item to request a return. <br><br>To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You’ll also need the receipt or proof of purchase. <br><br>To start a return, you can contact us at vikingbramds15@gmail.com. Please note that returns will need to be sent to the following address:кв. <a href="https://www.google.com/maps/place/Econt+Sofia+Ljubljana/@42.6734778,23.2628769,17.33z/data=!4m6!3m5!1s0x40aa9b35bf10fb05:0xb2b2633d742471bb!8m2!3d42.6739015!4d23.2631652!16s%2Fg%2F11cjp7yd6q?entry=ttu">Овча купел 1, ул. Любляна №22A, 1618 Sofia</a><br><br>If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted. <br><br>You can always contact us for any return question at <a href="mailto:v.popov.businesses@gmail.com">vikingbrands15@gmail.com</a>. <br></p>
-<br>
-<p><strong>Damages and issues</strong> <br>Please inspect your order upon reception and contact us immediately if the item is defective, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.</p>
-<br>
-<p><strong>Exchanges</strong> <br>The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.</p>
-<p>&nbsp;</p>
-<p><strong>Refunds</strong> <br>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too. <br>If more than 15 business days have passed since we’ve approved your return, please contact us at v.popov.businesses@gmail.com.</p>
+    <div class="container">
+        <div class="content">
+            <div class="montaj-info">
+                <h3>Уточнения</h3>
+                <p class="mb-4">
+                <strong>СТАНДАРТЕН МОНТАЖ:</strong>
+                Стандартен монтаж (за сплит-ситема от настенен тип), при което се съблюдават следните условия: външният блок се монтира на достъпни места (под прозорец, на балкон или балконна стена) и не са необходими услугите на алпинисти, специални вишки и високи скелета. Дължината на тръбния път не превишава 3 метра и няма вкопаване на тръбния път в стените (не препоръчваме вкопаване) без декоративни ПВЦ канали.
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+<style>
+    .container {
+        max-width: 100%; /* Adjusted to allow responsiveness */
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.463); /* Set background color */
+        border: 1px; /* Add border */
+        border-radius: 8px; /* Add border radius for rounded corners */
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 30px;
+    }
+    
+    .content h3 {
+        /* margin-top: 10px; */
+		font-size: 35px;
+		font-weight: bold;
+		color: #ddd;
+	}
+    
+
+    .content p {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+</style>

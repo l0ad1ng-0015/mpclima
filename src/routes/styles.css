@@ -6,9 +6,19 @@
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)), url(./background_long.jpg);
-    background-size: 75%;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+
+@media screen and(max-width: 1220) {
+    body {
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }   
 }
 
 .container {
