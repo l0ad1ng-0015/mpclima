@@ -1,145 +1,204 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <section class="top-nav">
-    <div>
-      Logo Here
-    </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-    <ul class="menu">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li>Five</li>
-    </ul>
-  </section>
 
-<h2>Resize window to collapse menu</h2>
- 
+
+<div class="tableBlocks" style="">
+  <div>
+  <p><span style="">Услуга</span><span>Цена</span></p>
+  
+  <p><span>Монтаж на тяло на мултисплит при наличие на тръбен път</span><span>140 лв.</span></p>
+  
+  <p><span>Монтаж на вътрешно тяло 7 - 14 000 BTU на мултисплит при наличие на тръбен път</span><span>60 лв.</span></p>
+  
+  <p><span style="background: rgba(0, 0, 0, 0.356)">Монтаж на вътрешно тяло 15 - 24 000 BTU на мултисплит при наличие на тръбен път</span><span>90 лв.</span></p>
+  
+  <p><span style="">Допълнителен тръбен път за климатик 7 - 14 000 BTU на л.м.</span><span style="">45 лв.</span></p>
+  
+  <p><span>Допълнителен тръбен път за климатик 15 - 24 000 BTU на л.м.</span><span style="">55 лв.</span></p>
+  
+  <p><span>Допълнителен тръбен път за климатик 30 - 55 000 BTU на л.м.</span><span style="">70 лв.</span></p>
+  
+  <p><span>Вкопаване на тръбен път в тухлена зидария на л.м.</span><span style="">40 лв.</span></p>
+  
+  <p><span style="">Вкопаване на тръбен път в бетон на л.м. (с изключение на панелни блокове, след оглед)</span><span style="">80 лв.</span></p>
+  
+  <p><span style="">Качване на климатик, материали и инструменти без асансьор 7 - 14 000 BTU (на етаж)</span><span style="">10 лв.</span></p>
+  
+  <p><span>Качване на климатик, материали и инструменти без асансьор 15 - 24 000 BTU (на етаж)</span><span style="">15 лв.</span></p>
+  
+  <p><span style="">Монтаж на климатик на 2 етапа</span><span style="">70 лв.</span></p>
+  
+  
+  </div></div>
+
+
+
 <style>
-    @import url(https://fonts.googleapis.com/css?family=Raleway);
-
-* {
-  font-family: "Raleway";
-  box-sizing: border-box;
+  span {
+    position: static;
+  }
+  span {
+    /* Remove absolute positioning */
+    /* position: absolute; */
+    /* Remove the following properties if they are not needed */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* z-index: -1; */
+    /* transition: 0.5s; */
 }
 
-.top-nav {
+  
+  * {
+   box-sizing: border-box;
+}
+
+.infoService > * {
+   margin: 0px auto;
+   width: 100%;
+   padding: 0px 20px;
+}
+
+.tableBlocks {
+   padding: 40px 20px;
+   width: 100%;
+   max-width: var(--width);
+}
+
+h2 {
+   font-family: inherit;
+   font-weight: 500;
+   line-height: 1.1;
+   color: inherit;
+}
+
+body h2 {
+   font-family: "Roboto Condensed";
+   font-weight: 400;
+   color: rgb(4, 4, 4);
+}
+
+body h2 {
+   font-size: 16px;
+   margin-bottom: 15px;
+}
+
+.infoService h2 {
+   max-width: var(--width);
+   text-align: center;
+   font-size: 30px;
+   margin: 0px auto 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+h2 {
+   orphans: 3;
+   widows: 3;
+}
+
+b {
+   font-weight: 700;
+}
+
+body b {
+   font-weight: 700;
+}
+
+.infoService span {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+}
+
+.tableBlocks > div {
+   width: 100%;
+   max-width: var(--widthmin);
+   margin: 40px auto;
+}
+
+p {
+   margin: 0px 0px 10px;
+}
+
+body p {
+   margin-bottom: 15px;
+}
+
+.tableBlocks p {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px;
+   border-left: 1px solid var(--light);
+   border-right: 1px solid var(--light);
+}
+
+.tableBlocks p:nth-of-type(2n+1) {
+   background: #f5f5f5;
+}
+
+.tableBlocks p:first-of-type {
+   /* color: rgb(255, 255, 255); */
+   /* background: #05255f; */
+   /* color: white; */
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+}
+
+p {
+   orphans: 3;
+   widows: 3;
+}
+
+.tableBlocks p:last-of-type {
+   border-bottom: 3px solid var(--blue);
+}
+
+.tableBlocks p:nth-of-type(n+13) {
+   display: none;
+}
+
+.tableBlocks p span {
+   width: 100%;
+   padding: 10px;
+   display: inline-block;
+}
+
+.tableBlocks p span:last-of-type {
+   width: 120px;
+}
+
+inline-style {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: #00BAF0;
-  background: linear-gradient(to left, #f46b45, #eea849); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
-  height: 50px;
-  padding: 1em;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.spanShow {
+   text-align: center;
+   display: block;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.spanShow::before {
+   content: "";
+   display: block;
+   height: 40px;
+   margin-top: -30px;
 }
 
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.spanShow span::before {
+   content: "";
+   font-family: icomoon;
+   font-size: 40px;
+   padding: 10px;
+   border-radius: 50%;
+   display: inline-block;
+   background: var(--blue);
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   margin-top: -30px;
+   line-height: 40px;
 }
 
-#menu-toggle {
-  display: none;
+.spanShow .spanShowHix::before {
+   content: "";
+   font-family: icomoon;
+   background: #f5f5f5;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
-}
 </style>

@@ -37,10 +37,10 @@
 			<li><a class="menu__item" href="/">Начало</a></li>
 			<li class="submenu">
 				<a class="menu__item" href="#">За нас</a>
-				<!-- <ul class="sub-nav">
+				<ul class="sub-nav">
 					<li><a href="/партньори">Партньори</a></li>
 					<li><a href="/галерия">Галерия</a></li>
-				</ul> -->
+				</ul>
 			</li>
 			<li class="submenu">
 				<a class="menu__item" href="/дейности">Услуги</a>
@@ -100,13 +100,13 @@
 	right: 0 !important;
 	}
 	.menu__btn {
-	position: fixed;
-	top: 90px;
-	right: 20px;
-	width: 26px;
-	height: 26px;
+	position: absolute;
+	top: 50px;
+	right: 18px;
+	width: 30px;
+	height: 37px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 1000;
 	}
 	.menu__btn > span,
 	.menu__btn > span::before,
@@ -126,12 +126,18 @@
 	content: '';
 	top: 8px;
 	}
+
+	.menu__container {
+    position: relative; /* Change position to relative */
+    display: none; /* Hide the menu container initially */
+	}
+
 	.menu__box {
 	display: block;
 	position: fixed;
 	top: 0;
 	right: -100%;
-	width: 200px;
+	width: 212px;
 	height: 100%;
 	margin: 0;
 	padding: 80px 0;
@@ -139,6 +145,7 @@
 	background-color: #0070bb;
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 	transition-duration: .25s;
+	/* z-index: 1000; */
 	}
 	.menu__item {
 	display: block;
@@ -155,84 +162,28 @@
 	border-radius: 12px;
 	}
 
-	@media screen and (min-width: 880px) {
-		#menu__toggle {
-		opacity: 0;
-		}
-		#menu__toggle:checked + .menu__btn > span {
-		transform: rotate(45deg);
-		}
-		#menu__toggle:checked + .menu__btn > span::before {
-		top: 0;
-		transform: rotate(0deg);
-		}
-		#menu__toggle:checked + .menu__btn > span::after {
-		top: 0;
-		transform: rotate(90deg);
-		}
-		#menu__toggle:checked ~ .menu__box {
-		right: 0 !important;
-		}
-		.menu__btn {
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		width: 26px;
-		height: 26px;
-		cursor: pointer;
-		z-index: 1;
-		}
-		.menu__btn > span,
-		.menu__btn > span::before,
-		.menu__btn > span::after {
-		display: none;
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		background-color: #616161;
-		transition-duration: .25s;
-		}
-		.menu__btn > span::before {
-		content: '';
-		top: -8px;
-		}
-		.menu__btn > span::after {
-		content: '';
-		top: 8px;
-		}
-		.menu__box {
-		display: none;
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 500px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		background-color: #0070bb;
-		box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-		transition-duration: .25s;
-		}
-		.menu__item {
-		display: none;
-		padding: 12px 24px;
-		color: #1369e1;
-		font-family: 'Roboto', sans-serif;
-		font-size: 20px;
-		font-weight: 600;
-		text-decoration: none;
-		transition-duration: .25s;
-		}
-		.menu__item:hover {
-		background-color: #1369e1;
-		}
-	
-		.menu__item ul li {
-			display: block;
-		}
+	@media screen and (max-width: 880px) {
+
+		/* .menu__box {
+		width: 175px;
+		} */
+
+		.menu__container {
+        display: block; /* Show the menu container */
+    	}
 	}
 
+	@media screen and (min-width: 880px) {
+    #menu__toggle {
+        opacity: 1; /* Show the toggle button */
+    }
+    .menu__btn {
+        display: block; /* Show the hamburger icon */
+    }
+    .menu__container {
+        display: none; /* Hide the menu container */
+    }
+}
 
 	.nav {
 		/* Corrected class name here */
@@ -254,11 +205,12 @@
 
 
 	.menu__container {
-        position: absolute;
-        top: 0;
-        right: 0;
+        position: fixed;
+        top: 20px;
+        right: 20px;
         margin-top: 30px; /* Adjust as needed */
         margin-right: 20px; /* Adjust as needed */
+		z-index: 1000;
 		}
 	@media screen and (max-width: 880px) {
 		.logo {
@@ -288,6 +240,26 @@
         margin-right: 20px; /* Adjust as needed */
 		}
 	}
+
+	@media screen and (max-width: 510px) {
+		.logo {
+			width: 200px;
+		}
+		.nav {
+			padding-top: 7px;
+		}
+		.menu__btn {
+			top: 28px;
+		}
+		.menu__box {
+			padding-top: 50px;
+		}
+		.menu__item {
+			padding: 24px 24px;
+		}
+	}
+
+
 	.nav ul li {
 		list-style: none;
 		display: inline-table;

@@ -43,25 +43,25 @@
     </a>
     <div class="background"></div>
   </div>
-  <div class="partners-item">
+  <div class="partners-item6">
     <a href="https://bg.mitsubishielectric.com/fa/" target="_blank">
       <img src="/partners/mitsubishi_electricLogo.png" alt="Img 6">
     </a>
     <div class="background"></div>
   </div>
-  <div class="partners-item">
+  <div class="partners-item7">
     <a href="https://condex.bg/?gad_source=1&gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgMVfkbUmfkdUOa6OifpiLhSkcu-LL3LgQ0AgyI5G35GVxu967UJvu4aAirlEALw_wcB/" target="_blank">
       <img src="/partners/mitsubishi_heavyLogo.png" alt="Img 7">
     </a>
     <div class="background"></div>
   </div>
-  <div class="partners-item">
+  <div class="partners-item8">
     <a href="https://gree-bulgaria.com/" target="_blank">
       <img src="/partners/GREE-logo.png" alt="Img 8">
     </a>
     <div class="background"></div>
   </div>
-  <div class="partners-item">
+  <div class="partners-item9">
     <a href="https://www.daikin.bg/bg_bg/customers.html/" target="_blank">
       <img src="/partners/daikinLogo.png" alt="Img 9">
     </a>
@@ -90,6 +90,7 @@
     font-weight: bold;
     background-color: #0000007e;
     color: #fff;
+    border-radius: 12px;
   }
 
   h1 {
@@ -143,7 +144,7 @@
     justify-content: center;
   }
   
-  .partners-item1, .partners-item3, .partners-item4, .partners-item10, .partners-item11 {
+  .partners-item1, .partners-item3, .partners-item4, .partners-item6, .partners-item7, .partners-item8, .partners-item9, .partners-item10, .partners-item11 {
     margin: 20px;
     text-align: center;
     position: relative;
@@ -188,6 +189,54 @@
           transform: scale(1.1);
       }
 
+
+    .partners-item6 img {
+      margin-top: 17px;
+      max-width: 100%;
+      width: 390px;
+      height: auto;
+      z-index: 2;
+      align-items: center;
+    }
+      .partners-item6:hover {
+        transform: scale(1.1);
+      }
+
+    .partners-item7 img {
+      margin-top: 17px;
+      max-width: 100%;
+      width: 390px;
+      height: auto;
+      z-index: 2;
+      align-items: center;
+    }
+      .partners-item7:hover {
+        transform: scale(1.1);
+      }
+
+    .partners-item8 img {
+      margin-top: 17px;
+      max-width: 100%;
+      width: 390px;
+      height: auto;
+      z-index: 2;
+      align-items: center;
+    }
+      .partners-item8:hover {
+        transform: scale(1.1);
+      }
+
+    .partners-item9 img {
+      margin-top: 17px;
+      max-width: 100%;
+      width: 390px;
+      height: auto;
+      z-index: 2;
+      align-items: center;
+    }
+      .partners-item9:hover {
+        transform: scale(1.1);
+      }
   .partners-item10 img {
     max-width: 100%;
     width: 300px;

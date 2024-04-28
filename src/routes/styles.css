@@ -5,21 +5,30 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)), url(./background_long.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)), url(./background_long.png);
+    background-position: center top;
+    background-size: 75%; /* Default value for larger screens */
     background-attachment: fixed;
-    /* background-repeat: no-repeat; */
 }
 
-@media screen and(max-width: 1220) {
+@media screen and (max-width: 1220px) {
     body {
-        background-size: cover;
-        background-position: center top;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }   
+        background-size: cover; /* Override for smaller screens */
+    }
 }
+
+@media screen and (max-width: 880px) {
+    body {
+        background-size: cover; /* Override for smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-size: cover; /* Override for smaller screens */
+    }
+}
+
 
 .container {
     width: 60%;
@@ -54,8 +63,9 @@ button{
     background-color: rgba(0, 0, 0, 0.17);
     color: #fff;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
+    z-index: 1;
 }
 
 span{

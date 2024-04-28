@@ -6,6 +6,15 @@
 	function toggleSection() {
 		showAdditionalSection = !showAdditionalSection;
 	}
+
+
+
+	// Data for the table
+	let services = [
+	  { name: 'Монтаж на външно тяло на мултисплит при наличие на тръбен път', price: '140 лв.' },
+	  { name: 'Монтаж на вътрешно тяло 7 - 14 000 BTU на мултисплит при наличие на тръбен път', price: '60 лв.' },
+	];
+	// Additional prices
 </script>
 
 
@@ -125,46 +134,35 @@
 	</div>
 </div>
 
-<div class="montaj-price">
-	<h3>
-		<b>Нестандартни услуги</b>
-	</h3>
+  <!-- Additional prices -->
+  
+  <div>
+	<h3 style="margin-top: 40px;">Нестандартни услуги</h3>
+	<div class="table">
+	<div>Услуга</div>
+	<div class="price">Цена</div>
+	{#each services as service}
+	  <div>{service.name}</div>
+	  <div>{service.price}</div>
+	{/each}
+  	</div>
+  </div>
+  
+  
+<!-- Additional prices -->
 
-	<div class="montaj-price-box">
-        <p>
-			<!-- <span>Услуга</span>
-			<span>Цена</span> -->
-			Услуга
-			<p2>Цена</p2>
-		</p>
 
-		<p>
-			Качване на климатик, материали и инструменти без асансьор (на етаж)
-			<b class="p2">15лв<b>
-			</p>
 
-		<p>
-			Монтаж с висока стълба над 3 метра 
-			<b class="p2">След предвалителен оглед</b>
+<div class="montaj-info-container">
+	<div class="montaj-info-content">
+		<div class="montaj-info">
+			<h3 style="margin-bottom: 20px;">Уточнения</h3>
+			<p class="mb-4">
+			<strong>СТАНДАРТЕН МОНТАЖ:</strong>
+			Стандартен монтаж (за сплит-ситема от настенен тип), при което се съблюдават следните условия: външният блок се монтира на достъпни места (под прозорец, на балкон или балконна стена) и не са необходими услугите на алпинисти, специални вишки и високи скелета. Дължината на тръбния път не превишава 3 метра и няма вкопаване на тръбния път в стените (не препоръчваме вкопаване) без декоративни ПВЦ канали.
 		</p>
-		
-		<p>
-			Монтаж със скеле
-			<b class="p2">След предвалителен оглед</b>
-		</p>
+		</div>
 	</div>
-
-	<div class="montaj-price-box-warn">
-		<b>Тези цени се отнасят само за монтаж на климатици, ако<br> искате да видите допълнителните ни цени кликнете <a href="/activities/допълнителни-цени">тук</a> </b>
-	</div>
-</div>
-
-<div class="montaj-info">
-	<h3>Уточнения</h3>
-	<p>	
-		<strong>СТАНДАРТЕН МОНТАЖ:</strong>
-		Стандартен монтаж (за сплит-ситема от настенен тип), при което се съблюдават следните условия: външният блок се монтира на достъпни места (под прозорец, на балкон или балконна стена) и не са необходими услугите на алпинисти, специални вишки и високи скелета. Дължината на тръбния път не превишава 3 метра и няма вкопаване на тръбния път в стените (не препоръчваме вкопаване) без декоративни ПВЦ канали.
-	</p>
 </div>
 
 
@@ -185,6 +183,7 @@
     font-weight: bold;
     background-color: #0000007e; 
     color: #fff; 
+	border-radius: 10px;
     }
 
 	/* .montaj-title {
@@ -295,71 +294,98 @@
 				}
 
 
-	.montaj-price {
-		padding: 40px 20px;
-    	width: 100%;
-   	 	max-width: 1400px;
-		/* max-width: (--width); */
-		margin: 10px auto;
+	
+ 	/* Additional prices */
+	.table {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 1px;
+	  margin: 40px;
+	  margin-left: 100px;
+	  margin-right: 100px;
+	}
+  
+	.table > div:nth-child(2n) {
+	  background-color: rgba(0, 0, 0, 0.6);
+	}
+  
+	.table > div:nth-child(2n+1) {
+	  background-color: rgba(0, 0, 0, 0.356);
+	}
+  
+	.table > div:first-child {
+	  background-color: #0070BB;
+	  color: #ffffff;
+	  font-weight: bold;
+	}
+  
+	.table > div:first-child + div {
+	  background-color: #0070BB;
+	  color: #ffffff;
+	}
+  
+	
+  
+	.table div {
+	  padding: 10px;
+	  border: 1px solid #ccc;
 	}
 
-	.montaj-price p {
-		background: rgba(0, 0, 0, 0.246);
+ 	/* Additional prices */
+
+
+	 .montaj-info-container {
 		display: flex;
-		align-items: center;
-    	justify-content: space-between;
+		justify-content: center; /* Horizontally center the content */
+		align-items: center; /* Vertically center the content */
+		max-width: 70%;
+		text-align: center;
+		margin: 90px auto; /* Auto margins to center horizontally */
 		padding: 10px;
-   	 	margin: 0;
-		gap: 10px;
-   	 	border-left: 1px solid var(--light);
-    	border-right: 1px solid var(--light);
+		background-color: rgba(0, 0, 0, 0.463);
+		border: 1px;
+		border-radius: 8px;
 	}
 
-		.montaj-price-box {
-			margin: 20px; 
+	@media screen and (max-width: 880px) {
+		.montaj-info-container{
+			max-width: 90%;
 		}
-		.montaj-price-box-warn b {
-			padding-top: 10px;
-			color: red;
-			font-size: 20px;
+		.table {
+			margin-left: 40px;
+			margin-right: 40px;
 		}
-		.montaj-price-box-warn a  {
-			font-size: larger;
-			color: #cb0e0ec1;
-		}
-		.montaj-price p:first-child {
- 			display: flex;
-  			color: #fff;
-  			background: #0070BB;
-  			border-top-left-radius: 8px;
-  			border-top-right-radius: 8px;
-		}
+	}
 
-		.montaj-price p:nth-of-type(odd):not(:first-child) {
-			background: rgba(0, 0, 0, 0.6);
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 10px;
-			margin: 0;
-			gap: 10px;
-			border-left: 1px solid var(--light);
-			border-right: 1px solid var(--light);
+	@media screen and (max-width: 600px) {
+		.montaj-info-container {
+			max-width: 100%;
 		}
+	}
 
-		.montaj-price p:nth-of-type(even) {
-			background: rgba(0, 0, 0, 0.356);
-			display: flex;
-			justify-content: space-between;
-			padding: 10px;
-			margin: 0;
-			border-left: 1px solid var(--light);
-			border-right: 1px solid var(--light);
-		}
+    .montaj-info-content {
+        max-width: 100%;
+        padding: 30px;
+    }
+    
+    .montaj-info-container content h3 {
+        /* margin-top: 10px; */
+		font-size: 35px;
+		font-weight: bold;
+		color: #ddd;
+	}
+    
 
-	/* .montaj-info p:nth-of-type(odd) {
-		background: var(--light);
-	} */
+    .montaj-info-container content p {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+
+	/*
+	PREVIUS ONE
 	
 	.montaj-info {
 		display: flexbox;
@@ -375,7 +401,7 @@
 		margin: 20px auto 40px auto;
 		line-height: 28px;
 		box-sizing: border-box;
-	}
+	} */
 	
 
 	h1 {
@@ -395,7 +421,7 @@
 	}
 
 	h3 {
-		margin-top: 40px;
+		/* margin-top: 40px; */
 		font-size: 35px;
 		font-weight: bold;
 		color: #ddd;
@@ -445,3 +471,108 @@
 		margin-top: 20px;
 	}
 </style>
+
+
+<!--
+	MONTAJ-PRICE first (old one)
+	<div class="montaj-price">
+	<h3>
+		<b>Нестандартни услуги</b>
+	</h3>
+
+	<div class="montaj-price-box">
+        <p>
+			<span>Услуга</span>
+			<span>Цена</span>
+			Услуга
+			<p2>Цена</p2>
+		</p>
+
+		<p>
+			
+			<b>Качване на климатик, материали и инструменти без асансьор (на етаж)</b>
+			<b class="p2">15лв<b>
+			</p>
+
+		<p>
+			Монтаж с висока стълба над 3 метра 
+			<b class="p2">След предвалителен оглед</b>
+		</p>
+		
+		<p>
+			Монтаж със скеле
+			<b class="p2">След предвалителен оглед</b>
+		</p>
+	</div>
+
+	<div class="montaj-price-box-warn">
+		<b>Тези цени се отнасят само за монтаж на климатици, ако<br> искате да видите допълнителните ни цени кликнете <a href="/activities/допълнителни-цени">тук</a> </b>
+	</div>
+</div>
+
+.montaj-price {
+	padding: 40px 20px;
+	width: 100%;
+		max-width: 1400px;
+	
+	margin: 10px auto;
+}
+
+.montaj-price p {
+	background: rgba(0, 0, 0, 0.246);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+		margin: 0;
+	gap: 10px;
+		border-left: 1px solid var(--light);
+	border-right: 1px solid var(--light);
+}
+
+	.montaj-price-box {
+		margin: 20px; 
+	}
+	.montaj-price-box-warn b {
+		padding-top: 10px;
+		color: red;
+		font-size: 20px;
+	}
+	.montaj-price-box-warn a  {
+		font-size: larger;
+		color: #cb0e0ec1;
+	}
+	.montaj-price p:first-child {
+		 display: flex;
+		  color: #fff;
+		  background: #0070BB;
+		  border-top-left-radius: 8px;
+		  border-top-right-radius: 8px;
+	}
+
+	.montaj-price p:nth-of-type(odd):not(:first-child) {
+		background: rgba(0, 0, 0, 0.6);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+		margin: 0;
+		gap: 10px;
+		border-left: 1px solid var(--light);
+		border-right: 1px solid var(--light);
+	}
+
+	.montaj-price p:nth-of-type(even) {
+		background: rgba(0, 0, 0, 0.356);
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+		margin: 0;
+		border-left: 1px solid var(--light);
+		border-right: 1px solid var(--light);
+
+.montaj-info p:nth-of-type(odd) {
+		background: var(--light);
+	}
+	} -->
+	 
