@@ -69,12 +69,12 @@
     <div class="social">
 
 
-<!-- 
+ 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.2977346377706!2d23.3262787!3d42.6974161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856e34c59f1d%3A0x97d07b6d259f65c!2z0KHQvtGE0LjRjyDRhtC10L3RgtGK0YAsINGD0LsuIOKAntCc0L7RgdC60L7QstGB0LrQsOKAnCAzLCAxMDAwINCh0L7RhNC40Y8!5e0!3m2!1sbg!2sbg!4v1706443322618!5m2!1sbg!2sbg" 
         width="600" 
         height="480" 
         frameborder="0" 
-        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe> -->
+        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe> 
         
         <ul>
             <li>
