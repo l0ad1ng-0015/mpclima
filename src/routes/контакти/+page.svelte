@@ -69,12 +69,12 @@
     <div class="social">
 
 
-
+<!-- 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.2977346377706!2d23.3262787!3d42.6974161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856e34c59f1d%3A0x97d07b6d259f65c!2z0KHQvtGE0LjRjyDRhtC10L3RgtGK0YAsINGD0LsuIOKAntCc0L7RgdC60L7QstGB0LrQsOKAnCAzLCAxMDAwINCh0L7RhNC40Y8!5e0!3m2!1sbg!2sbg!4v1706443322618!5m2!1sbg!2sbg" 
         width="600" 
         height="480" 
         frameborder="0" 
-        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe> -->
         
         <ul>
             <li>
@@ -90,10 +90,10 @@
             <b>Работно време: Понеделник-Петък 8:00 - 20:00</b> -->
 
         <ul>
-            <li>
+            <!-- <li>
                 <p>Централен офис: </p>
                 <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%E2%80%9E%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%E2%80%9C+3,+1000+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80,+%D0%A1%D0%BE%D1%84%D0%B8%D1%8F/@42.69742,23.3237038,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa856e34c59f1d:0x97d07b6d259f65c!8m2!3d42.6974161!4d23.3262787!16s%2Fg%2F11c1_6sygp?entry=ttu" target="_blank">ул.Московска 3, София</a>
-            </li>
+            </li> -->
         </ul>
         <ul>
             <li>
