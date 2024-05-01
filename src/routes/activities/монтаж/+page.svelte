@@ -136,8 +136,8 @@
 
   <!-- Additional prices -->
   
-  <div>
-	<h3 style="margin-top: 40px;">Нестандартни услуги</h3>
+  <div class="table-container">
+	<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
 	<div class="table">
 	<div>Услуга</div>
 	<div class="price">Цена</div>
@@ -156,11 +156,12 @@
 <div class="montaj-info-container">
 	<div class="montaj-info-content">
 		<div class="montaj-info">
-			<h3 style="margin-bottom: 20px;">Уточнения</h3>
-			<p class="mb-4">
-			<strong>СТАНДАРТЕН МОНТАЖ:</strong>
-			Стандартен монтаж (за сплит-ситема от настенен тип), при което се съблюдават следните условия: външният блок се монтира на достъпни места (под прозорец, на балкон или балконна стена) и не са необходими услугите на алпинисти, специални вишки и високи скелета. Дължината на тръбния път не превишава 3 метра и няма вкопаване на тръбния път в стените (не препоръчваме вкопаване) без декоративни ПВЦ канали.
-		</p>
+			<!-- <h3 style="margin-bottom: 20px;">Уточнения</h3> -->
+			<p><b>Уточнения:</b> Цените за монтаж на мултисплит система са без включен тръбен път. Дължината на тръбното трасе между външното тяло и вътрешните тела се заплаща допълнително за всеки линеен метър.</p>
+			<p>Клиентски материали и аксесоари не се монтират, но при настояване от клиента, услугите се заплащат еквивалентно на стойността на нашите материали и услуги. Свързването на WiFi модулите към домашната мрежа е ангажимент на клиента.</p>
+			<p><strong>ВАЖНО:</strong> При нужда от монтаж с вишка цената за наемане на автовишката се заплаща изцяло от клиента и е по действащия ценоразпис на фирмата, извършваща услугата.</p>
+			<p>Монтажът на климатична сплит система, като всяка монтажна дейност, е свързан с пробиване и запрашаване. Това не е проблем в помещения, в които тече ремонт, но в завършени жилища може да доведе до известен дискомфорт за собствениците. Нашият съвет е да подготвите стаята за монтажната дейност: да покриете пода и мебелите с найлон за строителни дейности, да премахнете всичко, което би попречило да се монтира климатикът на избраното от Вас място - етажерки, високи шкафове, рафтове. Важно е да има осигурен достъп до стената, на която ще се монтира вътрешното тяло, за да може да се осъществи монтажът. Ние винаги почистваме пода с прахосмукачка след монтаж, но финият прах е предизвикателство за всеки уред и трудно би се почистил от мебелите.</p>
+			<p style="margin-bottom: 20px;">С оглед на безопасността на монтажните ни екипи те не използват калцуни. Изкуственият материал, от който са направени, може да доведе до сериозни инциденти свързани с подхлъзване и падане при монтажна дейност в жилището и извън него. Ако настилката в коридора и стаята, в която ще се монтира климатикът, е ламинат, паркет или друг вид дърво, ще Ви помолим да я обезопасите с найлон, за да не пострада по някакъв начин повърхността ѝ. Ние вярваме, че тази малка помощ от Ваша страна ще доведе до един перфектен за Вас и същевременно безопасен за нашите служители монтаж.</p>
 		</div>
 	</div>
 </div>
@@ -296,40 +297,43 @@
 
 	
  	/* Additional prices */
+	.table-container {
+		max-width: 1280px;
+		margin: 0 auto;
+		margin-top: 70px; 
+	}
+
 	.table {
-	  display: grid;
-	  grid-template-columns: repeat(2, 1fr);
-	  gap: 1px;
-	  margin: 40px;
-	  margin-left: 100px;
-	  margin-right: 100px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1px;
+	margin: 0 auto; 
 	}
-  
+
 	.table > div:nth-child(2n) {
-	  background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	}
-  
+
 	.table > div:nth-child(2n+1) {
-	  background-color: rgba(0, 0, 0, 0.356);
+	background-color: rgba(0, 0, 0, 0.356);
 	}
-  
+
 	.table > div:first-child {
-	  background-color: #0070BB;
-	  color: #ffffff;
-	  font-weight: bold;
+	background-color: #0070BB;
+	color: #ffffff;
+	font-weight: bold;
 	}
-  
+
 	.table > div:first-child + div {
-	  background-color: #0070BB;
-	  color: #ffffff;
+	background-color: #0070BB;
+	color: #ffffff;
 	}
-  
-	
-  
+
 	.table div {
-	  padding: 10px;
-	  border: 1px solid #ccc;
+	padding: 10px;
+	border: 1px solid #ccc;
 	}
+
 
  	/* Additional prices */
 
@@ -376,11 +380,37 @@
 	}
     
 
-    .montaj-info-container content p {
-        color: #ffffff;
-        font-size: 20px;
-        line-height: 1.5;
+    .montaj-info p {
+        max-width: var(--widthmin);
+		margin: 20px auto 40px auto;
+		line-height: 28px;
+		box-sizing: border-box;
     }
+
+	@media screen and (max-width: 1111px) {
+		.montaj-info p {
+			font-size: 20px;
+		}
+		.montaj-info-content {
+			padding: 15px;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.montaj-info p {
+			font-size: 19px;
+			line-height: 25px;
+		}
+		.montaj-info-content {
+			padding: 10px;
+		}
+	}
+
+	@media screen and (max-width: 510px) {
+		.montaj-info p {
+			font-size: 18px;
+		}
+	}
 
 
 
