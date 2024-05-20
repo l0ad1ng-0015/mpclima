@@ -66,7 +66,7 @@
 </div>
 
 <div class="container">
-    <div class="social">
+    <!-- <div class="social">
 
 
  
@@ -85,10 +85,6 @@
             
             
         </ul>
-            <!-- <b>Централен офис: ул.Московска 3, София</b>
-            <b>Телефони: 0899 591664, 0898 414816</b>
-            <b>Работно време: Понеделник-Петък 8:00 - 20:00</b> -->
-
         <ul>
             <li>
                 <p>Централен офис: </p>
@@ -101,7 +97,7 @@
             </li>
         </ul>
         
-    </div>
+    </div> -->
     
    
     
@@ -150,7 +146,7 @@
     .container {
         display: flex;
         justify-content: center;
-        /* border: solid 1px green; */
+        border: solid 1px green;
         width: 100%;
         gap: 10rem;
         flex-wrap: wrap-reverse;
@@ -163,12 +159,14 @@
 
     .contact-content {
         width: 100%;
-        max-width: 500px;
+        max-width: 400px;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 25px;
         border-radius: 25px;
         text-align: center;
     }
+
+    
 
     .contact h2,
     .contact p {

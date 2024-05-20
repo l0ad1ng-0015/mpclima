@@ -13,6 +13,19 @@
 	let services = [
 	  { name: 'Монтаж на външно тяло на мултисплит при наличие на тръбен път', price: '140 лв.' },
 	  { name: 'Монтаж на вътрешно тяло 7 - 14 000 BTU на мултисплит при наличие на тръбен път', price: '60 лв.' },
+	  { name: 'Монтаж на вътрешно тяло 15 - 24 000 BTU на мултисплит при наличие на тръбен път', price: '90 лв.'},
+	  { name: 'Монтаж на климатик на 2 етапа', price: '70 лв.'},
+	  { name: 'Монтаж на кондензна помпа', price: '60 лв.'},
+	  { name: 'Монтаж на външно тяло с монтажен профил на л.м.', price: '10 лв.'},
+	  { name: 'Монтаж със строително скеле (осигурено от нас - височина 2 м)', price: '60 лв.'},
+	  { name: 'Начисляване на такса при "нестандартен монтаж" /след предварително съгласуване с клиента преди започване на монтажа/', price: '50 - 100 лв.'},
+	  { name: 'Експресен монтаж в рамките на 24 часа', price: 'По договаряне'},
+	//   { name: '', price: ''},
+	//   { name: '', price: ''},
+	//   { name: '', price: ''},
+	//   { name: '', price: ''},
+	//   { name: '', price: ''},
+	//   { name: '', price: ''},
 	];
 	// Additional prices
 </script>
@@ -136,18 +149,18 @@
 
   <!-- Additional prices -->
   
-  <div class="table-container">
-	<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
-	<div class="table">
-	<div>Услуга</div>
-	<div class="price">Цена</div>
-	{#each services as service}
-	  <div>{service.name}</div>
-	  <div>{service.price}</div>
-	{/each}
-  	</div>
-  </div>
-  
+<div class="table-container">
+		<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
+		<div class="table">
+			<div>Услуга</div>
+			<div class="price">Цена</div>
+			{#each services as service}
+			<div>{service.name}</div>
+			<div>{service.price}</div>
+			{/each}
+		</div>
+		<p id="p-warning" style="color: red; margin-top: 20px;  "><strong>ВАЖНО: Цените включени по-горе се отнасят само за конкретната дейност. <br> За да видите и другите цени кликнете</strong> <a href="/activities/нестандартни-услуги">TУК</a> </p>
+</div>
   
 <!-- Additional prices -->
 
@@ -303,11 +316,21 @@
 		margin-top: 70px; 
 	}
 
+	.table-container a {
+		color: rgba(216, 1, 1, 0.885); 
+		text-decoration: none;
+	}
+	.table-container a:hover{
+		color: #ff0000;
+		transition: 0.3s;
+	}
+
 	.table {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	line-height: 1.5; 
 	}
 
 	.table > div:nth-child(2n) {
@@ -331,9 +354,17 @@
 
 	.table div {
 	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
 	border: 1px solid #ccc;
 	}
 
+	@media screen and (max-width: 510px) {
+		.table div {
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	} 
 
  	/* Additional prices */
 
@@ -372,12 +403,11 @@
         padding: 30px;
     }
     
-    .montaj-info-container content h3 {
-        /* margin-top: 10px; */
+    /* .montaj-info-container content h3 {
 		font-size: 35px;
 		font-weight: bold;
 		color: #ddd;
-	}
+	} */
     
 
     .montaj-info p {
