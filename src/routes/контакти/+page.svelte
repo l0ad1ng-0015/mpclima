@@ -66,7 +66,7 @@
 </div>
 
 <div class="container">
-    <!-- <div class="social">
+    <div class="social">
 
 
  
@@ -97,7 +97,7 @@
             </li>
         </ul>
         
-    </div> -->
+    </div>
     
    
     

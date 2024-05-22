@@ -267,6 +267,12 @@
 		.montaj-container {
 			width: calc(100% - 40px); 
 		}
+		.main-title {
+			font-size: 2.5rem;
+		}
+		.container-title b {
+			font-size: 2.15rem;
+		}
 		}
 
 .montaj-container li button {
