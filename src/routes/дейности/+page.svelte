@@ -11,7 +11,7 @@
     <a href="/activities/сервизно_обслужване">
         <button type="button">СЕРВИЗНО ОБСЛУЖВАНЕ</button>
     </a>
-    <a href="/activities/допълнителни-услуги">
+    <a href="/activities/нестандартни-услуги">
         <button type="button">НЕСТАНДАРТНИ УСЛУГИ</button>
     </a>
 </div>
