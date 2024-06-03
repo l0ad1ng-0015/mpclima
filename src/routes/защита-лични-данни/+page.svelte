@@ -130,6 +130,7 @@
     }
 
     .content h1 {
+        font-size: 3.5rem;
         margin-top: 30px;
         margin-bottom: 35px;
     }

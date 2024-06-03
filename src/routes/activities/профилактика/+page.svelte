@@ -17,14 +17,10 @@
 	  { name: 'Годишно обслужване на четворен мултисплит', price: '240 лв.'},
 	  { name: 'Годишно обслужване на петорен мултисплит', price: '300 лв.'},
 	//   { name: '', price: ''},
-	//   { name: '', price: ''},
 	];
 	// Additional prices
   </script>
   
-  	<!-- <div class="main-title">
-		Профилактика на климатици
-	</div> -->
   
   <div class="prophylaxis-container">
 	  <h1 class="prophylaxis-header">Профилактика на климатици</h1>
@@ -63,14 +59,14 @@
 			{/each}
 		</div>
 		<p id="p-warning" style="color: red; margin-top: 20px;  "><strong>ВАЖНО: Цените включени по-горе се отнасят само за конкретната дейност. <br> За да видите и другите цени кликнете</strong> <a href="/activities/нестандартни-услуги">TУК</a> </p>
-</div>
+	</div>
 
 	  <div class="prophylaxis-container">
 		<div class="prophylaxis-content">
 			<p>
 			  Не чакайте климатикът ви да започне да създава проблеми. Планирайте профилактика още днес и се насладете на свеж и комфортен въздух във вашия дом или офис. Свържете се с нас за повече информация и запазване на час.
 			</p>
-			<a href="contact.html" class="prophylaxis-button">Свържете се с нас</a>
+			<a href="/контакти" class="prophylaxis-button">Свържете се с нас</a>
 		  </div>
 		</div>
   

@@ -1,10 +1,14 @@
 
 <script>
-    let showAdditionalSection = false;
-  
-    function toggleSection() {
-      showAdditionalSection = !showAdditionalSection;
-    }
+    // Data for the table
+	let services = [
+		{ name: 'Демонтаж на парапети и всякакви препятствие в терасата', price: '80лв'},
+		{ name: 'Демонтаж на стъклопакет | прозорец (единицен с размери 60-120см)', price: '70лв'},
+		{ name: 'Демонтаж на стъклопакет, двоен - цени само с предварителен огле и по преценка на монтажника', price: 'от 70лв нагоре'},
+		// { name: '', price: ''},
+		// { name: '', price: ''},
+	];
+	// Additional prices
   </script>
   
   	<div class="main-title">
@@ -28,15 +32,28 @@
   		</div>
   	</div>
   
-      <div class="demontaj-price">
+      
+    
+		<div class="table-container">
+			<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
+			<div class="table">
+				<div>Услуга</div>
+				<div class="price">Цена</div>
+				{#each services as service}
+				<div>{service.name}</div>
+				<div>{service.price}</div>
+				{/each}
+			</div>
+			<p id="p-warning" style="color: red; margin-top: 20px;  "><strong>ВАЖНО: Цените включени по-горе се отнасят само за конкретната дейност. <br> За да видите и другите цени кликнете</strong> <a href="/activities/нестандартни-услуги">TУК</a> </p>
+		</div>
+
+
+        <!--<div class="demontaj-price">
         <h3>
             <b>Демонтаж на препятствия </b>
-        </h3>
-    
-        <div class="demontaj-price-box">
+        </h3> 
+		<div class="demontaj-price-box">
             <p>
-                <!-- <span>Услуга</span>
-                <span>Цена</span> -->
                 Услуга
                 <p2>Цена</p2>
             </p>
@@ -62,7 +79,8 @@
         <div class="demontaj-price-box-warn">
             <b>Тези цени се отнасят само за монтаж на климатици, ако<br> искате да видите допълнителните ни цени кликнете <a href="/activities/допълнителни-цени">тук</a> </b>
         </div>
-    </div>
+		</div> -->
+    
   
   
   <style>
@@ -142,7 +160,7 @@
 		margin: 40px auto;
 	}
 
-	.demontaj-price p {
+	/* .demontaj-price p {
 		background: rgba(0, 0, 0, 0.246);
 		display: flex;
 		align-items: center;
@@ -152,9 +170,69 @@
 		gap: 10px;
    	 	border-left: 1px solid var(--light);
     	border-right: 1px solid var(--light);
+	} */
+
+
+	/* Additional prices */
+	.table-container {
+		max-width: 1280px;
+		margin: 0 auto;
+		margin-bottom: 60px;
 	}
 
-		.demontaj-price-box {
+	.table-container a {
+		color: rgba(216, 1, 1, 0.885); 
+		text-decoration: none;
+	}
+	.table-container a:hover{
+		color: #ff0000;
+		transition: 0.3s;
+	}
+
+	.table {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1px;
+	margin: 0 auto;
+	line-height: 1.5; 
+	}
+
+	.table > div:nth-child(2n) {
+	background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.table > div:nth-child(2n+1) {
+	background-color: rgba(0, 0, 0, 0.356);
+	}
+
+	.table > div:first-child {
+	background-color: #0070BB;
+	color: #ffffff;
+	font-weight: bold;
+	}
+
+	.table > div:first-child + div {
+	background-color: #0070BB;
+	color: #ffffff;
+	}
+
+	.table div {
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid #ccc;
+	}
+
+	@media screen and (max-width: 510px) {
+		.table div {
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	} 
+
+ 	/* Additional prices */
+
+		/* .demontaj-price-box {
 			margin: 20px; 
 		}
 		.demontaj-price-box-warn b {
@@ -194,7 +272,7 @@
 			margin: 0;
 			border-left: 1px solid var(--light);
 			border-right: 1px solid var(--light);
-		}
+		} */
 
     b {
         font-size: 35px;
@@ -209,6 +287,13 @@
 
 	h2 {
 		font-size: 30px;
+		font-weight: bold;
+		color: #ddd;
+	}
+
+	h3 {
+		/* margin-top: 40px; */
+		font-size: 35px;
 		font-weight: bold;
 		color: #ddd;
 	}

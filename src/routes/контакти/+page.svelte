@@ -97,7 +97,7 @@
             </li>
         </ul>
         
-    </div>
+    </div> 
     
    
     
@@ -109,7 +109,7 @@
         
             <form on:submit|preventDefault={submitForm} class="contact-form">
                 <input type="hidden" bind:value={apples} />
-                <input type="text" name="name" bind:value={name} placeholder="Име *" required  title="Моля, попълнете това поле">
+                <input type="text" name="name" bind:value={name} placeholder="Вашите имена *" required  title="Моля, попълнете това поле">
                 <input type="number" name="phone" bind:value={phone} placeholder="Телефон *" required title="Моля, попълнете това поле">
                 <input type="email" name="email" bind:value={email} placeholder="Имейл *" required title="Моля, попълнете това поле">
                 <input type="text" name="your-subject" bind:value={subject} placeholder="Относно">
@@ -147,7 +147,7 @@
         display: flex;
         justify-content: center;
         border: solid 1px green;
-        width: 100%;
+        width: 78%;
         gap: 10rem;
         flex-wrap: wrap-reverse;
         align-items: flex-end;
@@ -158,7 +158,7 @@
     
 
     .contact-content {
-        width: 100%;
+        /* width: 100%; */
         max-width: 400px;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 25px;
@@ -232,19 +232,21 @@
 
     .contact a {
         color: #0070BB;
+        
+        text-decoration: none;
     }
     .contact a:hover{
         color: #00518A;
     }
 
     .social iframe { 
-    border: 6px solid #0070FF; /* Blue border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-    height: 500px;
-    width: 600px;
-    margin: 0 auto;
-    display: block;
-}
+        border: 6px solid #0070FF; /* Blue border */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+        height: 500px;
+        width: 600px;
+        margin: 0 auto;
+        display: block;
+    }
 
 
 /* Add this style for the Google link */
@@ -270,7 +272,7 @@
 		.social ul li a {
         font-size: 16px;
         text-transform: none;
-        color: white;
+        color: #cacaca;
         text-decoration: none;
         font-weight: 300;
         font-size: 20px;
@@ -283,11 +285,61 @@
         font-size: 20px;
     }
     .social ul li a:hover {
-        color: #888888;
+        color: white;
     }
 		.social ul li	{
 			color: #bbbbbb;
 		}
 
+    @media screen and (min-width: 734px) {
+        .contact-content {
+            width: 100%;
+        }
+    }
 
+    
+    @media screen and (max-width: 733px) {
+        .container {
+            
+            padding: 30px 0;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        .contact-content {
+            width: 224px;
+        }
+
+        .contact-content button {
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        .contact-content p {
+            font-size: 1rem;
+            margin: 13px auto;
+        }
+        .contact input[type="text"],
+        .contact input[type="number"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 90%; 
+        }
+
+        .social iframe { 
+            height: 400px;
+            width: 450px;
+        }
+
+        .content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 595px) {
+        .social iframe {
+            height: 400px;
+            width: 250px;
+        }
+    }
 </style>
