@@ -9,7 +9,7 @@
   
     <!-- Услуги Section -->
     <div class="services" style="margin-top: 60px;">
-        <h2>Услуги</h2>
+        <a href="/дейности" class="a-h2">Услуги</a>
         <div class="service-items">
             <div class="service-item">
                 <img src="/images/icons/stickman-montaj.png" alt="Service 1">
@@ -41,7 +41,7 @@
   
     <!-- Контакти Section -->
     <div class="contact">
-        <h2>Контакти</h2>
+        <a href="/контакти" class="a-h2">Контакти</a>
         <div class="contact-items">
             <div class="contact-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...$$props}><path fill="white" d="M10 6h4V4h-4zm8 17q-2.075 0-3.537-1.463T13 18t1.463-3.537T18 13t3.538 1.463T23 18t-1.463 3.538T18 23M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v2.9q0 .45-.387.675t-.813.025q-.65-.3-1.362-.45T18 11q-2.9 0-4.95 2.05T11 18q0 .45.063.913t.187.912q.125.425-.137.8t-.688.375zm14.5-3.2v-2.3q0-.2-.15-.35T18 15t-.35.15t-.15.35v2.275q0 .2.075.388t.225.337l1.5 1.5q.15.15.35.15T20 20t.15-.35t-.15-.35z"/></svg>
@@ -86,10 +86,15 @@
         max-width: 1200px;
     }
 
-    .services h2, .contact h2 {
+    .a-h2 {
         margin-bottom: 20px;
         font-size: 2.5em;
-        color: #9e9d9d;
+        color: #c1bebe;
+        text-decoration: none;
+    }
+    .a-h2:hover {
+        color: white;
+        transition: 0,3s;
     }
 
     .service-items, .contact-items {
@@ -116,6 +121,10 @@
 
     .service-item:hover, .contact-item:hover {
         border-color: #0070BB;
+        transition: 0.23s;
+    }
+    .contact-item:hover {
+        border-radius: 30px;
     }
 
     .service-item img {

@@ -146,7 +146,7 @@
     .container {
         display: flex;
         justify-content: center;
-        border: solid 1px green;
+        /* border: solid 1px green; */
         width: 78%;
         gap: 10rem;
         flex-wrap: wrap-reverse;
