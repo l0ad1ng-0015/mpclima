@@ -114,7 +114,7 @@
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 2px;
+	height: 3px;
 	background-color: #ffffff;
 	transition-duration: .25s;
 	}
@@ -258,6 +258,27 @@
 			padding: 24px 24px;
 		}
 	}
+
+
+	 @media screen and (max-width: 390px) { /*RAZMER ZA NEW GEN IPHONE */
+		.logo {
+			width: 150px;
+		}
+		.nav {
+			padding-top: 7px;
+		}
+		.menu__btn {
+			top: 28px;
+			width: 32px;
+		}
+		.menu__box {
+			padding-top: 20px;
+		}
+		.menu__item {
+			padding: 24px 24px;
+		}
+	}
+	
 
 
 	.nav ul li {

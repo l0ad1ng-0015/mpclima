@@ -29,6 +29,12 @@ body {
     }
 }
 
+@media screen and (max-width: 200px) {
+    body {
+        background-size: cover; /* Override for smaller screens */
+    }
+}
+
 
 .container {
     width: 60%;

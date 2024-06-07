@@ -1,11 +1,14 @@
 <div class="container">
-    <h1>Добре дошли!</h1>
-    <p class="p-main">Фирма MP Clima е компания в областта на климатичните инсталации, предоставяща висококачествени услуги и решения за вашия дом или бизнес. Ние се стремим към съвършенство във всяка стъпка, от продажбата до монтажа и поддръжката на вашите климатици, осигурявайки комфорт и надеждност на нашите клиенти.</p>
-    <!-- <div>
-        <a href="/продажба">
-            <button type="button">ПРОДАЖБА КЛИМАТИЦИ</button>
-        </a>
-    </div> -->
+    <div>
+        <h1>Добре дошли!</h1>
+        <p class="p-main">Фирма MP Clima е компания в областта на климатичните инсталации, предоставяща висококачествени услуги и решения за вашия дом или бизнес. Ние се стремим към съвършенство във всяка стъпка, от продажбата до монтажа и поддръжката на вашите климатици, осигурявайки комфорт и надеждност на нашите клиенти.</p>
+        <!-- <div>
+            <a href="/продажба">
+                <button type="button">ПРОДАЖБА КЛИМАТИЦИ</button>
+            </a>
+        </div> -->
+    </div>
+    
   
     <!-- Услуги Section -->
     <div class="services" style="margin-top: 60px;">
@@ -64,12 +67,12 @@
 </div>
 
 <style>
-    body {
+    /* body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .container {
         display: flex;
@@ -122,6 +125,7 @@
     .service-item:hover, .contact-item:hover {
         border-color: #0070BB;
         transition: 0.23s;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.1);
     }
     .contact-item:hover {
         border-radius: 30px;
@@ -156,8 +160,28 @@
 
       h1{
         margin-top: 0;
+        font-size: 2.7rem;
+      }
+
+      .p-main {
+        font-size: 0.9rem;
       }
     }
+
+    @media screen and (max-width: 390px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .p-main {
+            font-size: 0.856rem;
+        }
+
+        .service-item h3, .contact-item h3 {
+            font-size: 0.5rem;
+        }
+    }
+
 
 
     @media screen and (min-width: 1364px) {
@@ -215,4 +239,9 @@
       background-color: #0070BB;
       color: #fff;
     }
+
+    h1 {
+        margin-top: 60px;
+    }
+    
 </style>
