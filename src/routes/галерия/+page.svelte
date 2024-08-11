@@ -202,6 +202,7 @@
 
 .card:hover {
     transform: scale(1.1); /* Scale up the partner item on hover */
+    transition: 0.3s;
   }
 
 @media screen and (min-width: 600px) {

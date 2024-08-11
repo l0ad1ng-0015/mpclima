@@ -26,7 +26,7 @@
     <div class="background"></div>
   </div>
   <div class="partners-item3">
-    <a href="https://general-bulgaria.com//" target="_blank">
+    <a href="https://general-bulgaria.com/" target="_blank">
       <img src="/partners/generalLogo.png" alt="Img 3">
     </a>
     <div class="background"></div>

@@ -13,7 +13,7 @@ body {
 
 @media screen and (max-width: 1220px) {
     body {
-        background-size: cover; /* Override for smaller screens */
+        background-size: cover; /* Override for medium screens */
     }
 }
 
@@ -25,13 +25,10 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        background-size: cover; /* Override for smaller screens */
-    }
-}
-
-@media screen and (max-width: 200px) {
-    body {
-        background-size: cover; /* Override for smaller screens */
+        background-size: contain; /* Ensure the whole image is visible on mobile */
+        background-attachment: scroll; /* Disable fixed background on mobile */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center center; /* Center the background image */
     }
 }
 

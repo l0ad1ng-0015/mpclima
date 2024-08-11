@@ -36,7 +36,7 @@
 </div>
 <div class="container-title">
 		<h4>
-			<b>Стандартни монтажни дейности</b>
+			<b style="padding: 0 28px">Стандартни монтажни дейности</b>
 		</h4>
 	</div>
 <div class="montaj-container-wrapper">
@@ -150,7 +150,7 @@
   <!-- Additional prices -->
   
 <div class="table-container">
-		<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
+		<h3 style="margin: 40px 5px 25px">Нестандартни услуги</h3>
 		<div class="table">
 			<div>Услуга</div>
 			<div class="price">Цена</div>
@@ -202,7 +202,7 @@
 
 	/* .montaj-title {
 		text-align: center;
-		font-size: 30px;
+		font-size: mon;
 		font-weight: bold;
 		color: white; 
 		margin-bottom: 10px;
@@ -393,8 +393,7 @@
 			max-width: 90%;
 		}
 		.table {
-			margin-left: 40px;
-			margin-right: 40px;
+			margin: 0 15px;
 		}
 	}
 
@@ -442,11 +441,11 @@
 		}
 	}
 
-	@media screen and (max-width: 510px) {
+	/* @media screen and (max-width: 510px) {
 		.montaj-info p {
 			font-size: 18px;
 		}
-	}
+	} */
 
 
 
@@ -492,6 +491,13 @@
 		font-weight: bold;
 		color: #ddd;
 	}
+
+	@media screen and (max-width: 530px) {
+		h3 {
+			font-size: 30px;
+		}
+	}
+
 	h4 {
 		font-family: 'Poppins', sans-serif !important;
     	/* background: #eff3f8; */

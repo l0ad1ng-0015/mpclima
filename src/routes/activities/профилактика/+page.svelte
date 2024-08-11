@@ -49,7 +49,7 @@
   	</div>
   
 	  <div class="table-container">
-		<h3 style="margin-top: 40px; margin-bottom: 25px">Нестандартни услуги</h3>
+		<h3 style="margin: 40px 5px 25px">Нестандартни услуги</h3>
 		<div class="table">
 			<div>Услуга</div>
 			<div class="price">Цена</div>
@@ -228,6 +228,12 @@
 	border: 1px solid #ccc;
 	}
 
+	@media screen and (max-width: 880px) {
+		.table {
+			margin: 0 15px;
+		}
+	}
+
 	@media screen and (max-width: 510px) {
 		.table div {
 			padding-left: 7px;
@@ -280,6 +286,12 @@
 		font-size: 35px;
 		font-weight: bold;
 		color: #ddd;
+	}
+
+	@media screen and (max-width: 530px) {
+		h3 {
+			font-size: 30px;
+		}
 	}
 
 	p {
