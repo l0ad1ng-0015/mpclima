@@ -7,38 +7,36 @@
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)), url(/static/images/background_long.png);
     background-position: center top;
-    background-size: 75%; /* Default value for larger screens */
+    background-size: cover; /* Default value for most screens */
     background-attachment: fixed;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 @media screen and (max-width: 1220px) {
     body {
-        background-size: cover; /* Override for medium screens */
+        background-size: cover; /* Ensure background covers the screen on medium screens */
     }
 }
 
 @media screen and (max-width: 880px) {
     body {
-        background-size: cover; /* Override for smaller screens */
+        background-size: cover; /* Ensure background covers the screen on smaller screens */
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
-        background-size: contain; /* Ensure the whole image is visible on mobile */
-        background-attachment: scroll; /* Disable fixed background on mobile */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        background-position: center center; /* Center the background image */
+        background-size: 100%; /* Adjust size for mobile, maintaining full coverage */
+        background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
+        background-position: center top; /* Center the background image */
     }
 }
-
 
 .container {
     width: 60%;
     padding: 30px 30px;
     margin: 0 auto;
 }
-
 
 h1 {
     font-size: 50px;
@@ -51,11 +49,7 @@ p {
     line-height: 25px;
 }
 
-
-
-
-
-button{
+button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -66,12 +60,11 @@ button{
     background-color: rgba(0, 0, 0, 0.17);
     color: #fff;
     cursor: pointer;
-    /* position: relative; */
     overflow: hidden;
     z-index: 1;
 }
 
-span{
+span {
     background: #0070BB;
     height: 100%;
     width: 0;
@@ -82,24 +75,26 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
-button:hover span{
+
+button:hover span {
     width: 100%;
 }
-button:hover{
+
+button:hover {
     background-color: #0070BB;
-    color: #fff
+    color: #fff;
 }
 
 .sub-nav {
-    display: none; /* Hide submenus by default */
+    display: none;
     position: absolute;
-    background-color: transparent; /* Set transparent background */
+    background-color: transparent;
     border-radius: 5px;
-    padding: 0; /* Remove padding to handle spacing with pseudo-element */
-    z-index: -1; /* Set z-index to position submenu below main menu items */
-    transform: rotate(90deg) scale(0); /* Apply initial rotation and scaling */
-    transform-origin: top left; /* Set the rotation origin */
-    transition: transform 0.3s, opacity 0.3s, background-color 0.3s; /* Add transitions for smooth animation */
+    padding: 0;
+    z-index: -1;
+    transform: rotate(90deg) scale(0);
+    transform-origin: top left;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 
 .submenu:hover .sub-nav {
@@ -109,76 +104,38 @@ button:hover{
     background-color: rgba(34, 34, 34, 0.9);
     padding: 10px;
     border: 2px solid #0070BB;
-    z-index: 1; /* Keep the z-index as 1 or remove it to use the default stacking order */
+    z-index: 1;
 }
-
-
-
-/* Style for the pseudo-element */
-.submenu:hover .sub-nav {
-    display: block;
-    transform: rotate(0) scale(1);
-    opacity: 1;
-    background-color: rgba(34, 34, 34, 0.9);
-    padding: 10px;
-    border: 2px solid #0070BB;
-    z-index: 1; /* Keep the z-index as 1 or remove it to use the default stacking order */
-}
-
-
-
-/*за събмит нищото*/
-
-
-
-/* Rest of the styles remain the same */
 
 .thankyou h2,
 .thankyou p {
     color: #fff;
 }
 
-
-/* .social {
-    padding: 20px;
-} */
-
 .social h2 {
     font-size: 24px;
-    color: #333; /* Text color */
+    color: #333;
 }
 
 .social p {
     font-size: 16px;
-    color: #666; /* Text color */
+    color: #666;
     margin-bottom: 10px;
 }
 
-/* Style for the phone numbers */
 .social .phone {
     font-weight: bold;
-    color: #007BFF; /* Blue color */
+    color: #007BFF;
 }
-
 
 .social h2 {
     margin: 0 auto;
     display: block;
 }
 
- /* .social iframe { 
-    border: 5px solid #007BFF; /* Blue border */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
-    /* height: 500px;
-    width: 600px;
-    margin: 0 auto;
-    display: block;
-} */ */ */
- 
 #promotions-message {
     display: none;
     text-align: center;
     color: #fff;
     margin-top: 20px;
 }
-

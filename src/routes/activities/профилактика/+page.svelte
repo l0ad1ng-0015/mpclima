@@ -48,7 +48,7 @@
 
   	</div>
   
-	  <div class="table-container">
+	<div class="table-container">
 		<h3 style="margin: 40px 5px 25px">Нестандартни услуги</h3>
 		<div class="table">
 			<div>Услуга</div>
@@ -61,14 +61,14 @@
 		<p id="p-warning" style="color: red; margin-top: 20px;  "><strong>ВАЖНО: Цените включени по-горе се отнасят само за конкретната дейност. <br> За да видите и другите цени кликнете</strong> <a href="/activities/нестандартни-услуги">TУК</a> </p>
 	</div>
 
-	  <div class="prophylaxis-container">
+	<div class="prophylaxis-container">
 		<div class="prophylaxis-content">
 			<p>
 			  Не чакайте климатикът ви да започне да създава проблеми. Планирайте профилактика още днес и се насладете на свеж и комфортен въздух във вашия дом или офис. Свържете се с нас за повече информация и запазване на час.
 			</p>
 			<a href="/контакти" class="prophylaxis-button">Свържете се с нас</a>
-		  </div>
 		</div>
+	</div>
   
   
   <style>
