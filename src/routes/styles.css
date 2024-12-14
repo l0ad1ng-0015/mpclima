@@ -1,141 +1,142 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)), url(/static/images/background_long.png);
-    background-position: center top;
-    background-size: cover; /* Default value for most screens */
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)),
+		url(/static/images/background_long.png);
+	background-position: center top;
+	background-size: cover; /* Default value for most screens */
+	background-attachment: fixed;
+	background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 @media screen and (max-width: 1220px) {
-    body {
-        background-size: cover; /* Ensure background covers the screen on medium screens */
-    }
+	body {
+		background-size: cover; /* Ensure background covers the screen on medium screens */
+	}
 }
 
 @media screen and (max-width: 880px) {
-    body {
-        background-size: cover; /* Ensure background covers the screen on smaller screens */
-    }
+	body {
+		background-size: cover; /* Ensure background covers the screen on smaller screens */
+	}
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-size: 100%; /* Adjust size for mobile, maintaining full coverage */
-        background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
-        background-position: center top; /* Center the background image */
-    }
+	body {
+		/* background-size: 100%; Adjust size for mobile, maintaining full coverage */
+		background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
+		background-position: center top; /* Center the background image */
+	}
 }
 
 .container {
-    width: 60%;
-    padding: 30px 30px;
-    margin: 0 auto;
+	width: 60%;
+	padding: 30px 30px;
+	margin: 0 auto;
 }
 
 h1 {
-    font-size: 50px;
-    margin-top: 80px;
+	font-size: 50px;
+	margin-top: 80px;
 }
 
 p {
-    margin: 10px auto;
-    font-weight: 100;
-    line-height: 25px;
+	margin: 10px auto;
+	font-weight: 100;
+	line-height: 25px;
 }
 
 button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 40px 15px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #0070BB;
-    background-color: rgba(0, 0, 0, 0.17);
-    color: #fff;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 1;
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 40px 15px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #0070bb;
+	background-color: rgba(0, 0, 0, 0.17);
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1;
 }
 
 span {
-    background: #0070BB;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
+	background: #0070bb;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
 }
 
 button:hover span {
-    width: 100%;
+	width: 100%;
 }
 
 button:hover {
-    background-color: #0070BB;
-    color: #fff;
+	background-color: #0070bb;
+	color: #fff;
 }
 
 .sub-nav {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 0;
-    z-index: -1;
-    transform: rotate(90deg) scale(0);
-    transform-origin: top left;
-    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 0;
+	z-index: -1;
+	transform: rotate(90deg) scale(0);
+	transform-origin: top left;
+	transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 
 .submenu:hover .sub-nav {
-    display: block;
-    transform: rotate(0) scale(1);
-    opacity: 1;
-    background-color: rgba(34, 34, 34, 0.9);
-    padding: 10px;
-    border: 2px solid #0070BB;
-    z-index: 1;
+	display: block;
+	transform: rotate(0) scale(1);
+	opacity: 1;
+	background-color: rgba(34, 34, 34, 0.9);
+	padding: 10px;
+	border: 2px solid #0070bb;
+	z-index: 1;
 }
 
 .thankyou h2,
 .thankyou p {
-    color: #fff;
+	color: #fff;
 }
 
 .social h2 {
-    font-size: 24px;
-    color: #333;
+	font-size: 24px;
+	color: #333;
 }
 
 .social p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
+	font-size: 16px;
+	color: #666;
+	margin-bottom: 10px;
 }
 
 .social .phone {
-    font-weight: bold;
-    color: #007BFF;
+	font-weight: bold;
+	color: #007bff;
 }
 
 .social h2 {
-    margin: 0 auto;
-    display: block;
+	margin: 0 auto;
+	display: block;
 }
 
 #promotions-message {
-    display: none;
-    text-align: center;
-    color: #fff;
-    margin-top: 20px;
+	display: none;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
 }
