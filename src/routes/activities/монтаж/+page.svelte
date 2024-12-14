@@ -37,7 +37,9 @@
 	// Additional prices
 </script>
 
-<div class="main-title">Монтаж на климатици</div>
+<div class="main-title">
+	<h1 class="main-title-header">Монтаж на климатици</h1>
+</div>
 <div class="container-title">
 	<h4>
 		<b style="padding: 0 28px">Стандартни монтажни дейности</b>
@@ -329,14 +331,20 @@
     border-top: 50px solid #ddd; /* Adjust the color and size as needed */
 
 	.main-title {
-		text-align: center;
-		padding: 20px 10px;
-		margin: 40px 0;
-		font-size: 40px;
-		font-weight: bold;
+		max-width: 800px;
+		margin: 0 auto;
+		/* margin-bottom: 60px; */
+		padding: 16px 46px;
 		background-color: #0000007e;
-		color: #fff;
-		border-radius: 10px;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.main-title-header {
+		text-align: center;
+		font-size: 2.5rem;
+		color: white;
+		margin-bottom: 10px;
 	}
 
 	/* .montaj-title {
@@ -468,6 +476,7 @@
 		gap: 1px;
 		margin: 0 auto;
 		line-height: 1.5;
+		max-width: 1200px;
 	}
 
 	.table > div:nth-child(2n) {
@@ -490,10 +499,13 @@
 	}
 
 	.table div {
+		display: flex;
+		justify-content: center;
 		padding: 10px;
 		padding-left: 15px;
 		padding-right: 15px;
 		border: 1px solid #ccc;
+		align-items: center;
 	}
 
 	@media screen and (max-width: 510px) {

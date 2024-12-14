@@ -6,39 +6,37 @@
 
 body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)),
-		url(./static/images/background_long.png);
+		url(/static/images/background_long.png);
 	background-position: center top;
-	background-size: cover;
+	background-size: cover; /* Default value for most screens */
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (max-width: 1220px) {
 	body {
-		background-size: cover;
-		background-position: center top;
+		background-size: cover; /* Ensure background covers the screen on medium screens */
+	}
+}
+
+@media screen and (max-width: 880px) {
+	body {
+		background-size: cover; /* Ensure background covers the screen on smaller screens */
 	}
 }
 
 @media screen and (max-width: 600px) {
 	body {
-		background-size: cover;
-		background-attachment: scroll;
-		background-position: center top;
+		background-size: 100%; /* Adjust size for mobile, maintaining full coverage */
+		background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
+		background-position: center top; /* Center the background image */
 	}
 }
 
 .container {
 	width: 60%;
-	padding: 30px;
+	padding: 30px 30px;
 	margin: 0 auto;
-}
-
-@media screen and (max-width: 600px) {
-	.container {
-		width: 90%;
-		padding: 20px;
-	}
 }
 
 h1 {
