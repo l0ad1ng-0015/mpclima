@@ -27,7 +27,7 @@ body {
 
 @media screen and (max-width: 600px) {
 	body {
-		/* background-size: 100%; Adjust size for mobile, maintaining full coverage */
+		background-size: cover; /* Adjust size for mobile, maintaining full coverage */
 		background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
 		background-position: center top; /* Center the background image */
 	}
