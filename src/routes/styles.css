@@ -15,7 +15,7 @@ body {
 
 @media screen and (max-width: 1500px) {
 	body {
-		background-size: 90%; /* Ensure background covers the screen on medium screens */
+		background-size: 80%; /* Ensure background covers the screen on medium screens */
 	}
 }
 
