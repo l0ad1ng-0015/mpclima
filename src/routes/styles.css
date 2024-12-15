@@ -13,6 +13,12 @@ body {
 	background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
+@media screen and (max-width: 1500px) {
+	body {
+		background-size: 90%; /* Ensure background covers the screen on medium screens */
+	}
+}
+
 @media screen and (max-width: 1220px) {
 	body {
 		background-size: cover; /* Ensure background covers the screen on medium screens */
@@ -27,9 +33,9 @@ body {
 
 @media screen and (max-width: 600px) {
 	body {
-		background-size: 100%; /* Adjust size for mobile, maintaining full coverage */
-		background-attachment: scroll; /* Disable fixed background on mobile to avoid zoom issues */
-		background-position: center top; /* Center the background image */
+		background-size: cover; /* Adjust size for mobile, maintaining full coverage */
+		/* background-attachment: scroll; Disable fixed background on mobile to avoid zoom issues */
+		/* background-position: center top; Center the background image */
 	}
 }
 
