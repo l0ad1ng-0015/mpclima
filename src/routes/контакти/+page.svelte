@@ -166,6 +166,7 @@
 		text-align: center;
 		font-size: 2.5rem;
 		color: white;
+		margin-top: 10px !important;
 		margin-bottom: 10px;
 	}
 	p,
