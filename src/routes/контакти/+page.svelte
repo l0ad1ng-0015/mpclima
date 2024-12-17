@@ -133,7 +133,7 @@
 					name="message"
 					placeholder="Вашето ъобщение"
 				/>
-				<label for="agree">
+				<label for="agree" style="line-height: 20px;">
 					<input
 						type="checkbox"
 						id="agree"
@@ -176,12 +176,13 @@
 
 	.container {
 		display: flex;
-		justify-content: center;
-		/* border: solid 1px green; */
 		width: 78%;
 		gap: 10rem;
 		flex-wrap: wrap-reverse;
+		justify-content: center;
 		align-items: flex-end;
+		padding: 0 !important;
+		/* border: solid 1px green; */
 
 		/* align-items: stretch; */
 	}
@@ -313,6 +314,12 @@
 		color: #bbbbbb;
 	}
 
+	@media screen and (max-width: 1640px) {
+		.container {
+			gap: 5rem;
+		}
+	}
+
 	@media screen and (min-width: 734px) {
 		.contact-content {
 			width: 100%;
@@ -326,7 +333,7 @@
 			padding-right: 35px;
 		}
 		.contact-content {
-			width: 224px;
+			width: 300px;
 		}
 
 		.contact-content button {
@@ -357,9 +364,13 @@
 	}
 
 	@media screen and (max-width: 595px) {
+		.container {
+			gap: 3rem;
+		}
+
 		.social iframe {
 			height: 400px;
-			width: 250px;
+			width: 340px;
 		}
 	}
 </style>

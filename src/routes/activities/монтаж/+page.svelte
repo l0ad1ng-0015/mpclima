@@ -1,5 +1,8 @@
 <script>
 	// import { getElementsFromOption } from "photoswipe/dist/types/util/util";
+	export let title = 'Монтаж на климатици | MP Clima';
+	export let description =
+		'Професионален монтаж на климатици от експерти в София. Качествена услуга и достъпни цени.';
 
 	let showAdditionalSection = false;
 
@@ -36,6 +39,15 @@
 	];
 	// Additional prices
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta
+		name="keywords"
+		content="монтаж на климатици, инсталация на климатици, климатизация София"
+	/>
+</svelte:head>
 
 <div class="main-title">
 	<h1 class="main-title-header">Монтаж на климатици</h1>
