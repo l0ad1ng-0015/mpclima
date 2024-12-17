@@ -6,7 +6,7 @@
 
 body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)),
-		url(/static/backgrounds/background_orig_long.jpg);
+		url(/static/backgrounds/background_orig.jpg);
 	background-position: center top;
 	background-size: cover; /* Default value for most screens */
 	background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 @media screen and (max-width: 1220px) {
 	body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)),
-			url(/static/backgrounds/background_orig_small.jpg);
+			url(/static/backgrounds/background_orig_short.jpg);
 		background-size: cover; /* Ensure background covers the screen on medium screens */
 	}
 }
