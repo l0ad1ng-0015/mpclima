@@ -11,12 +11,11 @@
 
 <div class="container">
 	<div>
-		<h1>Добре дошли!</h1>
-		<p class="p-main">
-			Фирма MP Clima е компания в областта на климатичните инсталации, предоставяща висококачествени
-			услуги и решения за вашия дом или бизнес. Ние се стремим към съвършенство във всяка стъпка, от
-			продажбата до монтажа и поддръжката на вашите климатици, осигурявайки комфорт и надеждност на
-			нашите клиенти.
+		<h1>Продажба, монтаж и сервиз на климатици.</h1>
+		<p class="p-main" style="margin-top: 25px; font-size: 18px;">
+			Фирма MP Clima е специализирана в климатичните инсталации, предоставяйки качествени услуги и
+			решения за вашия дом или бизнес. От продажбата до монтажа и поддръжката, ние гарантираме
+			комфорт и надеждност за нашите клиенти.
 		</p>
 		<!-- <div>
             <a href="/продажба">
@@ -27,30 +26,30 @@
 
 	<!-- Услуги Section -->
 	<div class="services" style="margin-top: 60px;">
-		<a href="/дейности" class="a-h2">Услуги</a>
+		<a href="/услуги" class="a-h2">Услуги</a>
 		<div class="service-items">
 			<div class="service-item">
 				<img src="/images/icons/stickman-montaj.png" alt="Service 1" />
 				<h3>Монтаж</h3>
 				<p>Професионална инсталация на климатици.</p>
 				<a href="/activities/монтаж">
-					<button style="padding: 10px 12px;" class="more">Разберете повече</button>
+					<button style="padding: 10px 12px;" class="more">Виж повече</button>
 				</a>
 			</div>
 			<div class="service-item">
-				<img src="/images/icons/stickman-demontaj.png" alt="Service 3" />
+				<img src="/images/icons/stickman-demontaj.png" alt="Service 2" />
 				<h3>Демонтаж</h3>
 				<p>Безопасно демонтиране на стари или повредени климатици.</p>
 				<a href="/activities/демонтаж">
-					<button style="padding: 10px 12px;" class="more">Разберете повече</button>
+					<button style="padding: 10px 12px;" class="more">Виж повече</button>
 				</a>
 			</div>
 			<div class="service-item">
-				<img src="/images/icons/stickman-profilaktika.png" alt="Service 2" />
+				<img src="/images/icons/stickman-profilaktika.png" alt="Service 3" />
 				<h3>Профилактика</h3>
 				<p>Редовна поддръжка и сервиз на вашите климатици.</p>
-				<a href="/activities/профилактика">
-					<button style="padding: 10px 12px;" class="more">Разберете повече</button>
+				<a href="/activities/сервизно-обслужване">
+					<button style="padding: 10px 12px;" class="more">Виж повече</button>
 				</a>
 			</div>
 		</div>
@@ -73,7 +72,7 @@
 					/></svg
 				>
 				<h3>Работно време</h3>
-				<p>Понеделник-Петък 8:00 - 19:00</p>
+				<p style="margin-top: 0">Понеделник-Петък 8:00 - 18:00</p>
 			</div>
 			<div class="contact-item">
 				<svg
@@ -91,8 +90,8 @@
 					/></svg
 				>
 				<h3>Телефони</h3>
-				<a href="tel:0899 591664">0899591664, </a>
-				<a href="tel:0898 414816"> 0898414816 </a>
+				<a href="tel:0898 414816" class="tel"><strong>0898414816</strong> </a>
+				<a href="tel:0899 591664" class="tel"><strong>0899591664</strong> </a>
 			</div>
 			<div class="contact-item">
 				<svg
@@ -146,6 +145,11 @@
 	.a-h2:hover {
 		color: white;
 		transition: 0, 3s;
+	}
+
+	.tel {
+		font-size: 1.3rem !important;
+		margin-bottom: 7px;
 	}
 
 	.service-items,
@@ -212,12 +216,18 @@
 		}
 
 		h1 {
-			margin-top: 0;
-			font-size: 2.7rem;
+			margin-top: 20px !important;
+			font-size: 2.5rem;
 		}
 
 		.p-main {
 			font-size: 0.9rem;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		h1 {
+			font-size: 2.1rem !important;
 		}
 	}
 
@@ -260,14 +270,22 @@
 	.service-item p,
 	.contact-item p,
 	.contact-item a {
-		font-size: 1em;
+		font-size: 1.18em;
 		color: #a9a6a6;
 		text-decoration: none;
 	}
 
+	.service-item p {
+		font-size: 1em !important;
+	}
+
+	.contact-item a {
+		color: #838383ee;
+	}
+
 	.contact-item a {
 		font-size: 1em;
-		color: #fffdfd;
+		color: #b5b3b3;
 		text-decoration: none;
 	}
 	.contact-item a:hover {

@@ -40,7 +40,7 @@
 				</ul>
 			</li>
 			<li class="submenu">
-				<a class="menu__item" href="/дейности">Услуги</a>
+				<a class="menu__item" href="/услуги">Услуги</a>
 			</li>
 			<li class="submenu">
 				<a class="menu__item" href="/контакти">Контакти</a>

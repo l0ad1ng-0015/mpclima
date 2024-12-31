@@ -24,7 +24,7 @@
 		{ name: 'Монтаж на климатик на 2 етапа', price: '70 лв.' },
 		{ name: 'Монтаж на кондензна помпа', price: '60 лв.' },
 		{ name: 'Монтаж на външно тяло с монтажен профил на л.м.', price: '10 лв.' },
-		{ name: 'Монтаж със строително скеле (осигурено от нас - височина 2 м)', price: '60 лв.' },
+		{ name: 'Монтаж със строително скеле (осигурено от нас - височина над 2 м)', price: '60 лв.' },
 		{
 			name: 'Начисляване на такса при "нестандартен монтаж" /след предварително съгласуване с клиента преди започване на монтажа/',
 			price: '50 - 100 лв.'
@@ -83,7 +83,7 @@
 		{:else}
 			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
 		{/if}
-		<h2>Цена: 270лв</h2>
+		<h2>Цена: 280лв</h2>
 	</div>
 
 	<div class="montaj-container">
@@ -109,7 +109,7 @@
 		{:else}
 			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
 		{/if}
-		<h2>Цена: 290лв</h2>
+		<h2>Цена: 300лв</h2>
 	</div>
 
 	<div class="montaj-container">
@@ -135,7 +135,7 @@
 		{:else}
 			<li><button class="btn show-more-btn" on:click={toggleSection}>Покажи повече</button></li>
 		{/if}
-		<h2>Цена: 310лв</h2>
+		<h2>Цена: 320лв</h2>
 	</div>
 
 	<div class="montaj-container">

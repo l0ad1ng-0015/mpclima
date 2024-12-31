@@ -9,18 +9,16 @@
 				this, please consider leaving the website.<br> Your privacy is important to us, and we respect your choice.<br>
 				Thank you for your understanding.</div> -->
 		<h2>За фирмата</h2>
-		Designed and developed by<br />
-		Warning: This website might use cookies to enhance your experience. <br /> If you are not
-		comfortable with this, please consider leaving the website.<br /> Your privacy is important to
-		us, and we respect your choice.<br />
-		Thank you for your understanding.
+		Фирма MP Clima<br /> е специализирана в климатичните инсталации, предоставяйки качествени услуги
+		и решения за вашия дом или бизнес. От продажбата до монтажа и поддръжката, ние гарантираме комфорт
+		и надеждност за нашите клиенти.
 	</div>
 
 	<div class="column">
 		<h2>Контакти</h2>
 		<ul>
 			<li>
-				<a href="tel:0899 591664"
+				<a href="tel:0898 414816" style="font-size: 19px;"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="1em"
@@ -32,9 +30,9 @@
 							fill="#888888"
 							d="M199.232 125.568L90.624 379.008a32 32 0 0 0 6.784 35.2l512.384 512.384a32 32 0 0 0 35.2 6.784l253.44-108.608a32 32 0 0 0 10.048-52.032L769.6 633.92a32 32 0 0 0-36.928-5.952l-130.176 65.088l-271.488-271.552l65.024-130.176a32 32 0 0 0-5.952-36.928L251.2 115.52a32 32 0 0 0-51.968 10.048"
 						/>
-					</svg>0899 591664,</a
+					</svg><strong>0898 414816</strong></a
 				>
-				<a href="tel:0898 414816"><svg />0898 414816</a>
+				<a href="tel:0899 591664" style="font-size: 19px;"><svg /><strong>0899 591664</strong></a>
 			</li>
 
 			<li>
@@ -78,8 +76,12 @@
 	<div class="column">
 		<h2>Услуги</h2>
 		<ul>
-			<li class="first-li"><a href="/каталог">Продажба на климатици</a></li>
-			<li><a href="/дейности">Монтаж и Демонтаж на климатици </a></li>
+			<!-- <li class="first-li"><a href="/продажба">Продажба на климатици</a></li> -->
+			<li>
+				<a href="/монтаж">Монтаж на климатици</a><a href="activities/демонтаж"
+					>Демонтаж на климатици
+				</a>
+			</li>
 			<li><a href="activities/профилактика">Профилактика</a></li>
 			<!-- <li><a href="activities/сервизно_обслужване">Сервизна дейност</a></li> -->
 			<li><a href="activities/нестандартни-услуги">Нестандартлни услуги</a></li>

@@ -75,8 +75,8 @@
 		<ul>
 			<li>
 				<p>Телефони:</p>
-				<a href="tel:0899 591664">0899591664, </a>
-				<a href="tel:0898 414816"> 0898414816 </a>
+				<a href="tel:0899 591664" style="font-size: 24px;">0898414816, </a>
+				<a href="tel:0898 414816" style="font-size: 24px;">0899591664 </a>
 			</li>
 		</ul>
 		<ul>
@@ -90,7 +90,7 @@
 		</ul>
 		<ul>
 			<li>
-				<p>Работно време: Понеделник-Петък 8:00 - 20:00</p>
+				<p>Работно време: Понеделник-Петък 8:00 - 18:00</p>
 			</li>
 		</ul>
 	</div>
@@ -293,7 +293,6 @@
 			list-style: none;
         } */
 	.social ul li a {
-		font-size: 16px;
 		text-transform: none;
 		color: #cacaca;
 		text-decoration: none;
