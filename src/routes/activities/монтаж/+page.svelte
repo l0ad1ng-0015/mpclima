@@ -1,8 +1,8 @@
 <script>
 	// import { getElementsFromOption } from "photoswipe/dist/types/util/util";
-	export let title = 'Монтаж на климатици | MP Clima';
+	export let title = 'Монтаж | MP Clima';
 	export let description =
-		'Професионален монтаж на климатици от експерти в София. Качествена услуга и достъпни цени.';
+		'Професионален монтаж на климатици в София от опитни специалисти. Осигуряваме качествена и надеждна услуга с внимание към детайлите. Предлагаме бърза инсталация, безопасна работа и достъпни цени за вашия комфорт.';
 
 	let showAdditionalSection = false;
 
@@ -45,8 +45,23 @@
 	<meta name="description" content={description} />
 	<meta
 		name="keywords"
-		content="монтаж на климатици, инсталация на климатици, климатизация София"
+		content="монтаж на климатици, демонтаж на климатици, профилактика на климатици, нестандартни услуги за климатици, монтаж София, демонтаж София, профилактика София, тръбен път за климатик, вкопаване на тръбен път, пробиване за климатик, тест с азот, антивибрационни тампони, кондензни вани, допълнителни услуги за климатици, качване на климатик, медни тръби, PVC тръби, комуникационни кабели, захранващи кабели, ремонт на климатици, сервиз за климатици, montaj na klimatitsi, demontaj na klimatitsi, profilaktika na klimatitsi, nestandartni uslugi za klimatitsi, montaj Sofiya, demontaj Sofiya, profilaktika Sofiya, traben pat za klimatik, vkopavane na traben pat, probivane za klimatik, test s azot, antivibracionni tamponi, kondenzni vani, dopalnitelni uslugi za klimatitsi, kachvane na klimatik, medni trabi, PVC trabi, komunikacionni kabeli, zahranvashti kabeli, remont na klimatitsi, servis za klimatitsi"
 	/>
+
+	<!-- Twitter Card тагове -->
+	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image:alt" content=" Монтаж на климатици" />
+
+	<!-- Open Graph тагове (за Facebook и други) -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image:alt" content="Монтаж на климатици" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mpclima.bg/activities/монтаж" />
 </svelte:head>
 
 <div class="main-title">

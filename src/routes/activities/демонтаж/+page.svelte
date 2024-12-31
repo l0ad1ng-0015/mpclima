@@ -1,4 +1,8 @@
 <script>
+	export let title = 'Демонтаж | MP Clima';
+	export let description =
+		'Професионално и безопасно демонтиране на стари или повредени климатици. Осигуряваме ефикасно премахване на уреди с минимален риск за о	';
+
 	// Data for the table
 	let services = [
 		{ name: 'Демонтаж на парапети и всякакви препятствие в терасата', price: '80лв' },
@@ -12,6 +16,30 @@
 	];
 	// Additional prices
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta
+		name="keywords"
+		content="демонтаж на климатици, инсталация на климатици, климатизация София  demontaža na klimatici, demontiranje klimatikov, svianje na klima sistem, premestvane na klimatik, rasklapanje klimatic, zamena na klima aparat, zamena klimatizacija, демонтаж на климатик, demontazha na klima uređaja, otstranjuvanje na klimatik, разглобяване на климатик"
+	/>
+
+	<!-- Twitter Card тагове -->
+	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image:alt" content="Демонтаж на климатици" />
+
+	<!-- Open Graph тагове (за Facebook и други) -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image:alt" content="Демонтаж на климатици" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mpclima.bg/activities/демонтаж" />
+</svelte:head>
 
 <div class="main-title">
 	<h1 class="main-title-header">Демонтажна дейност</h1>

@@ -1,3 +1,33 @@
+<script>
+	export let title = 'Услуги | MP Clima';
+	export let description =
+		'Предлагаме широк спектър от услуги за климатици, включително монтаж, демонтаж, профилактика и сервизно обслужване. Нашите експерти осигуряват качествени и надеждни решения за вашите климатични системи, с внимание към детайлите и на достъпни цени.';
+</script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta
+		name="keywords"
+		content="uslugi za klimatici, montaž na klimatici, demontaj na klimatici, profilaktika na klimatici, servis na klimatici, popravka na klimatik, instalacija klimatik, zamena klimatski uređaji, čišćenje klimatici, remont klimatskih sistema, održavanje klimatici, klimatski sistemi servis, klima uređaji servis, klima popravka, usluga za klima uređaj, servisna usluga, profesionalno servisno obsluzhvane, kvalitetni serviz na klimatici"
+	/>
+
+	<!-- Twitter Card тагове -->
+	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image:alt" content="Продажба" />
+
+	<!-- Open Graph тагове (за Facebook и други) -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image:alt" content="Продажба" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mpclima.bg/продажба" />
+</svelte:head>
+
 <!-- Услуги Section -->
 
 <div class="container">
@@ -50,7 +80,7 @@
 			<div class="service-item">
 				<img src="/images/icons/stickman-nestan.png" alt="Service 5" />
 				<h3>Нестандартни услуги</h3>
-				<p>Нестандартни цени, които не са включени в по-горните услуги</p>
+				<p>Нестандартни цени, които не са включени в по-горните услуги.</p>
 				<a href="/activities/нестандартни-услуги">
 					<button style="padding: 10px 12px;" class="more">Виж повече</button>
 				</a>

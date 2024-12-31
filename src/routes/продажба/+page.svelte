@@ -1,12 +1,39 @@
-<script type="ts">
+<script>
+	export let title = 'Продажба | MP Clima';
+	export let description =
+		'Продажбата на климатици и климатични системи се осъществява само чрез телефонни поръчки. Свържете се с нас на посочените номера за консултация и подробности относно продуктите и наличностите.';
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta
+		name="keywords"
+		content="родажба на климатици, климатични системи продажба, климатици на телефони, закупуване на климатик, климатични уреди продажба, климатици за дом и офис, продажба климатик по поръчка, доставка на климатици, климатици по телефон, консултация климатик, продажба на климатични системи, продажба климатични уреди София, климатик за продажба, поръчка климатичен уред, климатици за дома, климатични устройства по телефон."
+	/>
+
+	<!-- Twitter Card тагове -->
+	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image:alt" content="Продажба" />
+
+	<!-- Open Graph тагове (за Facebook и други) -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image:alt" content="Продажба" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mpclima.bg/продажба" />
+</svelte:head>
 
 <div class="main-title">Продажба на климатици</div>
 
 <div class="text-content">
 	<p>
 		Отностно продажби на климатици, свържете се с нас на посочените телефони по-долу или вижте
-		нашише
+		нашите
 	</p>
 	<a href="/контакти">контакти.</a>
 </div>

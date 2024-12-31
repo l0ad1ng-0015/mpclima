@@ -1,8 +1,31 @@
 <script>
+	export let title = 'Партньори | MP Clima';
+	export let description =
+		'Представяме нашите доверени партньори. Тук ще откриете логотата на водещи фирми, с които работим, за да осигурим качествени и надеждни климатични решения за нашите клиенти.';
 	import { onMount } from 'svelte';
 
 	onMount(() => {});
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+
+	<!-- Twitter Card тагове -->
+	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image:alt" content="Партньори" />
+
+	<!-- Open Graph тагове (за Facebook и други) -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image:alt" content="Партньори" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mpclima.bg/партньори" />
+</svelte:head>
 
 <!-- <h1>Нашите партньори:</h1> -->
 
