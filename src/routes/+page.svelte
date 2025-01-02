@@ -30,7 +30,6 @@
 </svelte:head>
 
 <div class="container">
-	<h1>{description}</h1>
 	<div>
 		<h1>Продажба, монтаж и сервиз на климатици.</h1>
 		<p class="p-main" style="margin-top: 25px; font-size: 18px;">
