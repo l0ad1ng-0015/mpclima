@@ -89,7 +89,7 @@
 	<meta name="description" content={description} />
 
 	<!-- Twitter Card тагове -->
-	<meta name="twitter:card" content="static/logo_square.jpg" />
+	<meta name="twitter:card" content="/static/logo_square.jpg" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content="/static/logo_square.jpg" />
@@ -101,7 +101,7 @@
 	<meta property="og:image" content="/static/logo_square.jpg" />
 	<meta property="og:image:alt" content="Продажба" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="/продажба" />
+	<meta property="og:url" content="/галерия" />
 </svelte:head>
 
 <div class="main-title">

@@ -1,0 +1,5 @@
+NS 1
+ns267.superhosting.bg
+
+NS 2
+ns268.superhosting.bg

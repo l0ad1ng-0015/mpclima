@@ -50,7 +50,7 @@
 	/>
 
 	<!-- Twitter Card тагове -->
-	<meta name="twitter:card" content="static\logo_square.jpg" />
+	<meta name="twitter:card" content="/static/logo_square.jpg" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content="/static/logo_square.jpg" />
