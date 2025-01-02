@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let title = 'Галерия | MP Clima';
+	export let title = 'Контакти | MP Clima';
 	export let description =
 		'Свържете се с нас чрез контактната форма или използвайте телефоните и имейла ни за запитвания. Нашият офис е на ул.Московска 3, София и сме на разположение да помогнем!';
 	let name = '';
@@ -66,16 +66,16 @@
 	<meta name="twitter:card" content="static\logo_square.jpg" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image" content="/static/logo_square.jpg" />
 	<meta name="twitter:image:alt" content="Контакти" />
 
 	<!-- Open Graph тагове (за Facebook и други) -->
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image" content="/static/logo_square.jpg" />
 	<meta property="og:image:alt" content="Контакти" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://mpclima.bg/контакти" />
+	<meta property="og:url" content="/контакти" />
 </svelte:head>
 
 <div class="main-title">

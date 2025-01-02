@@ -38,16 +38,16 @@
 	<meta name="twitter:card" content="static\logo_square.jpg" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta name="twitter:image" content="/static/logo_square.jpg" />
 	<meta name="twitter:image:alt" content="Профилактика на климатици" />
 
 	<!-- Open Graph тагове (за Facebook и други) -->
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content="https://mpclima.bg/static/logo_square.jpg" />
+	<meta property="og:image" content="/static/logo_square.jpg" />
 	<meta property="og:image:alt" content="Профилактика на климатици" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://mpclima.bg/activities/профилактика" />
+	<meta property="og:url" content="/activities/профилактика" />
 </svelte:head>
 
 <div class="prophylaxis-container">
