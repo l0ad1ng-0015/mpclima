@@ -10,7 +10,7 @@ body {
 	background-position: center top;
 	background-size: cover; /* Default value for most screens */
 	background-attachment: fixed;
-	background-repeat: no-repeat; /* Prevent the image from repeating */
+	background-repeat: no-repeat;
 }
 
 /* @media screen and (max-width: 1500px) {
@@ -23,23 +23,22 @@ body {
 	body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.654)),
 			url(/static/backgrounds/background_orig_short.jpg);
-		background-size: cover; /* Ensure background covers the screen on medium screens */
+		background-size: cover;
 	}
 }
 
-@media screen and (max-width: 880px) {
-	body {
-		background-size: cover; /* Ensure background covers the screen on smaller screens */
+@media only screen and (max-width: 989px) {
+	.responsive #top .avia-full-stretch {
+		background-attachment: scroll !important;
 	}
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 880px) {
 	body {
-		background-size: cover; /* Adjust size for mobile, maintaining full coverage */
-		/* background-attachment: scroll; Disable fixed background on mobile to avoid zoom issues */
-		/* background-position: center top; Center the background image */
+		background-attachment: scroll;
+		background-size: cover;
 	}
-}
+} */
 
 .container {
 	width: 60%;
