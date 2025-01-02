@@ -60,7 +60,7 @@
 
 <svelte:head>
 	<title>{title}</title>
-	<meta name="description" content={description} />
+	<meta name="description2" content={description} />
 
 	<!-- Twitter Card тагове -->
 	<meta name="twitter:card" content="/static/logo_square.jpg" />

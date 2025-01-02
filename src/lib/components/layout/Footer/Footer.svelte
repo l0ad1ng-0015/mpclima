@@ -100,7 +100,7 @@
 
 	<div class="text-center p-4" style="text-aling: center;">
 		© 2024 Copyright:
-		<a class="text-reset fw-bold" href="https://mpclima.bg/">MP Clima | Sofia</a>
+		<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
 	</div>
 </footer>
 
