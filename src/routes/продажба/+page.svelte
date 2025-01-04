@@ -192,7 +192,6 @@
 
 	@media screen and (max-width: 505px) {
 		.steps {
-			е
 		}
 	}
 
