@@ -1,5 +1,5 @@
 <script>
-	export let title = 'MP Clima | Начало';
+	export let title = 'MP Clima | Sofia - Начало';
 	export let description =
 		'Фирма MP Clima е компания в областта на климатичните инсталации, предоставяща висококачествени услуги и решения за вашия дом или бизнес.';
 </script>
@@ -255,7 +255,7 @@
 		}
 
 		h1 {
-			margin-top: 20px !important;
+			margin-top: 15px !important;
 			font-size: 2.5rem;
 		}
 
