@@ -48,30 +48,48 @@
 	<div class="services" style="margin-top: 60px;">
 		<a href="/услуги" class="a-h2">Услуги</a>
 		<div class="service-items">
-			<div class="service-item">
-				<img src="/images/icons/stickman-montaj.png" alt="Service 1" />
-				<h3>Монтаж</h3>
-				<p>Професионална инсталация на климатици.</p>
-				<a href="/activities/монтаж">
-					<button style="padding: 10px 12px;" class="more">Виж повече</button>
-				</a>
-			</div>
-			<div class="service-item">
-				<img src="/images/icons/stickman-demontaj.png" alt="Service 2" />
-				<h3>Демонтаж</h3>
-				<p>Безопасно демонтиране на стари или повредени климатици.</p>
-				<a href="/activities/демонтаж">
-					<button style="padding: 10px 12px;" class="more">Виж повече</button>
-				</a>
-			</div>
-			<div class="service-item">
-				<img src="/images/icons/stickman-profilaktika.png" alt="Service 3" />
-				<h3>Профилактика</h3>
-				<p>Редовна поддръжка и сервиз на вашите климатици.</p>
-				<a href="/activities/сервизно-обслужване">
-					<button style="padding: 10px 12px;" class="more">Виж повече</button>
-				</a>
-			</div>
+			<a
+				class="button-items"
+				href="/activities/монтаж"
+				style="text-decoration: none; color: white;"
+			>
+				<div class="service-item">
+					<img src="/images/icons/stickman-montaj.png" alt="Service 1" />
+					<h3>Монтаж</h3>
+					<p>Професионална инсталация на климатици.</p>
+					<a href="/activities/монтаж">
+						<button style="padding: 10px 12px;" class="more">Виж повече</button>
+					</a>
+				</div>
+			</a>
+			<a
+				class="button-items"
+				href="/activities/демонтаж"
+				style="text-decoration: none; color: white;"
+			>
+				<div class="service-item">
+					<img src="/images/icons/stickman-demontaj.png" alt="Service 2" />
+					<h3>Демонтаж</h3>
+					<p>Безопасно демонтиране на стари или повредени климатици.</p>
+					<a href="/activities/демонтаж">
+						<button style="padding: 10px 12px;" class="more">Виж повече</button>
+					</a>
+				</div>
+			</a>
+			<a
+				class="button-items"
+				href="/activities/профилактика"
+				style="text-decoration: none; color: white;"
+			>
+				<div class="service-item">
+					<img src="/images/icons/stickman-profilaktika.png" alt="Service 3" />
+					<h3>Профилактика</h3>
+					<p>Редовна поддръжка и сервиз на вашите климатици.</p>
+					<a href="/activities/профилактика">
+						<button style="padding: 10px 12px;" class="more">Виж повече</button>
+					</a>
+				</div>
+			</a>
 		</div>
 	</div>
 
@@ -164,7 +182,8 @@
 	}
 	.a-h2:hover {
 		color: white;
-		transition: 0, 3s;
+		transition: 600ms;
+		text-decoration: underline;
 	}
 
 	.tel {

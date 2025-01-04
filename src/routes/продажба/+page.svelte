@@ -9,7 +9,7 @@
 	<meta name="description" content={description} />
 	<meta
 		name="keywords"
-		content="родажба на климатици, климатични системи продажба, климатици на телефони, закупуване на климатик, климатични уреди продажба, климатици за дом и офис, продажба климатик по поръчка, доставка на климатици, климатици по телефон, консултация климатик, продажба на климатични системи, продажба климатични уреди София, климатик за продажба, поръчка климатичен уред, климатици за дома, климатични устройства по телефон."
+		content="продажба на климатици, климатични системи продажба, климатици на телефони, закупуване на климатик, климатични уреди продажба, климатици за дом и офис, продажба климатик по поръчка, доставка на климатици, климатици по телефон, консултация климатик, продажба на климатични системи, продажба климатични уреди София, климатик за продажба, поръчка климатичен уред, климатици за дома, климатични устройства по телефон."
 	/>
 
 	<!-- Twitter Card тагове -->
@@ -28,20 +28,47 @@
 	<meta property="og:url" content="/продажба" />
 </svelte:head>
 
-<div class="main-title">Продажба на климатици</div>
-
-<div class="text-content">
-	<p>
-		Отностно продажби на климатици, свържете се с нас на посочените телефони по-долу или вижте
-		нашите
-	</p>
-	<a href="/контакти">контакти.</a>
+<div class="main-title">
+	<h1 class="main-title-header">Продажба на климатици</h1>
 </div>
 
-<div class="container">
-	<!-- Контакти Section -->
-	<div class="contact">
-		<div class="contact-items">
+<div class="container-title">
+	<h4>
+		<b style="margin-bottom: 16px;">Открийте идеалния климатик за вашия дом или офис</b>
+	</h4>
+</div>
+<div class="prodajbi-container-wrapper">
+	<p>
+		Ние предлагаме професионална консултация и доставка на висококачествени климатици. Свържете се с
+		нас за повече информация!
+	</p>
+	<div class="steps">
+		<div class="step">
+			<h2>1. Консултация</h2>
+			<p>
+				Обадете се на нашите специалисти за безплатна консултация относно най-добрия избор за вашия
+				дом или офис.
+			</p>
+		</div>
+		<div class="step">
+			<h2>2. Избор и Поръчка</h2>
+			<p>
+				Ние ще ви помогнем да изберете правилния модел според вашите нужди. Всичко става бързо и
+				лесно.
+			</p>
+		</div>
+		<div class="step">
+			<h2>3. Доставка</h2>
+			<p>Ние осигуряваме бърза и надеждна доставка до всяка точка на страната.</p>
+		</div>
+	</div>
+</div>
+
+<div class="prodajbi-container-wrapper" style="margin-top: 40px;">
+	<div class="contact-section">
+		<h2>Свържете се с нас</h2>
+		<p>Нашият екип е готов да ви помогне. Можете да се свържете с нас по телефон или имейл:</p>
+		<div class="contact-details">
 			<div class="contact-item">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -61,103 +88,163 @@
 				<a href="tel:0898 414816" class="tel"><strong>0898414816</strong> </a>
 				<a href="tel:0899 591664" class="tel"><strong>0899591664</strong> </a>
 			</div>
-			<div class="contact-item">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1em"
-					height="1em"
-					viewBox="0 0 24 24"
-					{...$$props}
-					><path
-						fill="white"
-						d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44"
-					/></svg
-				>
-				<h3>Имейл</h3>
-				<a href="mailto:mpclimabg@gmail.com">mpclimabg@gmail.com</a>
-			</div>
+			<a href="/контакти" style="text-decoration: none; color: white;">
+				<div class="contact-item">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1em"
+						height="1em"
+						viewBox="0 0 24 24"
+						{...$$props}
+						><path
+							fill="currentColor"
+							d="M11.846 21H6q-.846 0-1.423-.577T4 19v-2.77h3V3h13v6.577l-1 1V4H8v12.23h5.346l-1.5 1.5zm2.385 0v-2.21l5.96-5.934l2.184 2.21L16.441 21zm-4.846-9.846v-1h8.23v1zm0-2.77v-1h8.23v1zm10.806 7.632l.925-.956l-.925-.944l-.95.95z"
+						/></svg
+					>
+					<h3 style="font-weight: 500;">
+						Направете запитване , чрез контактната ни форма, и ние ще Ви върнем отговор с
+						подходящата оферта за Вас.
+					</h3>
+					<!-- <p>
+					Направете запитване , чрез контактната ни форма, и ние ще Ви върнем отговор с подходящата
+					оферта за Вас.
+				</p> -->
+					<a href="/контакти">
+						<button style="padding: 10px 12px;" class="more">Свържете се</button>
+					</a>
+				</div>
+			</a>
 		</div>
 	</div>
 </div>
 
 <style>
-	.main-title {
-		text-align: center;
-		padding: 20px 10px;
-		margin: 40px 0;
-		font-size: 40px;
-		font-weight: bold;
-		background-color: #0000007e;
+	/* Основни стилове */
+	body {
+		font-family: 'Arial', sans-serif;
+		margin: 0;
+		background: linear-gradient(to bottom, #0056b3, #003f7f);
 		color: #fff;
 	}
 
-	.text-content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		padding: 20px;
-		background-color: rgba(0, 0, 0, 0.337);
+	.main-title {
+		max-width: 800px;
+		margin: 0 auto;
+		/* margin-bottom: 60px; */
+		padding: 16px 46px;
+		background-color: #0000007e;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	}
 
-	.text-content p {
-		margin-bottom: 20px;
+	.main-title-header {
 		text-align: center;
-		line-height: 1.5;
-		font-size: 25px;
-	}
-
-	.text-content a {
-		font-size: 25px;
-		text-decoration: none;
-		color: #007bff;
-		transition: color 0.3s ease;
-	}
-
-	.text-content a:hover {
-		color: #0056b3;
-	}
-
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		padding: 20px;
-	}
-
-	.services,
-	.contact {
-		margin: 20px 0;
-		width: 100%;
-		max-width: 1200px;
-	}
-
-	.a-h2 {
-		margin-bottom: 20px;
-		font-size: 2.5em;
-		color: #c1bebe;
-		text-decoration: none;
-	}
-	.a-h2:hover {
+		font-size: 2.5rem;
 		color: white;
-		transition: 0, 3s;
+		margin-top: 10px !important;
+		margin-bottom: 10px;
 	}
 
-	.tel {
-		font-size: 1.3rem !important;
-		margin-bottom: 7px;
-	}
-
-	.service-items,
-	.contact-items {
+	.prodajbi-container-wrapper {
 		display: flex;
-		justify-content: space-around;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 1rem;
+		padding: 40px 20px;
+		padding-top: 0;
+		background-color: rgba(0, 0, 0, 0.297);
+		text-align: left;
+
+		/* margin-right: 400px; */
+		/* margin-right: 400px; */
+
+		/* & .montaj-title{
+			justify-content: center;
+		} */
+	}
+
+	.prodajbi-container-wrapper p {
+		text-align: center;
+		font-size: 1.2rem;
+		line-height: 1.6;
+		margin-bottom: 20px auto 10px !important;
+	}
+	@media screen and (max-width: 880px) {
+		b {
+			font-size: 1.8rem;
+			padding: 0 30px;
+			margin-bottom: 5px !important;
+		}
+
+		.prodajbi-container-wrapper p {
+			font-size: 0; /* 1.1rem */
+		}
+	}
+	.steps {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 20px;
+		padding-top: 0 !important;
+	}
+
+	@media screen and (max-width: 505px) {
+		.steps {
+		}
+	}
+
+	.step {
+		flex: 1 1 300px;
+		padding: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		border-radius: 10px;
+		text-align: center;
+		background: rgba(0, 0, 0, 0.6);
+		transition: transform 0.3s ease, background 0.3s ease;
+	}
+
+	.step:hover {
+		transform: translateY(-10px);
+		background: rgba(0, 86, 179, 0.8);
+	}
+
+	.step h2 {
+		margin-bottom: 15px;
+		font-size: 1.5rem;
+	}
+
+	.step p {
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+
+	/* CONTACTI 2 */
+	.contact-section {
+		text-align: center;
+		padding: 40px 20px;
+		background: rgba(228, 59, 59, 0);
+	}
+
+	.contact-section h2 {
+		font-size: 2rem;
+		margin-bottom: 20px;
+	}
+
+	.contact-section p {
+		margin-bottom: 10px;
+		font-size: 1.2rem;
+		line-height: 1.5;
+	}
+
+	.contact-details {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
 		flex-wrap: wrap;
 	}
 
-	.service-item,
 	.contact-item {
 		margin: 10px;
 		padding: 20px;
@@ -174,70 +261,28 @@
 		justify-content: space-between;
 	}
 
-	.service-item:hover,
 	.contact-item:hover {
 		border-color: #0070bb;
 		transition: 0.23s;
 		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 	}
-	.contact-item:hover {
-		border-radius: 30px;
+
+	.contact-item h3 {
+		margin: 15px 0;
+		font-size: 1.2rem;
 	}
 
-	@media screen and (max-width: 599px) {
-		.service-items,
-		.contact-items {
-			justify-content: center;
-		}
-
-		.service-item,
-		.contact-item {
-			width: 90%;
-			margin: 10px 0;
-			border: 1px solid #0070bb;
-		}
-
-		.more {
-			width: 100%;
-			padding: 10px 0;
-		}
-
-		h1 {
-			margin-top: 20px !important;
-			font-size: 2.5rem;
-		}
-
-		.p-main {
-			font-size: 0.9rem;
-		}
+	.contact-item a {
+		color: #fff;
+		font-size: 1.6rem;
+		text-decoration: none;
+		transition: color 0.3s ease;
 	}
 
-	@media screen and (max-width: 450px) {
-		h1 {
-			font-size: 2.1rem !important;
-		}
+	.contact-item a:hover {
+		color: #cce7ff;
 	}
 
-	@media screen and (max-width: 390px) {
-		h1 {
-			font-size: 2.5rem;
-		}
-
-		.p-main {
-			font-size: 0.856rem;
-		}
-
-		.service-item h3,
-		.contact-item h3 {
-			font-size: 0.5rem;
-		}
-	}
-
-	@media screen and (min-width: 1364px) {
-		.p-main {
-			padding: 0 20px;
-		}
-	}
 	.contact-item svg {
 		width: 100px;
 		height: 100px;
@@ -248,45 +293,13 @@
 		fill: #0070bb;
 	}
 
-	.service-item h3,
-	.contact-item h3 {
-		margin: 10px 0;
-		font-size: 1.5em;
-	}
-
-	.service-item p,
-	.contact-item p,
-	.contact-item a {
-		font-size: 1.18em;
-		color: #a9a6a6;
-		text-decoration: none;
-	}
-
-	.service-item p {
-		font-size: 1em !important;
-	}
-
-	.contact-item a {
-		color: #838383ee;
-	}
-
-	.contact-item a {
-		font-size: 1em;
-		color: #b5b3b3;
-		text-decoration: none;
-	}
-	.contact-item a:hover {
-		color: #a9a6a6;
-		transition: 0.4s;
-	}
-
 	.more {
 		width: 100%;
 		padding: 10px;
 		text-align: center;
 		margin: 10px 0 0 0;
 		border-radius: 25px;
-		font-weight: bold;
+		/* font-weight: bold; */
 		border: 2px solid #0070bb;
 		background-color: rgba(0, 0, 0, 0.17);
 		color: #fff;
@@ -298,5 +311,25 @@
 	.more:hover {
 		background-color: #0070bb;
 		color: #fff;
+	}
+
+	/* CONTACTI 2 */
+
+	h4 {
+		font-family: 'Poppins', sans-serif !important;
+		/* background: #eff3f8; */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+		padding-top: 15px;
+		font-size: 35px;
+		font-weight: bold;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.297);
+
+		& b {
+			font-weight: 540;
+		}
 	}
 </style>

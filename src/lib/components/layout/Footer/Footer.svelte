@@ -77,20 +77,23 @@
 		<h2>Услуги</h2>
 		<ul>
 			<!-- <li class="first-li"><a href="/продажба">Продажба на климатици</a></li> -->
+			<li><a href="/продажба">Продажба</a></li>
 			<li>
-				<a href="activities/монтаж">Монтаж на климатици</a><a href="activities/демонтаж"
+				<a href="/activities/монтаж">Монтаж на климатици</a><a href="/activities/демонтаж"
 					>Демонтаж на климатици
 				</a>
 			</li>
-			<li><a href="activities/профилактика">Профилактика</a></li>
+			<li><a href="/activities/профилактика">Профилактика</a></li>
+			<li><a href="/activities/сервизно-обслужване">Сервизно обслужване</a></li>
 			<!-- <li><a href="activities/сервизно_обслужване">Сервизна дейност</a></li> -->
-			<li><a href="activities/нестандартни-услуги">Нестандартлни услуги</a></li>
 		</ul>
 	</div>
 
 	<div class="column">
 		<h2>Допълнително</h2>
 		<ul>
+			<li><a href="/защита-лични-данни">Политика за поверителност</a></li>
+			<li><a href="/activities/нестандартни-услуги">Нестандартни услуги</a></li>
 			<li><a href="/партньори">Партньори</a></li>
 			<li><a href="/галерия">Галерия</a></li>
 		</ul>
@@ -143,6 +146,7 @@
 			list-style: none;
 		}
 		& .column ul li a {
+			padding-bottom: 2px;
 			font-size: 16px;
 			text-transform: none;
 			color: #ffffff;
