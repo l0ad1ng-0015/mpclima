@@ -21,7 +21,7 @@
 	</script>
 
 	<a href="/">
-		<img src="/images/logo.png" class="logo" alt="logo-img" aria-label="Начална страница" />
+		<img src="/images/logo.png" class="logo" />
 	</a>
 
 	<div class="menu__container">
