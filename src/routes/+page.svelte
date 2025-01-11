@@ -266,7 +266,7 @@
 
 	@media screen and (max-width: 450px) {
 		h1 {
-			font-size: 2.1rem !important;
+			font-size: 2.5rem !important;
 		}
 	}
 

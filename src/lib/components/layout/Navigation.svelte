@@ -35,6 +35,7 @@
 			<li class="submenu">
 				<a class="menu__item" href="#">За нас</a>
 				<ul class="sub-nav">
+					<li><a href="/сертификати">Сертификати</a></li>
 					<li><a href="/партньори">Партньори</a></li>
 					<li><a href="/галерия">Галерия</a></li>
 				</ul>
@@ -54,6 +55,7 @@
 			<a href="#">За нас</a>
 
 			<ul class="sub-nav">
+				<li><a href="/сертификати">Сертификати</a></li>
 				<li><a href="/партньори">Партньори</a></li>
 				<li><a href="/галерия">Галерия</a></li>
 			</ul>

@@ -148,13 +148,15 @@
 	}
 
 	h1 {
+		margin-top: 0 !important;
 		margin-bottom: 20px;
-		font-size: 24px;
+		font-size: clamp(3rem, 5vw, 2rem);
 	}
 
 	.info {
+		margin-top: 0 !important;
 		margin-bottom: 20px;
-		font-size: 16px;
+		font-size: clamp(1.2rem, 1.1vw, 2rem);
 	}
 
 	table {
@@ -177,7 +179,7 @@
 		color: #fff;
 	}
 
-	@media screen and (max-width: 600px) {
+	/* @media screen and (max-width: 600px) {
 		th,
 		td {
 			display: block;
@@ -203,5 +205,5 @@
 			text-align: left;
 			font-weight: bold;
 		}
-	}
+	} */
 </style>
