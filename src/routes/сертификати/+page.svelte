@@ -237,7 +237,7 @@
 
 		.column-h {
 			padding: 0;
-			margin: 10px 20px 10px;
+			margin: 0 20px;
 		}
 
 		.column h2 {
