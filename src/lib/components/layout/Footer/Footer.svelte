@@ -101,14 +101,11 @@
 			<li><a href="/галерия">Галерия</a></li>
 		</ul>
 	</div>
-
-	<div class="column" />
-
-	<div class="text-center p-4" style="text-aling: center;">
-		© 2024 Copyright:
-		<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
-	</div>
 </footer>
+<div class="text-center p-4 center" style="text-aling: center;">
+	© 2024 Copyright:
+	<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
+</div>
 
 <style>
 	footer {
@@ -171,18 +168,30 @@
 		/* & .column li{
 			color: blue;
 		} */
-		& .text-center {
-			background-color: rgba(0, 0, 0, 0.05);
-			text-align: center;
-			margin: 15px;
-			justify-content: center;
-		}
 
 		& .text-reset a:hover {
 			color: #ffffff;
 			padding-left: 10px;
 		}
 		& .text-reset {
+			color: #bbbbbb;
+		}
+	}
+
+	.text-center {
+		display: flex;
+		padding: 20px 0;
+		background-color: rgba(0, 0, 0, 0.552);
+		text-align: center;
+		color: white;
+		justify-content: center;
+
+		& .text-reset a:hover {
+			color: #ffffff;
+			padding-left: 10px;
+		}
+		& .text-reset {
+			text-decoration: none;
 			color: #bbbbbb;
 		}
 	}

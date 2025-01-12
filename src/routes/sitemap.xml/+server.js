@@ -7,6 +7,7 @@ export async function GET() {
 		'https://mpclima.com//activities/демонтаж/',
 		'https://mpclima.com//activities/профилактика/',
 		'https://mpclima.com//activities/сервизно-обслужване/',
+		'https://mpclima.com/сертификати/',
 		'https://mpclima.com//контакти/',
 		'https://mpclima.com//галерия/'
 	];
