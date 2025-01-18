@@ -31,15 +31,15 @@
 			height: 960
 		},
 		{
-			largeURL: '/images/certicates/images/certificate4.jpg',
-			thumbnailURL: '/images/certicates/thumbs/certificate4.jpg',
+			largeURL: '/images/certicates/images/certificate5.jpg',
+			thumbnailURL: '/images/certicates/thumbs/certificate5.jpg',
 			galleryClass: 'card',
 			width: 679,
 			height: 960
 		},
 		{
-			largeURL: '/images/certicates/images/certificate5.jpg',
-			thumbnailURL: '/images/certicates/thumbs/certificate5.jpg',
+			largeURL: '/images/certicates/images/certificate4.jpg',
+			thumbnailURL: '/images/certicates/thumbs/certificate4.jpg',
 			galleryClass: 'card',
 			width: 679,
 			height: 960

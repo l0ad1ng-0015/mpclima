@@ -103,7 +103,7 @@
 	</div>
 </footer>
 <div class="text-center p-4 center" style="text-aling: center;">
-	© 2024 Copyright:
+	© 2025 Copyright:
 	<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
 </div>
 
@@ -188,11 +188,11 @@
 
 		& .text-reset a:hover {
 			color: #ffffff;
-			padding-left: 10px;
 		}
 		& .text-reset {
 			text-decoration: none;
 			color: #bbbbbb;
+			padding-left: 10px;
 		}
 	}
 	/* @media screen and (max-width: 800px) {

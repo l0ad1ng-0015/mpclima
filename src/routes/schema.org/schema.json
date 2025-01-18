@@ -1,0 +1,12 @@
+{
+	"@context": "https://mpclima.com/schema.org",
+	"@type": "SiteNavigationElement",
+	"name": ["Услуги", "Контакти", "Галерия"],
+	"url": [
+		"https://mpclima.com/продажба/",
+		"https://mpclima.com/услуги/",
+		"https://mpclima.com/монтаж/",
+		"https://mpclima.com/контакти/",
+		"https://mpclima.com/галерия/"
+	]
+}
