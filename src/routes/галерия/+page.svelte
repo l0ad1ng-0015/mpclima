@@ -9,64 +9,126 @@
 	export let galleryID = 'gallery-01';
 
 	let images = [
+		//ВЪТРЕШНИ МОНТАЖИ --->
 		{
-			largeURL: '/images/gallery-01/images/gallery1.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery1.jpg',
+			largeURL: '/images/gallery-00/in/images/gallery1.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery1.jpg',
 			galleryClass: 'card',
-			width: 540,
-			height: 960
+			width: 960,
+			height: 1280
 		},
 		{
-			largeURL: '/images/gallery-01/images/gallery2.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery2.jpg',
-			// thumbnailURL: '/images/gallery-01/images/gallery2.jpg',
+			largeURL: '/images/gallery-00/in/images/gallery2.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery2.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/in/images/gallery3.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery3.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/in/images/gallery4.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery4.jpg',
+			galleryClass: 'card',
+			width: 622,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/in/images/gallery5.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery5.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/in/images/gallery6.jpg',
+			thumbnailURL: '/images/gallery-00/in/thumbs/gallery6.jpg',
 			galleryClass: 'card',
 			width: 720,
-			height: 960
+			height: 1280
 		},
+
+		//ВЪНШНИ МОНТАЖИ --->
 		{
-			largeURL: '/images/gallery-01/images/gallery3.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery3.jpg',
+			largeURL: '/images/gallery-00/out/images/gallery1.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery1.jpg',
 			galleryClass: 'card',
 			width: 1350,
 			height: 1800
 		},
 		{
-			largeURL: '/images/gallery-01/images/gallery4.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery4.jpg',
-			galleryClass: 'card',
-			width: 641,
-			height: 855
-		},
-		{
-			largeURL: '/images/gallery-01/images/gallery5.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery5.jpg',
+			largeURL: '/images/gallery-00/out/images/gallery2.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery2.jpg',
+			// thumbnailURL: '/images/gallery-00/out/images/gallery2.jpg',
 			galleryClass: 'card',
 			width: 720,
-			height: 960
+			height: 1280
 		},
 		{
-			largeURL: '/images/gallery-01/images/gallery6.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery6.jpg',
+			largeURL: '/images/gallery-00/out/images/gallery3.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery3.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/out/images/gallery4.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery4.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/out/images/gallery5.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery5.jpg',
+			galleryClass: 'card',
+			width: 960,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/out/images/gallery6.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery6.jpg',
 			galleryClass: 'card',
 			width: 720,
-			height: 960
+			height: 1280
 		},
 		{
-			largeURL: '/images/gallery-01/images/gallery7.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery7.jpg',
+			largeURL: '/images/gallery-00/out/images/gallery7.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery7.jpg',
+			galleryClass: 'card',
+			width: 622,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/out/images/gallery8.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery8.jpg',
+			galleryClass: 'card',
+			width: 622,
+			height: 1280
+		},
+		{
+			largeURL: '/images/gallery-00/out/images/gallery9.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery9.jpg',
 			galleryClass: 'card',
 			width: 720,
-			height: 960
+			height: 1280
 		},
 		{
-			largeURL: '/images/gallery-01/images/gallery8.jpg',
-			thumbnailURL: '/images/gallery-01/thumbs/gallery8.jpg',
+			largeURL: '/images/gallery-00/out/images/gallery10.jpg',
+			thumbnailURL: '/images/gallery-00/out/thumbs/gallery10.jpg',
 			galleryClass: 'card',
-			width: 222,
-			height: 244
+			width: 720,
+			height: 1280
 		}
 	];
+
+	let column1Images = images.slice(0, 6); // Gallery 1 and 2
+	let column2Images = images.slice(6, 16);
 
 	function handleImageLoad(image, event) {
 		console.log('Image..');
@@ -108,22 +170,91 @@
 	<h1 class="main-title-header">Галерия</h1>
 </div>
 
-<div class="pswp-gallery image-mosaic" id={galleryID}>
-	{#each images as image}
-		<a
-			href={image.largeURL}
-			class={image.galleryClass}
-			data-pswp-width={image.width}
-			data-pswp-height={image.height}
-			target="_blank"
-			rel="noreferrer"
-		>
-			<img src={image.thumbnailURL} alt="" />
-			{#if false}
-				<img src={image.largeURL} alt="" on:load={(event) => handleImageLoad(image, event)} />
-			{/if}
-		</a>
-	{/each}
+<div class="container">
+	<div class="column">
+		<div class="column-h"><h2>Монтаж на вътрешни тела</h2></div>
+		<div class="pswp-gallery image-mosaic" id={galleryID}>
+			{#each column1Images as image}
+				<a
+					href={image.largeURL}
+					class={image.galleryClass}
+					data-pswp-width={image.width}
+					data-pswp-height={image.height}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<div class="image-container">
+						<img
+							src={image.thumbnailURL}
+							alt=""
+							style="width: 150px; height: 200px; object-fit: cover;"
+						/>
+						<div class="svg-overlay">
+							<svg
+								width="34"
+								height="34"
+								viewBox="0 0 34 34"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M18 30q-.425 0-.712-.288T17 29v-10H7q-.425 0-.712-.288T6 18t.288-.712T7 17h10V7q0-.425.288-.712T18 6t.713.288T19 7v10h10q.425 0 .713.288T30 18t-.288.713T29 19H19v10q0 .425-.288.713T18 30z"
+									fill="currentColor"
+								/>
+							</svg>
+						</div>
+					</div>
+					{#if false}
+						<img src={image.largeURL} alt="" on:load={(event) => handleImageLoad(image, event)} />
+					{/if}
+				</a>
+			{/each}
+		</div>
+	</div>
+	<div class="column">
+		<div class="column-h"><h2>Монтаж на външни тела</h2></div>
+		<div class="pswp-gallery image-mosaic" id={galleryID}>
+			{#each column2Images as image}
+				<a
+					href={image.largeURL}
+					class={image.galleryClass}
+					data-pswp-width={image.width}
+					data-pswp-height={image.height}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<div class="image-container">
+						<img
+							src={image.thumbnailURL}
+							alt=""
+							style="width: 150px; height: 200px; object-fit: cover;"
+						/>
+						<div class="svg-overlay">
+							<svg
+								width="34"
+								height="34"
+								viewBox="0 0 34 34"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M18 30q-.425 0-.712-.288T17 29v-10H7q-.425 0-.712-.288T6 18t.288-.712T7 17h10V7q0-.425.288-.712T18 6t.713.288T19 7v10h10q.425 0 .713.288T30 18t-.288.713T29 19H19v10q0 .425-.288.713T18 30z"
+									fill="currentColor"
+								/>
+							</svg>
+						</div>
+					</div>
+					{#if false}
+						<img src={image.largeURL} alt="" on:load={(event) => handleImageLoad(image, event)} />
+					{/if}
+				</a>
+			{/each}
+		</div>
+	</div>
 </div>
 
 <!-- <div class="image-mosaic">
@@ -196,49 +327,126 @@
 		margin-bottom: 10px;
 	}
 
-	.image-mosaic {
-		display: grid;
-		align-items: center;
-		gap: 2rem;
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		grid-auto-rows: 240px;
-	}
-
-	.card {
+	.container {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 2rem; /* Разстояние между колоните */
 		justify-content: center;
-		align-items: center;
-		/* background: #353535; */
-		font-size: 3rem;
-		color: #fff;
-		box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-		height: 100%;
-		width: 100%;
-		border-radius: 4px;
-		transition: tranform 0.5s ease;
-		/* transition: all 500ms; */
-		overflow: hidden;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		padding: 0;
+	}
+
+	.column {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem; /* Разстояние между хединг и снимките */
+		flex: 1 1 100%; /* Заема цял ред по подразбиране */
+		max-width: 1200px; /* Максимална ширина за по-големи екрани */
+		background-color: rgba(0, 0, 0, 0.594);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+		border-radius: 8px;
+		padding: 1rem;
+	}
+
+	.column-h {
+		padding: 0 40px 0 30px;
+		margin: auto 0;
+	}
+
+	.column h2 {
+		font-size: 1.7rem;
+		min-width: 200px; /* Фиксирана ширина за хединга */
 		margin: 0;
-		border-radius: 10px;
+		color: white;
+		font-weight: 400;
 	}
 
-	.card:hover {
-		transform: scale(1.1); /* Scale up the partner item on hover */
-		transition: 0.3s;
-	}
-
-	@media screen and (min-width: 600px) {
-		.card-tall {
-			grid-row: span 2 / auto;
+	@media screen and (max-width: 1400px) {
+		.column {
+			flex-direction: column; /* Подреждане едно под друго */
+			align-items: center;
+			text-align: center; /* Центриране на текста */
 		}
 
-		.card-wide {
-			grid-column: span 2 / auto;
+		.column-h {
+			padding: 0;
+			margin: 0 20px;
+		}
+
+		.column h2 {
+			font-size: 2rem;
+			margin-bottom: 1rem; /* Разстояние под заглавието */
+		}
+	}
+
+	.image-mosaic {
+		display: grid;
+		grid-template-columns: 1fr; /* Всички изображения ще са на една колона вътре в колоната */
+		gap: 1rem;
+		width: 100%;
+	}
+
+	.card img {
+		border-radius: 10px;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.card img:hover {
+		filter: brightness(0.5);
+		transition: 0.1s;
+		src: url(https://api.iconify.design/material-symbols:add-2-rounded.svg);
+		/* mask-image: url(https://api.iconify.design/material-symbols:add-2-rounded.svg); */
+		image-resolution: from-image;
+	}
+
+	.fixed-size {
+		width: 20px; /* Set the desired width */
+		height: 250px; /* Set the desired height */
+		object-fit: cover; /* Ensure the image covers the area without distortion */
+	}
+
+	.image-container {
+		position: relative;
+		display: inline-block;
+	}
+
+	.svg-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+		color: white;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.image-container:hover .svg-overlay {
+		opacity: 1;
+	}
+
+	@media screen and (min-width: 900px) {
+		.image-mosaic {
+			grid-template-columns: repeat(
+				auto-fit,
+				minmax(150px, 1fr)
+			); /* Подредба на няколко снимки в ред при по-големи екрани */
+		}
+	}
+	@media screen and (max-width: 585px) {
+		.column h2 {
+			font-size: 1.77rem;
+		}
+	}
+
+	@media screen and (min-width: 380px) {
+		.column {
+			width: 70%;
 		}
 	}
 </style>
