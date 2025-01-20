@@ -13,6 +13,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+body.ios {
+	background-attachment: scroll;
+}
+
 /* @media screen and (max-width: 1500px) {
 	body {
 		background-size: ; 

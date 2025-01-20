@@ -7,7 +7,18 @@
 	// Променливи за заглавие и описание
 	export let title = 'MP Clima | Sofia';
 	export let description = 'Професионален монтаж и сервиз на климатици. Качествени услуги в София.';
+
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+		if (isIOS) {
+			document.body.classList.add('ios');
+		}
+	});
 </script>
+
+<slot />
 
 <!--kak da se adjustne za vs ustroistva-->
 <!-- <head>
@@ -18,6 +29,21 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<script>
@@ -61,6 +87,15 @@
 	<meta property="og:url" content="/" /> -->
 </svelte:head>
 
+<div class="top-btn">
+	<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" {...$$props}
+		><path
+			fill="currentColor"
+			d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8z"
+		/></svg
+	>
+</div>
+
 <div class="layoutWrapper">
 	<Navigation />
 
@@ -102,5 +137,26 @@
 		grid-template-rows: auto 1fr auto;
 		min-height: 100vh;
 		/* end keep nav */
+	}
+
+	.top-btn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background-color: #0070bb;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 10px;
+	}
+
+	@media screen and (max-width: 880px) {
+		.top-btn {
+			display: none;
+		}
 	}
 </style>

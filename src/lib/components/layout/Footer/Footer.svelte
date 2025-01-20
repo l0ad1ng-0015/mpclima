@@ -9,6 +9,7 @@
 				this, please consider leaving the website.<br> Your privacy is important to us, and we respect your choice.<br>
 				Thank you for your understanding.</div> -->
 		<h2>За фирмата</h2>
+		<hr />
 		Фирма MP Clima<br /> е специализирана в климатичните инсталации, предоставяйки качествени услуги
 		и решения за вашия дом или бизнес. От продажбата до монтажа и поддръжката, ние гарантираме комфорт
 		и надеждност за нашите клиенти.
@@ -16,6 +17,7 @@
 
 	<div class="column">
 		<h2>Контакти</h2>
+		<hr />
 		<ul>
 			<li>
 				<a href="tel:0898 414816" style="font-size: 19px;"
@@ -75,6 +77,7 @@
 
 	<div class="column">
 		<h2>Услуги</h2>
+		<hr />
 		<ul>
 			<!-- <li class="first-li"><a href="/продажба">Продажба на климатици</a></li> -->
 			<li><a href="/продажба">Продажба</a></li>
@@ -93,6 +96,7 @@
 
 	<div class="column">
 		<h2>Допълнително</h2>
+		<hr />
 		<ul>
 			<li><a href="/защита-лични-данни">Политика за поверителност</a></li>
 			<li><a href="/сертификати">Сертификати</a></li>
@@ -102,9 +106,28 @@
 		</ul>
 	</div>
 </footer>
-<div class="text-center p-4 center" style="text-aling: center;">
-	© 2025 Copyright:
-	<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
+<div>
+	<div class="text-center p-4 center" style="text-aling: center;">
+		<div style="text-align: center;">
+			© 2025 Copyright:
+			<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
+		</div>
+		<a href="http://facebook.com">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				x="0px"
+				y="0px"
+				width="50"
+				height="50"
+				viewBox="0 0 50 50"
+				style="fill:#FFFFFF;"
+			>
+				<path
+					d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+				/>
+			</svg></a
+		>
+	</div>
 </div>
 
 <style>
@@ -113,6 +136,7 @@
 		display: grid;
 		justify-content: center;
 		align-content: center;
+		text-align: center;
 		grid-template-columns: repeat(4, 1fr);
 		/* grid-template-rows: repeat(3, minmax(40px, auto)); */
 		gap: var(--size-fluid-2);
@@ -180,11 +204,13 @@
 
 	.text-center {
 		display: flex;
-		padding: 20px 0;
+		padding: 0 50px;
 		background-color: rgba(0, 0, 0, 0.552);
+		align-items: center;
 		text-align: center;
 		color: white;
-		justify-content: center;
+		justify-content: space-around;
+		gap: 2px;
 
 		& .text-reset a:hover {
 			color: #ffffff;
@@ -213,7 +239,14 @@
 	grid-template-rows: 8px auto 12px; */
 
 	h2 {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
+	}
+	hr {
+		width: 85px;
+		height: 0.09cm;
+		background: #0070bb;
+		border: none;
+		margin-bottom: 12px;
 	}
 
 	@media (max-width: 800px) {
