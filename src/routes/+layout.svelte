@@ -7,18 +7,7 @@
 	// Променливи за заглавие и описание
 	export let title = 'MP Clima | Sofia';
 	export let description = 'Професионален монтаж и сервиз на климатици. Качествени услуги в София.';
-
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-		if (isIOS) {
-			document.body.classList.add('ios');
-		}
-	});
 </script>
-
-<slot />
 
 <!--kak da se adjustne za vs ustroistva-->
 <!-- <head>
@@ -29,6 +18,7 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->

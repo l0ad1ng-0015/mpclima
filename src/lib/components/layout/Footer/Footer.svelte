@@ -243,7 +243,7 @@
 	}
 	hr {
 		width: 85px;
-		height: 0.09cm;
+		height: 0.076cm;
 		background: #0070bb;
 		border: none;
 		margin-bottom: 12px;
