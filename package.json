@@ -37,6 +37,7 @@
 		"photoswipe": "^5.4.3",
 		"posthog-js": "^1.96.1",
 		"posthog-node": "^3.2.1",
+		"sitemap": "^8.0.0",
 		"svelte-routing": "^2.5.0"
 	}
 }
