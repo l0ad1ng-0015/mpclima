@@ -1,3 +1,25 @@
+<div class="social-media-up" style="font-size: 1.3em;">
+	<a
+		href="https://www.facebook.com/mpclimabg"
+		target="_blank"
+		aria-label="Последвайте ни във Facebook"
+	>
+		Последвайте ни във:
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="40"
+			height="40"
+			viewBox="0 0 50 50"
+			class="facebook-logo"
+		>
+			<path
+				fill="#FFFFFF"
+				d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+			/>
+		</svg>
+	</a>
+</div>
+
 <footer class="">
 	<!-- <div class="footer-logo">
 	</div> -->
@@ -90,7 +112,6 @@
 			</li>
 			<li><a href="/activities/профилактика">Профилактика</a></li>
 			<li><a href="/activities/сервизно-обслужване">Сервизно обслужване</a></li>
-			<!-- <li><a href="activities/сервизно_обслужване">Сервизна дейност</a></li> -->
 		</ul>
 	</div>
 
@@ -107,25 +128,32 @@
 	</div>
 </footer>
 <div>
-	<div class="text-center p-4 center" style="text-aling: center;">
-		<div style="text-align: center;">
+	<div class="text-center p-4 center">
+		<div class="text-reset">
 			© 2025 Copyright:
 			<a class="text-reset fw-bold" href="/">MP Clima | Sofia</a>
 		</div>
-		<!-- <a href="http://facebook.com">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				x="0px"
-				y="0px"
-				width="50"
-				height="50"
-				viewBox="0 0 50 50"
-				style="fill:#FFFFFF;"
+		<div class="social-media" style="font-size: 1.3em;">
+			<a
+				href="https://www.facebook.com/mpclimabg"
+				target="_blank"
+				aria-label="Последвайте ни във Facebook"
 			>
-				<path
-					d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
-				/>
-			</svg></a -->
+				Последвайте ни във:
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="40"
+					height="40"
+					viewBox="0 0 50 50"
+					class="facebook-logo"
+				>
+					<path
+						fill="#FFFFFF"
+						d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+					/>
+				</svg>
+			</a>
+		</div>
 	</div>
 </div>
 
@@ -191,14 +219,10 @@
 		/* & .column li{
 			color: blue;
 		} */
+	}
 
-		& .text-reset a:hover {
-			color: #ffffff;
-			padding-left: 10px;
-		}
-		& .text-reset {
-			color: #bbbbbb;
-		}
+	.social-media-up {
+		display: none;
 	}
 
 	.text-center {
@@ -211,15 +235,63 @@
 		justify-content: space-around;
 		gap: 2px;
 
-		& .text-reset a:hover {
-			color: #ffffff;
-		}
-		& .text-reset {
+		& .text-reset a {
+			font-size: 1em;
 			text-decoration: none;
 			color: #bbbbbb;
-			/* padding-left: 10px; */
+			padding-left: 10px;
+		}
+
+		& .text-reset a:hover {
+			color: #ffffff;
+			padding-left: 10px;
+		}
+		& .text-reset {
+			font-size: 1.3em;
+			text-decoration: none;
+			color: #bbbbbb;
+			padding-left: 10px;
 		}
 	}
+
+	.social-media {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.social-media a {
+		display: flex;
+		align-items: center;
+		color: white;
+		text-decoration: none;
+		margin: 0 auto;
+		transition: transform 0.3s ease, opacity 0.3s ease;
+	}
+
+	.social-media a:hover {
+		opacity: 0.8;
+		text-decoration-line: underline;
+		text-decoration-color: #0070bb;
+		text-decoration-style: solid;
+	}
+
+	.facebook-logo {
+		/* display: flex; */
+		align-items: center;
+		margin-left: 10px;
+		width: 40px;
+		height: 40px;
+		fill: #bbbbbb;
+		transition: fill 0.3s ease;
+	}
+
+	.facebook-logo:hover {
+		fill: #0070bb;
+	}
+
 	/* @media screen and (max-width: 800px) {
 	main {
 		flex-direction: column;
@@ -252,6 +324,46 @@
 		footer {
 			grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
 			background-color: rgba(0, 0, 0, 0.476);
+			margin-top: 0;
+		}
+
+		.text-center {
+			justify-content: left;
+			text-align: left;
+			flex-direction: column;
+			padding: 0 20px;
+			margin: 30px 0;
+		}
+
+		.social-media {
+			display: none;
+		}
+
+		.social-media-up {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.476);
+			margin-top: 50px;
+			padding: 20px 0 10px 0;
+			text-align: center;
+		}
+
+		.social-media-up a {
+			display: flex;
+			align-items: center;
+			color: white;
+			font-size: larger;
+			text-decoration: none;
+			margin: 0 auto;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+
+		.social-media-up a:hover {
+			opacity: 0.8;
+			text-decoration-line: underline;
+			text-decoration-color: #0070bb;
+			text-decoration-style: solid;
 		}
 	}
 </style>
