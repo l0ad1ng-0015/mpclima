@@ -5,8 +5,9 @@
 	import Footer from '../lib/components/layout/Footer/Footer.svelte';
 
 	// Променливи за заглавие и описание
-	export let title = 'MP Clima | Sofia';
-	export let description = 'Професионален монтаж и сервиз на климатици. Качествени услуги в София.';
+	export const title = 'MP Clima | Sofia';
+	export const description =
+		'Професионален монтаж и сервиз на климатици. Качествени услуги в София.';
 </script>
 
 <!--kak da se adjustne za vs ustroistva-->
@@ -18,6 +19,7 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->
 	<!-- Google Tag Manager -->

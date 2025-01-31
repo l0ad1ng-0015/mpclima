@@ -31,7 +31,7 @@
 	});
 
 	let commits = [];
-	const MAX_COMMITS = 12;
+	const MAX_COMMITS = 13;
 
 	async function fetchCommits() {
 		const response = await fetch('https://api.github.com/repos/l0ad1ng-0015/mpclima/commits');
