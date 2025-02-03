@@ -1,5 +1,5 @@
 <script>
-	export let title = 'Услуги | MP Clima';
+	export let title = 'Политика за поверителност | MP Clima';
 </script>
 
 <svelte:head>
@@ -187,7 +187,7 @@
 
 	@media (max-width: 768px) {
 		.container {
-			padding: 60px;
+			padding: 40px 60px 60px;
 		}
 
 		.content h1 {
@@ -207,7 +207,7 @@
 
 	@media (max-width: 480px) {
 		.container {
-			padding: 50px;
+			padding: 30px 45px;
 		}
 
 		.content h1 {

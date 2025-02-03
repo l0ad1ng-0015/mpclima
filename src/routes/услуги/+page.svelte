@@ -166,7 +166,7 @@ OLD ONE
 	.services {
 		margin: 20px 0;
 		width: 100%;
-		max-width: 1200px;
+		/* max-width: 1200px; */
 	}
 
 	.a-h2 {
@@ -182,7 +182,7 @@ OLD ONE
 
 	.service-items {
 		display: grid;
-		gap: 1.3rem;
+		gap: 2.4rem;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		justify-items: center;
 		width: 100%;

@@ -47,7 +47,7 @@
 		<a href="/услуги">
 			<button
 				style="margin-bottom: 20px; padding: 10px 12px; width: 45%; font-size: 1.2rem"
-				class="more">Върнете се към страница услуги</button
+				class="more"><b>Върнете се към страница услуги</b></button
 			>
 		</a>
 	</div>
@@ -56,7 +56,8 @@
 		<div class="contact-section">
 			<h2>Свържете се с нас</h2>
 			<p>
-				Нашият екип е готов да ви помогне. Можете да се свържете с нас по <strong>телефон</strong>
+				Нашият екип е готов да Ви помогне. Можете да се свържете с нас по <strong>телефон</strong>
+				<br />
 				или чрез нашата
 				<strong>контактна форма:</strong>
 			</p>
@@ -77,7 +78,9 @@
 						/></svg
 					>
 					<h3>Телефони</h3>
-					<a href="tel:0898 414816" class="tel"><strong>0898414816</strong> </a>
+					<a href="tel:0898 414816" class="tel" style="margin: 15px 0;"
+						><strong>0898414816</strong>
+					</a>
 					<a href="tel:0899 591664" class="tel"><strong>0899591664</strong> </a>
 				</div>
 				<a href="/контакти" style="text-decoration: none; color: white;">
@@ -101,7 +104,7 @@
 					оферта за Вас.
 				</p> -->
 						<a href="/контакти">
-							<button style="padding: 10px 12px;" class="more">Свържете се</button>
+							<button style="padding: 10px 12px; font-weight:700" class="more">Свържете се</button>
 						</a>
 					</div>
 				</a>
@@ -148,14 +151,14 @@
 	}
 
 	.services {
-		margin: 30px;
+		margin: 30px 0;
 		background-color: rgba(0, 0, 0, 0.356);
 	}
 
 	.services h2 {
 		text-align: center;
 		font-size: 30px;
-		padding: 10px 0 20px 0;
+		padding: 15px 10px 10px;
 		color: white;
 	}
 
@@ -164,7 +167,7 @@
 		align-items: center;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		padding: 10px 25px;
+		padding: 10px 20px;
 	}
 
 	.service-item {
@@ -172,7 +175,7 @@
 		padding: 20px;
 		border: 1px solid #ddd;
 		border-radius: 10px;
-		width: 300px;
+		/* width: 300px; */
 		text-align: center;
 		margin: 10px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -196,6 +199,37 @@
 		color: #c2c0c0;
 	}
 
+	@media screen and (max-width: 930px) {
+		br {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 580px) {
+		.service-item {
+			width: 300px;
+		}
+
+		.contact-item {
+			width: 300px;
+		}
+	}
+
+	@media screen and (max-width: 579px) {
+		.service-item {
+			width: 200px;
+		}
+
+		.contact-item {
+			width: 200px;
+		}
+
+		.more b {
+			font-size: 1rem;
+			padding: 6px;
+		}
+	}
+
 	/* CONTACTI 2 */
 	.contact {
 		text-align: center;
@@ -209,13 +243,12 @@
 	}
 
 	.contact-section h2 {
-		font-size: 2rem;
-		margin-bottom: 20px;
+		font-size: 30px;
+		padding: 15px 10px 10px;
 	}
 	.contact-section p {
 		margin-bottom: 10px;
 		font-size: 20px;
-		line-height: 1.5;
 	}
 
 	.contact-details {
@@ -231,7 +264,7 @@
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		text-align: center;
-		width: 300px;
+		/* width: 300px; */
 		transition: transform 0.3s;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		background: #00000096;
@@ -248,7 +281,7 @@
 	}
 
 	.contact-item h3 {
-		margin: 15px 0;
+		margin: 15px 0 0;
 		font-size: 1.2rem;
 	}
 
@@ -279,7 +312,7 @@
 		text-align: center;
 		margin: 10px 0 0 0;
 		border-radius: 25px;
-		/* font-weight: bold; */
+		font-weight: 600;
 		border: 2px solid #0070bb;
 		background-color: rgba(0, 0, 0, 0.17);
 		color: #fff;

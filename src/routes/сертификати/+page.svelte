@@ -135,7 +135,7 @@
 		</div>
 	</div>
 	<div class="column">
-		<div class="column-h"><h2>Удостоверения</h2></div>
+		<h2>Удостоверения</h2>
 		<div class="pswp-gallery image-mosaic" id={galleryID}>
 			{#each column2Images as image}
 				<a
@@ -241,7 +241,7 @@
 		}
 
 		.column h2 {
-			font-size: 2rem;
+			font-size: 1.7rem;
 			margin-bottom: 1rem; /* Разстояние под заглавието */
 		}
 	}
@@ -308,7 +308,7 @@
 		}
 	}
 
-	@media screen and (min-width: 380px) {
+	@media screen and (max-width: 380px) {
 		.column {
 			width: 70%;
 		}

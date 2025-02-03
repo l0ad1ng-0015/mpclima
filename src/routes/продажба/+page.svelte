@@ -53,13 +53,13 @@
 		<div class="step">
 			<h2>2. Избор и Поръчка</h2>
 			<p>
-				Ние ще ви помогнем да изберете правилния модел според вашите нужди. Всичко става бързо и
+				Ние ще Ви помогнем да изберете правилния модел според вашите нужди. Всичко става бързо и
 				лесно.
 			</p>
 		</div>
 		<div class="step">
 			<h2>3. Доставка</h2>
-			<p>Ние осигуряваме бърза и надеждна доставка до всяка точка на страната.</p>
+			<p>Ние осигуряваме бърза и надеждна доставка до всяка точка на град София.</p>
 		</div>
 	</div>
 </div>
@@ -67,7 +67,10 @@
 <div class="prodajbi-container-wrapper" style="margin-top: 40px;">
 	<div class="contact-section">
 		<h2>Свържете се с нас</h2>
-		<p>Нашият екип е готов да ви помогне. Можете да се свържете с нас по телефон или имейл:</p>
+		<p>
+			Нашият екип е готов да Ви помогне. Можете да се свържете с нас по <strong>телефон</strong>
+			<br />или чрез нашата <strong>контактна форма:</strong>
+		</p>
 		<div class="contact-details">
 			<div class="contact-item">
 				<svg
@@ -85,7 +88,9 @@
 					/></svg
 				>
 				<h3>Телефони</h3>
-				<a href="tel:0898 414816" class="tel"><strong>0898414816</strong> </a>
+				<a href="tel:0898 414816" class="tel" style="margin: 15px 0;"
+					><strong>0898414816</strong>
+				</a>
 				<a href="tel:0899 591664" class="tel"><strong>0899591664</strong> </a>
 			</div>
 			<a href="/контакти" style="text-decoration: none; color: white;">
@@ -102,8 +107,8 @@
 						/></svg
 					>
 					<h3 style="font-weight: 500;">
-						Направете запитване , чрез контактната ни форма, и ние ще Ви върнем отговор с
-						подходящата оферта за Вас.
+						Направете запитване, чрез контактната ни форма, и ние ще Ви върнем отговор с подходящата
+						оферта за Вас.
 					</h3>
 					<!-- <p>
 					Направете запитване , чрез контактната ни форма, и ние ще Ви върнем отговор с подходящата
@@ -151,7 +156,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		gap: 1rem;
-		padding: 40px 20px;
+		padding: 20px 20px;
 		padding-top: 0;
 		background-color: rgba(0, 0, 0, 0.297);
 		text-align: left;
@@ -190,46 +195,73 @@
 		padding-top: 0 !important;
 	}
 
-	@media screen and (max-width: 505px) {
-		.steps {
+	@media screen and (max-width: 930px) {
+		br {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 580px) {
+		.service-item {
+			width: 300px;
+		}
+
+		.contact-item {
+			width: 300px;
+		}
+	}
+
+	@media screen and (max-width: 579px) {
+		.service-item {
+			width: 200px;
+		}
+
+		.contact-item {
+			width: 200px;
 		}
 	}
 
 	.step {
 		flex: 1 1 300px;
-		padding: 20px;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-		border-radius: 10px;
-		text-align: center;
 		background: rgba(0, 0, 0, 0.6);
-		transition: transform 0.3s ease, background 0.3s ease;
+		padding: 20px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		/* width: 300px; */
+		text-align: center;
+		margin: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
 	}
 
 	.step:hover {
+		border-color: #0070bb;
 		transform: translateY(-10px);
-		background: rgba(0, 86, 179, 0.8);
+		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.623);
 	}
 
 	.step h2 {
-		margin-bottom: 15px;
-		font-size: 1.5rem;
+		font-size: 24px;
+		margin-bottom: 10px;
+		color: white;
 	}
 
 	.step p {
-		font-size: 1rem;
 		line-height: 1.5;
+		font-size: 16px;
+		color: #c2c0c0;
 	}
 
 	/* CONTACTI 2 */
 	.contact-section {
 		text-align: center;
-		padding: 40px 20px;
+		padding: 10px 20px;
 		background: rgba(228, 59, 59, 0);
 	}
 
 	.contact-section h2 {
-		font-size: 2rem;
-		margin-bottom: 20px;
+		font-size: 30px;
+		padding: 15px 10px 10px;
 	}
 
 	.contact-section p {
@@ -251,7 +283,7 @@
 		border: 1px solid #ccc;
 		border-radius: 10px;
 		text-align: center;
-		width: 300px;
+		/* width: 300px; */
 		transition: transform 0.3s;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		background: #00000096;

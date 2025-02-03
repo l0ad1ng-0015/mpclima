@@ -23,7 +23,7 @@
 <footer class="">
 	<!-- <div class="footer-logo">
 	</div> -->
-	<div class="column">
+	<div class="column" style="line-height: 1.3;">
 		<!-- <img src="images/MP_LOGO_2-ptif.png" alt="Footer Logo">
 			<h2>За фирмата</h2> 
 			<div class="column-1-text">Designed and developed by<br />

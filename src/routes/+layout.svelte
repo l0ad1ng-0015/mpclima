@@ -7,7 +7,7 @@
 	// Променливи за заглавие и описание
 	export const title = 'MP Clima | Sofia';
 	export const description =
-		'Професионален монтаж и сервиз на климатици. Качествени услуги в София.';
+		'Фирма MP Clima е компания в областта на климатичните инсталации, предоставяща висококачествени услуги и решения за вашия дом или бизнес в София. От продажбата до монтажа и поддръжката, ние гарантираме комфорт и надеждност за нашите клиенти.';
 </script>
 
 <!--kak da se adjustne za vs ustroistva-->
@@ -19,25 +19,6 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
-	<!-- Google Tag Manager -->
 	<script>
 		(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
@@ -52,7 +33,7 @@
 	</script>
 	<!-- End Google Tag Manager -->
 
-	<!-- <meta name="author" content="MP Clima" />
+	<meta name="author" content="MP Clima" />
 	<link rel="shortcut icon" href="/static/logo_square.jpg" type="image/x-icon" />
 
 	<title>{title}</title>
@@ -63,20 +44,18 @@
 		content="монтаж на климатици, демонтаж на климатици, профилактика на климатици, нестандартни услуги за климатици, монтаж София, демонтаж София, профилактика София, тръбен път за климатик, вкопаване на тръбен път, пробиване за климатик, тест с азот, антивибрационни тампони, кондензни вани, допълнителни услуги за климатици, качване на климатик, медни тръби, PVC тръби, комуникационни кабели, захранващи кабели, ремонт на климатици, сервиз за климатици, montaj na klimatitsi, demontaj na klimatitsi, profilaktika na klimatitsi, nestandartni uslugi za klimatitsi, montaj Sofiya, demontaj Sofiya, profilaktika Sofiya, traben pat za klimatik, vkopavane na traben pat, probivane za klimatik, test s azot, antivibracionni tamponi, kondenzni vani, dopalnitelni uslugi za klimatitsi, kachvane na klimatik, medni trabi, PVC trabi, komunikacionni kabeli, zahranvashti kabeli, remont na klimatitsi, servis za klimatitsi, nestandardne usluge za klimatici, specijalizirani servisi klimatici, custom klima montaž, projektiranje klimatizacija, нестандартен монтаж климатик, klasični i nestandardni sistemi, klima sa specijalni zahtevi, нестандартни климатици, klima sisteme po porudzbini, klimatizacija za specijalizirani prostor, projektiranje i instalacija klimatskih sistema, bespoke klimatski uređaji, нестандартни климатични решения, custom klima dizajn, klima usluga po meri, nestandardne usluge za klimatici, specijalizirani servisi klimatici, custom klima montaž, projektiranje klimatizacija, нестандартен монтаж климатик, klasični i nestandardni sistemi, klima sa specijalni zahtevi, нестандартни климатици, klima sisteme po porudzbini, klimatizacija za specijalizirani prostor, projektiranje i instalacija klimatskih sistema, bespoke klimatski uređaji, нестандартни климатични решения, custom klima dizajn, klima usluga po meri, serviz na klimatici, remont na klimatici, diagnostika klimatik, popravka klimatik, servisna usluga, klimatski sistemi servis, klimatici servis, servis na klima uređaj, профилактика klimatici, popravka klima sistem, klima servis bg, klimatski uređaji servis, odrzhavane na klimatici, замяна на климатик, proverenje klimatik, климатични системи ремонт, servis i profilaktika klimatik, ремонт климатик, klimatski uređaj popravka, климатични услуги, servis klima uređaja"
 	/>
 
-
 	<meta name="twitter:card" content="/static/logo_square.jpg" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content="/static/logo_square.jpg" />
 	<meta name="twitter:image:alt" content="MP Clima | Sofia" />
 
-
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta property="og:image" content="/static/logo_square.jpg" />
 	<meta property="og:image:alt" content="MP Clima | Sofia" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="/" /> -->
+	<meta property="og:url" content="/" />
 </svelte:head>
 
 <div class="top-btn">
