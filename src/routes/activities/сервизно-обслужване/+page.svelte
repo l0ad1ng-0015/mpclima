@@ -82,6 +82,10 @@
 						><strong>0898414816</strong>
 					</a>
 					<a href="tel:0899 591664" class="tel"><strong>0899591664</strong> </a>
+					<h3>Сервизни и алпински услуги</h3>
+					<a href="tel:0897 729998" class="tel" style="margin: 15px 0;"
+						><strong>0897729998</strong>
+					</a>
 				</div>
 				<a href="/контакти" style="text-decoration: none; color: white;">
 					<div class="contact-item">
