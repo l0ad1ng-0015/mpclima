@@ -91,6 +91,12 @@
 				</div>
 			</a>
 		</div>
+		<a href="/услуги">
+			<button
+				style="margin-bottom: 20px; padding: 10px 15px; width: 45%; font-size: 1.2rem"
+				class="more"><b>Вижте всичките ни услуги</b></button
+			>
+		</a>
 	</div>
 
 	<!-- Контакти Section -->

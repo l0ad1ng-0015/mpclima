@@ -1,6 +1,6 @@
 <script>
 	// import { getElementsFromOption } from "photoswipe/dist/types/util/util";
-	export let title = 'Монтаж | MP Clima';
+	export let title = 'Монтаж на климатици | MP Clima';
 	export let description =
 		'Професионален монтаж на климатици в София от опитни специалисти. Осигуряваме качествена и надеждна услуга с внимание към детайлите. Предлагаме бърза инсталация, безопасна работа и достъпни цени за вашия комфорт.';
 

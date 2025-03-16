@@ -77,6 +77,9 @@
 </div>
 
 <style>
+	:global(body) {
+		zoom: 70%;
+	}
 	.contentWrapper {
 		color: #fff;
 		display: flex;
