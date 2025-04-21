@@ -80,6 +80,12 @@
 	:global(body) {
 		zoom: 70%;
 	}
+
+	@media screen and (max-width: 880px) {
+		:global(body) {
+			zoom: 100%;
+		}
+	}
 	.contentWrapper {
 		color: #fff;
 		display: flex;

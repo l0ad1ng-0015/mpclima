@@ -42,9 +42,10 @@
 		max-width: 800px;
 		margin: 0 auto;
 		padding: 2rem;
-		background-color: rgba(0, 0, 0, 0.463);
+		background-color: #f4f4f4;
 		border: 1px;
 		border-radius: 8px;
+		background-color: #2980b9;
 	}
 
 	.prophylaxis-header {
